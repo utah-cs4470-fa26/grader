@@ -1,0 +1,7 @@
+(PrintCmd "")
+(ReadCmd "s" (VarLValue X))
+(AssertCmd (FloatExpr 0) "")
+(WriteCmd (FloatExpr 3234) "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr J3s))))
+(ShowCmd (FloatExpr 0))
+(PrintCmd "")

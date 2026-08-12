@@ -1,0 +1,3 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr Z) (VarExpr anint))))
+(PrintCmd "")
+(LetCmd (VarLValue O) (TrueExpr))

@@ -1,0 +1,3 @@
+(LetCmd (VarLValue t) (FalseExpr))
+(ShowCmd (VarExpr j1b_))
+(LetCmd (VarLValue l) (FalseExpr))

@@ -1,0 +1,6 @@
+(AssertCmd (TrueExpr) "")
+(ShowCmd (TrueExpr))
+(WriteCmd (FalseExpr) "")
+(LetCmd (VarLValue w4T_) (IntExpr 6))
+(WriteCmd (TrueExpr) "")
+(ShowCmd (IntExpr 46235))

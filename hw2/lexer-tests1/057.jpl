@@ -1,0 +1,5 @@
+// ERROR
+
+let z = container{1, 2, false, 4, 5, true}
+let x = if z.fst then z.snd else z.third
+

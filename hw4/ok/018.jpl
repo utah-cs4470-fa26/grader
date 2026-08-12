@@ -1,0 +1,5 @@
+struct a {
+  elem: int
+}
+
+let b = a{3}

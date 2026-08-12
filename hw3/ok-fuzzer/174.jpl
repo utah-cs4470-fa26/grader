@@ -1,0 +1,9 @@
+time show [ H ]
+time show [ ]
+assert true, ""
+read image "aOU" to w9L_
+assert q, ""
+time show [ i ]
+read image "Bma" to S7T_
+print ""
+read image "" to i

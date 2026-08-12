@@ -1,0 +1,7 @@
+(PrintCmd "")
+(PrintCmd "")
+(LetCmd (VarLValue H) (VarExpr U2n6u_))
+(AssertCmd (VarExpr y) ".[%R6`0")
+(ShowCmd (IntExpr 6))
+(AssertCmd (TrueExpr) "")
+(LetCmd (VarLValue L1x_0p) (FalseExpr))

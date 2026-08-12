@@ -1,0 +1,8 @@
+(ReadCmd "w" (VarLValue B1Y))
+(ReadCmd "Mw" (VarLValue J2W))
+(ReadCmd "4" (VarLValue J9e_5S))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr e6a))))
+(ShowCmd (VarExpr k8q))
+(PrintCmd "8[eU;\&")
+(WriteCmd (VarExpr d) "WNU")
+(LetCmd (VarLValue A1V_7D_) (TrueExpr))

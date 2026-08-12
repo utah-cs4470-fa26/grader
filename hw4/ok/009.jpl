@@ -1,0 +1,5 @@
+struct floats3 {
+  d1: float[]
+  d2: float[,]
+  d3: float[,,]
+}

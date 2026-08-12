@@ -1,0 +1,8 @@
+(ReadCmd "U" (VarLValue s))
+(AssertCmd (IntExpr 8) "|")
+(PrintCmd "")
+(PrintCmd "")
+(PrintCmd "6")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr e))))
+(AssertCmd (VarExpr K) "")
+(ReadCmd "[" (VarLValue X))

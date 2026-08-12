@@ -1,0 +1,49 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 1;
+    int64_t _1 = 2;
+    int64_t _2 = 3;
+    int64_t _3 = 4;
+    int64_t _4 = 5;
+    int64_t _5 = 6;
+    _a1_int64_t _6;
+    _6.d0 = 6;
+    _6.data = jpl_alloc(sizeof(int64_t) * 6);
+    _6.data[0] = _0;
+    _6.data[1] = _1;
+    _6.data[2] = _2;
+    _6.data[3] = _3;
+    _6.data[4] = _4;
+    _6.data[5] = _5;
+    double _7 = 3.0;
+    double _8 = exp(_7);
+    double _9 = sqrt(_8);
+    int64_t _10 = to_int(_9);
+    if (_10 >= 0)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_10 < _6.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    int64_t _11 = 0;
+    _11 *= _6.d0;
+    _11 += _10;
+    int64_t _12 = _6.data[_11];
+    show("(IntType)", &_12);
+}
+

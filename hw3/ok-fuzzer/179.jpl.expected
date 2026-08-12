@@ -1,0 +1,5 @@
+(PrintCmd "H")
+(PrintCmd "EbDK")
+(PrintCmd "")
+(PrintCmd "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr p5Y) (VarExpr a9Q) (VarExpr myf))))

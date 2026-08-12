@@ -1,0 +1,4 @@
+time show [ h3k_ ]
+assert 5, "W"
+assert false, ""
+show true

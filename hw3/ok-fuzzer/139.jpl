@@ -1,0 +1,5 @@
+assert true, "E"
+write image y to "e"
+print "EM"
+print ""
+time show [[[k], 0], c]

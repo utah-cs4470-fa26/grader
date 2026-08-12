@@ -1,0 +1,3 @@
+(ReadCmd "" (VarLValue N))
+(WriteCmd (TrueExpr) "")
+(ShowCmd (TrueExpr))

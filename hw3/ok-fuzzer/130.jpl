@@ -1,0 +1,7 @@
+let h = true
+time time show [3]
+print "("
+show false
+time show [d, s]
+time show [H6T_, b]
+print "k"

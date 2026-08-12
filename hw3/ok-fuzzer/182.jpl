@@ -1,0 +1,6 @@
+read image "\" to V1s
+time show [ l ]
+let N = false
+let O = 57
+time show [[ J ]]
+print ""

@@ -1,0 +1,3 @@
+write image 50477 to "/"
+time show [ P0x_ ]
+assert H3i_, ""

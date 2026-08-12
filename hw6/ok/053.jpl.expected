@@ -1,0 +1,2 @@
+(StructCmd posn x (IntType) y (IntType))
+(ShowCmd (DotExpr (IntType) (StructLiteralExpr (StructType posn) posn (IntExpr (IntType) 1) (IntExpr (IntType) 2)) x))

@@ -1,0 +1,7 @@
+write image 6.96 to "V"
+write image .35 to ""
+read image "" to M
+print "^T-"
+read image "" to g1Y_
+read image "" to R8Q6p_
+time show [ b ]

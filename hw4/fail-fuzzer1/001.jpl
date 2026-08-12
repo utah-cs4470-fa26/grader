@@ -1,0 +1,6 @@
+time print "" time print ""
+write image false to ""
+assert true , ""
+assert void , ""
+time print ""
+print ""

@@ -1,0 +1,131 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+    rgba a;
+    rgba b;
+} a;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  a *data;
+} _a2_a;
+
+typedef struct {
+    rgba a;
+    _a2_a b;
+} b;
+
+typedef struct {
+  int64_t d0;
+  bool *data;
+} _a1_bool;
+
+typedef struct {
+  int64_t d0;
+  _a1_bool *data;
+} _a1__a1_bool;
+
+typedef struct {
+  int64_t d0;
+  _a1__a1_bool *data;
+} _a1__a1__a1_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+void jpl_main(struct args args) {
+    double _0 = 13.0;
+    double _1 = 86.0;
+    bool _2 = _0 < _1;
+    double _3 = 32.0;
+    double _4 = 61.0;
+    double _5 = _3 / _4;
+    double _6 = 54.0;
+    bool _7 = _5 != _6;
+    _a1_bool _8;
+    _8.d0 = 2;
+    _8.data = jpl_alloc(sizeof(bool) * 2);
+    _8.data[0] = _2;
+    _8.data[1] = _7;
+    _a1__a1_bool _9;
+    _9.d0 = 1;
+    _9.data = jpl_alloc(sizeof(_a1_bool) * 1);
+    _9.data[0] = _8;
+    _a1__a1__a1_bool _10;
+    _10.d0 = 1;
+    _10.data = jpl_alloc(sizeof(_a1__a1_bool) * 1);
+    _10.data[0] = _9;
+    _a1_int64_t _11;
+    _11.d0 = 2;
+    _11.data = jpl_alloc(sizeof(int64_t) * 2);
+    _11.data[0] = _8.d0;
+    _11.data[1] = _8.d0;
+    if (_8.d0 >= 0)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_8.d0 < _11.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    int64_t _12 = 0;
+    _12 *= _11.d0;
+    _12 += _8.d0;
+    int64_t _13 = _11.data[_12];
+    if (_13 >= 0)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_13 < _10.d0)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    int64_t _14 = 0;
+    _14 *= _10.d0;
+    _14 += _13;
+    _a1__a1_bool _15 = _10.data[_14];
+    int64_t _16 = 610;
+    int64_t _17 = -_16;
+    int64_t _18 = -_17;
+    if (_18 >= 0)
+    goto _jump5;
+    fail_assertion("negative array index");
+    _jump5:;
+    if (_18 < _15.d0)
+    goto _jump6;
+    fail_assertion("index too large");
+    _jump6:;
+    int64_t _19 = 0;
+    _19 *= _15.d0;
+    _19 += _18;
+    _a1_bool _20 = _15.data[_19];
+    bool _21 = false;
+    show("(BoolType)", &_21);
+    bool _22 = false;
+    double _23 = 88.0;
+    double _24 = 70.0;
+    bool _25 = _23 < _24;
+    bool _26 = _22 == _25;
+    int64_t _27 = 31;
+    int64_t _28 = _20.d0 + _27;
+    int64_t _29 = 132;
+    int64_t _30 = -_29;
+    bool _31 = _28 >= _30;
+    bool _32 = !_31;
+    bool _33 = _26 != _32;
+    if (0 != _33)
+    goto _jump7;
+    fail_assertion("j");
+    _jump7:;
+}
+

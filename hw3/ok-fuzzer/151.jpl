@@ -1,0 +1,3 @@
+time show [Z, anint]
+print ""
+let O = true

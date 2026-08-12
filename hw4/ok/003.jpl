@@ -1,0 +1,8 @@
+struct b {
+  x: int
+  y: int
+}
+
+struct a {
+  c: b
+}

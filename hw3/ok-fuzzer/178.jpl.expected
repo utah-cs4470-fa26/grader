@@ -1,0 +1,2 @@
+(ReadCmd "6" (VarLValue C9L_))
+(PrintCmd "6")

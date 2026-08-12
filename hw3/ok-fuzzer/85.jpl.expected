@@ -1,0 +1,2 @@
+(LetCmd (VarLValue i) (IntExpr 3374))
+(ReadCmd "9" (VarLValue Z2A))

@@ -1,0 +1,8 @@
+(PrintCmd "m")
+(ShowCmd (TrueExpr))
+(ShowCmd (VarExpr D6s_2G_))
+(ShowCmd (IntExpr 2))
+(ReadCmd "" (VarLValue W))
+(ShowCmd (VarExpr d1S_))
+(AssertCmd (TrueExpr) "Z|I")
+(ShowCmd (FloatExpr 4396))

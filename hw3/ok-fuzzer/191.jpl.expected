@@ -1,0 +1,7 @@
+(WriteCmd (VarExpr E) "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr M) (VarExpr myfloat))))
+(LetCmd (VarLValue a) (IntExpr 180))
+(WriteCmd (FalseExpr) "@n")
+(WriteCmd (FalseExpr) "U")
+(ShowCmd (FalseExpr))
+(ReadCmd "t" (VarLValue m))

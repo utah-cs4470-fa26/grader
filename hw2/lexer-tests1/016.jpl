@@ -1,0 +1,6 @@
+// OK
+
+let abcd = [[[800], [600]]]
+
+show abcd[0][1][0]
+show abcd[0][0][0]

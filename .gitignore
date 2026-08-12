@@ -1,0 +1,10 @@
+*.bak
+jplc
+*/out.txt
+*/out.txt2
+*/out.pp
+*/expected.pp
+old/
+a.out
+*/*.diff
+__pycache__

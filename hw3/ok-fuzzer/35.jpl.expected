@@ -1,0 +1,7 @@
+(ShowCmd (FalseExpr))
+(AssertCmd (VarExpr I0a_5t_4I) "")
+(WriteCmd (VarExpr X) "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr g4j_5j_))))
+(LetCmd (VarLValue e) (IntExpr 49))
+(ShowCmd (TrueExpr))
+(ReadCmd "[>" (VarLValue a))

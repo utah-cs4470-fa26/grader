@@ -1,0 +1,17 @@
+NEWLINE
+RETURN 'return'
+VARIABLE 'to_float'
+LPAREN '('
+VARIABLE 'i'
+OP '+'
+VARIABLE 'j'
+RPAREN ')'
+OP '/'
+VARIABLE 'to_float'
+LPAREN '('
+VARIABLE 'W'
+OP '+'
+VARIABLE 'H'
+RPAREN ')'
+NEWLINE
+END_OF_FILE

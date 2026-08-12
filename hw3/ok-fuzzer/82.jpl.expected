@@ -1,0 +1,6 @@
+(LetCmd (VarLValue Z) (FalseExpr))
+(AssertCmd (TrueExpr) "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr O))))
+(PrintCmd "t")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr L6W_))))
+(AssertCmd (VarExpr h) "?a`I$")

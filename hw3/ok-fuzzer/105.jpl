@@ -1,0 +1,8 @@
+show false
+assert 7, ""
+print ""
+let k = 77
+let w = e7c
+assert true, ""
+write image 0 to ""
+show true

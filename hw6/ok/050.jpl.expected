@@ -1,0 +1,2 @@
+(StructCmd nums i (IntType) f (FloatType))
+(ShowCmd (IfExpr (StructType nums) (TrueExpr (BoolType)) (StructLiteralExpr (StructType nums) nums (IntExpr (IntType) 1) (FloatExpr (FloatType) 1)) (StructLiteralExpr (StructType nums) nums (IntExpr (IntType) 2) (FloatExpr (FloatType) 1))))

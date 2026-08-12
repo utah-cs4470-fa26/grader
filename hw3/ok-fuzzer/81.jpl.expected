@@ -1,0 +1,4 @@
+(PrintCmd "")
+(ReadCmd "`" (VarLValue P))
+(ShowCmd (FloatExpr 7))
+(LetCmd (VarLValue u) (FloatExpr 4))

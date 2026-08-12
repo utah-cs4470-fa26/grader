@@ -1,0 +1,3 @@
+(ReadCmd "" (VarLValue m8k))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr o))))
+(AssertCmd (FloatExpr 455690679) "")

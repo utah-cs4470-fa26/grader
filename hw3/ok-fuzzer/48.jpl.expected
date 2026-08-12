@@ -1,0 +1,8 @@
+(AssertCmd (TrueExpr) "Xs")
+(ReadCmd "" (VarLValue D))
+(PrintCmd "3Z")
+(WriteCmd (FalseExpr) "")
+(WriteCmd (FalseExpr) "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr O6I7A_))))
+(LetCmd (VarLValue q1V) (IntExpr 2))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr s))))

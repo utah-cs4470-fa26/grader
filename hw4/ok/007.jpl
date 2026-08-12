@@ -1,0 +1,4 @@
+struct circlepair {
+  x: circlepair
+  y: circlepair
+}

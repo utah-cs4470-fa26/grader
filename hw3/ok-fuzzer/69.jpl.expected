@@ -1,0 +1,7 @@
+(WriteCmd (FloatExpr 6) "V")
+(WriteCmd (FloatExpr 0) "")
+(ReadCmd "" (VarLValue M))
+(PrintCmd "^T-")
+(ReadCmd "" (VarLValue g1Y_))
+(ReadCmd "" (VarLValue R8Q6p_))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr b))))

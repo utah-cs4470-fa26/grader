@@ -1,0 +1,8 @@
+(AssertCmd (VarExpr l3y4V25T_) "")
+(ShowCmd (FalseExpr))
+(PrintCmd "P")
+(PrintCmd "")
+(PrintCmd "|")
+(LetCmd (VarLValue t) (TrueExpr))
+(LetCmd (VarLValue f) (TrueExpr))
+(LetCmd (VarLValue A0l_) (VarExpr V0y))

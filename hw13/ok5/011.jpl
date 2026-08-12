@@ -1,0 +1,4 @@
+let m1[H, W_ignore] = array[i: 400, j: 400] [1.0]
+let m2 = array[i: 200, j: 400] [0.5]
+show array[i : H, j : H] sum[k : H] m1[i, k][0] * m2[k, j][0]
+

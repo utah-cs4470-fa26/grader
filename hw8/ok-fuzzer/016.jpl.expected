@@ -1,0 +1,109 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+    double a;
+} a;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+typedef struct {
+  int64_t d0;
+  _a1_int64_t *data;
+} _a1__a1_int64_t;
+
+typedef struct {
+    bool a;
+} d;
+
+typedef struct {
+  int64_t d0;
+  d *data;
+} _a1_d;
+
+typedef struct {
+    d a;
+} g;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 225;
+    int64_t _1 = 737;
+    int64_t _2 = -_1;
+    int64_t _3 = _0 * _2;
+    int64_t _4 = 602;
+    int64_t _5 = -_4;
+    int64_t _6 = 182;
+    int64_t _7 = -_6;
+    int64_t _8 = _5 * _7;
+    int64_t _9 = 887;
+    int64_t _10 = _8 - _9;
+    _a1_int64_t _11;
+    _11.d0 = 2;
+    _11.data = jpl_alloc(sizeof(int64_t) * 2);
+    _11.data[0] = _3;
+    _11.data[1] = _10;
+    _a1__a1_int64_t _12;
+    _12.d0 = 1;
+    _12.data = jpl_alloc(sizeof(_a1_int64_t) * 1);
+    _12.data[0] = _11;
+    int64_t _13 = 744;
+    if (_13 >= 0)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_13 < _12.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    int64_t _14 = 0;
+    _14 *= _12.d0;
+    _14 += _13;
+    _a1_int64_t _15 = _12.data[_14];
+    int64_t _16 = 654;
+    int64_t _17 = -_16;
+    if (_17 >= 0)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_17 < _15.d0)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    int64_t _18 = 0;
+    _18 *= _15.d0;
+    _18 += _17;
+    int64_t _19 = _15.data[_18];
+    int64_t _20 = -_19;
+    double _21 = 20.0;
+    a _22 = { _21 };
+    double _23 = _22.a;
+    double _24 = 51.0;
+    double _25 = -_24;
+    double _26 = -_25;
+    bool _27 = _23 == _26;
+    if (0 != _27)
+    goto _jump5;
+    fail_assertion("e");
+    _jump5:;
+    bool _28 = false;
+    d _29 = { _28 };
+    bool _30 = _29.a;
+    d _31 = { _30 };
+    bool _32 = _20 == _20;
+    d _33 = { _32 };
+    _a1_d _34;
+    _34.d0 = 2;
+    _34.data = jpl_alloc(sizeof(d) * 2);
+    _34.data[0] = _31;
+    _34.data[1] = _33;
+}
+

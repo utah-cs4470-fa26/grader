@@ -1,0 +1,4 @@
+(ReadCmd "l" (VarLValue Q1g7U_))
+(ShowCmd (IntExpr 6))
+(LetCmd (VarLValue C) (IntExpr 198))
+(ShowCmd (IntExpr 4))

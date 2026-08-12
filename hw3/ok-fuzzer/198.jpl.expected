@@ -1,0 +1,4 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr h3k_))))
+(AssertCmd (IntExpr 5) "W")
+(AssertCmd (FalseExpr) "")
+(ShowCmd (TrueExpr))

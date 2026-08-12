@@ -1,0 +1,7 @@
+(PrintCmd "")
+(ReadCmd "" (VarLValue G))
+(LetCmd (VarLValue z2X_9v) (IntExpr 5))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr b7H_))))
+(AssertCmd (FloatExpr 0) "8")
+(PrintCmd "b")
+(PrintCmd "a4E")

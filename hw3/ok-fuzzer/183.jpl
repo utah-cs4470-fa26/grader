@@ -1,0 +1,3 @@
+write image 6 to ""
+time show [[ I0J_ ]]
+assert .2089, "G"

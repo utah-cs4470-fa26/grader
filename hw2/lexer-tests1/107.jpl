@@ -1,0 +1,61 @@
+// OK TODO broken
+
+/* This file implements a raytracer with:
+
+- A sphere at 0, 0, 0, radius 1
+- A camera at 4, 0, 0
+- A viewing pyramid that intersects 0, +-2, +-2
+- A point light source at x, y, z
+- A totally matte white surface
+
+*/
+
+struct float2 {
+  x: float
+  y: float
+}
+
+struct float3 {
+  xx: float
+  yy: float
+  zz: float
+}
+
+// Send a ray at 0, x, y,
+// return a point {x', y', z'} such that
+// x'^2 + y'^2 + z'^2 ~= 1
+// or x' = y' = z' = 0 if there is no intersection
+fn sphere_point(sp: float2) : float3 {
+    // p(t) = { 4 - t, t * x / 4, t * y / 4 }
+    let r = 1.0 + (sp.x*sp.x + sp.y*sp.y) / 16.0
+    // r*t*t - 8*t + 15 = 0
+    let t = (8.0 - sqrt(64.0 - 60.0*r)) / (2.0 * r)
+    return float3{ 4.0 - t, t * sp.x / 4.0, t * sp.y / 4.0 }
+}
+
+fn energy(p1: float3, p2: float3) : float {
+    let d2 = (p2.xx - p1.xx)*(p2.xx - p1.xx) + (p2.yy - p1.yy)*(p2.yy - p1.yy) + (p2.zz - p1.zz)*(p2.zz - p1.zz)
+    let r2 = p1.yy*p1.yy + p1.zz*p1.zz
+    let alpha = atan2(r2, 4.0 - p1.xx)
+    let beta = atan2(r2, p1.xx)
+    let gamma = alpha + beta
+    return cos(gamma) / d2
+}
+
+fn color(x : float, p3: float3) : rgba {
+    return rgba{ 9.0 * p3.xx, 9.0 * p3.xx, 9.0 * p3.xx, 1.0 }
+}
+
+fn pixel(p4: float2, ls : float3) : rgba {
+    return color(if ((p4.x*p4.x) + (p4.y*p4.y) < (16.0 / 15.0)) \
+    then energy(sphere_point(p4), ls) \
+    else 0.0, ls)
+}
+
+assert argnum == 3, "Need exactly 3 arguments for the light source coordinates"
+let ls = float3{ to_float(args[0]), to_float(args[1]), to_float(args[2]) }
+let W = 400
+let H = 400
+time let img = array[i : W, j : H] pixel(float2{to_float(i - 200) / 100.0, to_float(j - 200) / 100.0}, ls)
+
+write image img to "sphere.png"

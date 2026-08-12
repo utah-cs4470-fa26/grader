@@ -1,0 +1,6 @@
+(PrintCmd "H")
+(ShowCmd (TrueExpr))
+(LetCmd (VarLValue O6R_6G_) (VarExpr z5M_))
+(LetCmd (VarLValue M9i_3z) (FalseExpr))
+(LetCmd (VarLValue G0j_) (FalseExpr))
+(ReadCmd "" (VarLValue F))

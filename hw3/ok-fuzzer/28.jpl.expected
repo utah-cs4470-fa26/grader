@@ -1,0 +1,6 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr r2Y_1r_)))))
+(WriteCmd (FalseExpr) "")
+(LetCmd (VarLValue D3w_6I6R_) (VarExpr z))
+(LetCmd (VarLValue H) (FalseExpr))
+(WriteCmd (FalseExpr) "")
+(ReadCmd "`" (VarLValue K))

@@ -1,0 +1,1 @@
+(ShowCmd (SumLoopExpr i (IntExpr 3) (ArrayIndexExpr (ArrayLoopExpr i (IntExpr 3) (DotExpr (VarExpr a) b)) (VarExpr i))))

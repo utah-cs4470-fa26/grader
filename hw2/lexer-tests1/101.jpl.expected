@@ -1,0 +1,14 @@
+NEWLINE
+LET 'let'
+VARIABLE 'z'
+EQUALS '='
+FALSE 'false'
+NEWLINE
+ASSERT 'assert'
+VARIABLE 'z'
+DOT '.'
+VARIABLE 'contents'
+COMMA ','
+STRING '"hello!"'
+NEWLINE
+END_OF_FILE

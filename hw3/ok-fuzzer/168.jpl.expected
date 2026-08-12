@@ -1,0 +1,6 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr d1z_))))
+(LetCmd (VarLValue T) (FalseExpr))
+(PrintCmd "}x{c,")
+(LetCmd (VarLValue K8m_0K_0B) (FalseExpr))
+(ShowCmd (TrueExpr))
+(ReadCmd "\Y[" (VarLValue U))

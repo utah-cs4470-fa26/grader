@@ -1,0 +1,6 @@
+show .080
+let U = I
+show 1
+show false
+time show [ g ]
+assert 45.92092307, ""

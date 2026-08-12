@@ -1,0 +1,6 @@
+(AssertCmd (FloatExpr 0) "*")
+(PrintCmd "n")
+(LetCmd (VarLValue v) (FalseExpr))
+(ReadCmd "yD" (VarLValue y))
+(LetCmd (VarLValue A) (TrueExpr))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr u))))

@@ -1,0 +1,5 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr no0j))))
+(LetCmd (VarLValue U9c4r5P_) (FalseExpr))
+(LetCmd (VarLValue e4G_9J_4m_) (IntExpr 4))
+(AssertCmd (FloatExpr 79790) "")
+(PrintCmd "IT")

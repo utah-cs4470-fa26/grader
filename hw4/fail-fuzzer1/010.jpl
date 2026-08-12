@@ -1,0 +1,6 @@
+read image "" to t
+assert void , ""
+true image write to ""
+write image false to ""
+print ""
+time print ""

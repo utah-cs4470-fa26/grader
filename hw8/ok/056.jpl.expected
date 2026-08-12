@@ -1,0 +1,30 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+    int64_t x;
+    int64_t y;
+} inner;
+
+typedef struct {
+    int64_t a;
+    inner b;
+    int64_t c;
+} outer;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 1;
+    int64_t _1 = 2;
+    int64_t _2 = 3;
+    inner _3 = { _1, _2 };
+    int64_t _4 = 4;
+    outer _5 = { _0, _3, _4 };
+    show("(TupleType (IntType) (TupleType (IntType) (IntType)) (IntType))", &_5);
+}
+

@@ -1,0 +1,2 @@
+(LetCmd (ArrayLValue a H D) (VarExpr x))
+(LetCmd (ArrayLValue c W) (VarExpr D))

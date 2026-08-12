@@ -1,0 +1,6 @@
+// ERROR
+
+let x = rgba{1.0, 2.0, 9.9, 3.3}
+let y = rgba{3.0, 5.0, 9.9, 3.3}
+let z = x + y
+

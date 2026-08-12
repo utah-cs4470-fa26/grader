@@ -1,0 +1,8 @@
+(LetCmd (VarLValue n7X_4A_0v_) (IntExpr 3))
+(ShowCmd (IntExpr 1))
+(PrintCmd "5/")
+(WriteCmd (TrueExpr) "/")
+(ReadCmd "" (VarLValue y))
+(ShowCmd (TrueExpr))
+(LetCmd (VarLValue k3S) (FalseExpr))
+(PrintCmd "z")

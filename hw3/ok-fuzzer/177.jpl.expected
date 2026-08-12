@@ -1,0 +1,3 @@
+(ShowCmd (FloatExpr 7))
+(AssertCmd (FalseExpr) "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr k))))

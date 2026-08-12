@@ -1,0 +1,4 @@
+(ReadCmd "~YA" (VarLValue M))
+(LetCmd (VarLValue N) (FloatExpr 0))
+(ReadCmd "." (VarLValue e4O_))
+(AssertCmd (IntExpr 929) "D")

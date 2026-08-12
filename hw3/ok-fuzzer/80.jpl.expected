@@ -1,0 +1,7 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr p))))
+(ShowCmd (IntExpr 6))
+(ReadCmd "" (VarLValue T))
+(AssertCmd (FloatExpr 0) "")
+(ShowCmd (FalseExpr))
+(AssertCmd (TrueExpr) "")
+(WriteCmd (TrueExpr) "XGq#V")

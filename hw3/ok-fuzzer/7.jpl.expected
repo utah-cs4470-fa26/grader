@@ -1,0 +1,3 @@
+(WriteCmd (IntExpr 50477) "/")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr P0x_))))
+(AssertCmd (VarExpr H3i_) "")

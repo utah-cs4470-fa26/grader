@@ -1,0 +1,8 @@
+struct pair {
+  x: int
+  y: float
+}
+
+let mypair = pair{1, 2}
+let myx = mypair.x
+let myy = mypair.y

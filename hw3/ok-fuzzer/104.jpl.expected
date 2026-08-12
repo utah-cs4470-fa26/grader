@@ -1,0 +1,4 @@
+(ShowCmd (FalseExpr))
+(LetCmd (VarLValue o1y_) (IntExpr 2))
+(WriteCmd (IntExpr 375236) "")
+(AssertCmd (FalseExpr) "")

@@ -1,0 +1,52 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+    int64_t a;
+} b;
+
+typedef struct {
+  int64_t d0;
+  rgba *data;
+} _a1_rgba;
+
+void jpl_main(struct args args) {
+    double _0 = 92.0;
+    show("(FloatType)", &_0);
+    double _1 = 9.0;
+    double _2 = 47.0;
+    double _3 = _1 - _2;
+    double _4 = -_3;
+    print("c");
+    double _5 = -_4;
+    double _6 = 30.0;
+    double _7 = -_6;
+    double _8 = _5 / _5;
+    double _9 = -_8;
+    double _10 = _5 - _4;
+    rgba _11 = { _7, _9, _4, _10 };
+    double _12 = 59.0;
+    rgba _13 = { _5, _12, _5, _4 };
+    double _14 = _13.a;
+    double _15 = _4 + _4;
+    double _16 = 38.0;
+    double _17 = fmod(_15, _16);
+    rgba _18 = { _4, _5, _14, _17 };
+    _a1_rgba _19;
+    _19.d0 = 2;
+    _19.data = jpl_alloc(sizeof(rgba) * 2);
+    _19.data[0] = _11;
+    _19.data[1] = _18;
+    bool _20 = true;
+    if (0 != _20)
+    goto _jump1;
+    fail_assertion("h");
+    _jump1:;
+}
+

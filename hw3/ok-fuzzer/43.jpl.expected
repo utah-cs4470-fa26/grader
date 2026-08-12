@@ -1,0 +1,3 @@
+(AssertCmd (VarExpr N5l0x_0H5k9Q_) "")
+(WriteCmd (IntExpr 1) "")
+(ShowCmd (VarExpr y))

@@ -1,0 +1,7 @@
+write image N to ""
+read image "" to Z
+assert void , ""
+assert void , "" ""
+read image "" to P
+show false
+show true

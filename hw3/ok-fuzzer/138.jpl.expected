@@ -1,0 +1,6 @@
+(PrintCmd "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr l5N_) (VarExpr x))))
+(PrintCmd "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr m1X_) (VarExpr D6B)))))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr p))))
+(AssertCmd (IntExpr 974) "JMWT|t")

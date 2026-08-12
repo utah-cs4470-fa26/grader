@@ -1,0 +1,59 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+  int64_t d0;
+  bool *data;
+} _a1_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+typedef struct {
+    double a;
+    int64_t b;
+} i;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 363;
+    int64_t _1 = -_0;
+    int64_t _2 = 869;
+    int64_t _3 = -_2;
+    int64_t _4 = -_3;
+    bool _5 = _1 == _4;
+    bool _6 = false;
+    bool _7 = !_6;
+    bool _8 = !_7;
+    _a1_bool _9;
+    _9.d0 = 2;
+    _9.data = jpl_alloc(sizeof(bool) * 2);
+    _9.data[0] = _5;
+    _9.data[1] = _8;
+    double _10 = 7.0;
+    double _11 = 93.0;
+    double _12 = -_11;
+    bool _13 = _10 == _12;
+    int64_t _14 = -_9.d0;
+    int64_t _15 = -_14;
+    int64_t _16 = 846;
+    int64_t _17 = -_9.d0;
+    int64_t _18 = _16 % _17;
+    int64_t _19 = _15 / _18;
+    int64_t _20 = 602;
+    int64_t _21 = -_20;
+    _a1_int64_t _22;
+    _22.d0 = 2;
+    _22.data = jpl_alloc(sizeof(int64_t) * 2);
+    _22.data[0] = _19;
+    _22.data[1] = _21;
+    bool _23 = false;
+}
+

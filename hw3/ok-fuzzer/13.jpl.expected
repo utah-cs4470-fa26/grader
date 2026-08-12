@@ -1,0 +1,6 @@
+(AssertCmd (TrueExpr) "")
+(LetCmd (VarLValue Y) (TrueExpr))
+(ShowCmd (IntExpr 576))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (ArrayLiteralExpr (ArrayLiteralExpr (IntExpr 1) (IntExpr 3)) (FloatExpr 5)) (ArrayLiteralExpr)))))
+(AssertCmd (TrueExpr) "b")
+(LetCmd (VarLValue t3B) (TrueExpr))

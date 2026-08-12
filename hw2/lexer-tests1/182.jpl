@@ -1,0 +1,24 @@
+// ERROR
+
+struct float2 {
+  x: float
+  y: float
+}
+
+struct float3 {
+  xx: float
+  yy: float
+  zz: float
+}
+
+// Send a ray at 0, x, y,
+// return a point {x', y', z'} such that
+// x'^2 + y'^2 + z'^2 ~= 1
+// or x' = y' = z' = 0 if there is no intersection
+fn sphere_point(sp: float2) : float3 {
+    // p(t) = { 4 - t, t * x / 4, t * y / 4 }
+    let r = 1.0 + (sp.x*sp.x + sp.y*sp.y) / 16.0
+    // r*t*t - 8*t + 15 = 0
+    let t = (8.0 - sqrt(64.0 - 60.0*r)) / (2.0 * r)
+    float3{ 4.0 - t, t * sp.x / 4.0, t * sp.y / 4.0 }
+}

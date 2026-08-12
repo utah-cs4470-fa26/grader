@@ -1,0 +1,17 @@
+// ERROR
+
+struct complex {
+  x : float
+  y : float
+}
+
+fn mandelcount(z : complex, c : complex, fuel : int): int {
+   return if fuel == 0 \
+   then 0 \
+   else
+   then 0 \
+   else 1 + mandelcount(c, fuel - 1)
+}
+
+let W = 2000
+let H = 1600

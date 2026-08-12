@@ -1,0 +1,8 @@
+(WriteCmd (TrueExpr) "K\m")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr y)) (ArrayLiteralExpr (VarExpr B9F_8H)) (ArrayLiteralExpr (VarExpr n1T) (VarExpr m5L)))))
+(ReadCmd "IXpH" (VarLValue P))
+(AssertCmd (FalseExpr) "")
+(ShowCmd (FalseExpr))
+(PrintCmd "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr G))))
+(ReadCmd "n g&eayX:o" (VarLValue B5y9p_))

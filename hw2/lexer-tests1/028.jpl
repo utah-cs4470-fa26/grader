@@ -1,0 +1,11 @@
+// OK
+
+struct rect {
+  W : int
+  H : int
+}
+
+let r = rect{ 800, 600 }
+
+show r.W
+show r.H

@@ -1,0 +1,6 @@
+struct posn_if {
+  x: int
+  y: float
+}
+
+show posn_if{1, 2.0}.y

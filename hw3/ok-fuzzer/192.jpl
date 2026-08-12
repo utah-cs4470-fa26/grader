@@ -1,0 +1,7 @@
+write image true to "k"
+let I4q = f
+time show [ u5M ]
+assert 9421, ""
+assert .45, ""
+print "NH"
+let G = .37

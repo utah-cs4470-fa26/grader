@@ -1,0 +1,2 @@
+(StructCmd mt)
+(ShowCmd (IfExpr (StructType mt) (TrueExpr (BoolType)) (StructLiteralExpr (StructType mt) mt) (StructLiteralExpr (StructType mt) mt)))

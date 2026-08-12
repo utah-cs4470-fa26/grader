@@ -1,0 +1,2 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr x))))
+(ReadCmd "" (VarLValue a))

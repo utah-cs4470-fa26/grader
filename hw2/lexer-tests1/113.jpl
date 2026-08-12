@@ -1,0 +1,4 @@
+// ERROR
+
+let x = to_float(true)
+let y = int(0.3)

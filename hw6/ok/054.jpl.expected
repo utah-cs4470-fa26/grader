@@ -1,0 +1,2 @@
+(StructCmd posn_if x (IntType) y (FloatType))
+(ShowCmd (DotExpr (FloatType) (StructLiteralExpr (StructType posn_if) posn_if (IntExpr (IntType) 1) (FloatExpr (FloatType) 2)) y))

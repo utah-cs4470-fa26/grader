@@ -1,0 +1,83 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+    double a;
+} a;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+typedef struct {
+  int64_t d0;
+  _a1_int64_t *data;
+} _a1__a1_int64_t;
+
+typedef struct {
+    double a;
+} e;
+
+typedef struct {
+  int64_t d0;
+  double *data;
+} _a1_double;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 904;
+    int64_t _1 = -_0;
+    int64_t _2 = 41;
+    _a1_int64_t _3;
+    _3.d0 = 2;
+    _3.data = jpl_alloc(sizeof(int64_t) * 2);
+    _3.data[0] = _1;
+    _3.data[1] = _2;
+    _a1__a1_int64_t _4;
+    _4.d0 = 1;
+    _4.data = jpl_alloc(sizeof(_a1_int64_t) * 1);
+    _4.data[0] = _3;
+    int64_t _5 = 309;
+    if (_5 >= 0)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_5 < _4.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    int64_t _6 = 0;
+    _6 *= _4.d0;
+    _6 += _5;
+    _a1_int64_t _7 = _4.data[_6];
+    double _8 = 70.0;
+    double _9 = 43.0;
+    double _10 = _8 + _9;
+    double _11 = 7.0;
+    bool _12 = _10 <= _11;
+    int64_t _13 = 325;
+    bool _14 = _13 < _7.d0;
+    bool _15 = !_14;
+    bool _16 = _12 == _15;
+    bool _17 = !_16;
+    print("e");
+    print("f");
+    double _18 = 11.0;
+    _a1_double _19;
+    _19.d0 = 1;
+    _19.data = jpl_alloc(sizeof(double) * 1);
+    _19.data[0] = _18;
+    bool _20 = false;
+    bool _21 = !_20;
+    if (0 != _21)
+    goto _jump3;
+    fail_assertion("h");
+    _jump3:;
+}
+

@@ -1,0 +1,3 @@
+(ReadCmd "J" (VarLValue s4s_))
+(PrintCmd "")
+(WriteCmd (FalseExpr) "")

@@ -1,0 +1,3 @@
+let a[H, W] = array[i: 400, j: 800] 1.0
+show a[1, 2]
+

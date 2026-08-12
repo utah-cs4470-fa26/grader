@@ -1,0 +1,3 @@
+(TimeCmd (LetCmd (VarLValue a) (ArrayLiteralExpr)))
+(TimeCmd (WriteCmd (IntExpr 1699) "0"))
+(WriteCmd (IntExpr 1699) "0")

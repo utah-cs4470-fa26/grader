@@ -1,0 +1,6 @@
+struct box {
+  y: void
+}
+
+let x = [[box{void}]]
+show x

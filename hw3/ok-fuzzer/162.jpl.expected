@@ -1,0 +1,3 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr l7q) (VarExpr a4K) (VarExpr b5D_0b) (VarExpr o0F) (VarExpr booltype))))
+(AssertCmd (IntExpr 8) "")
+(LetCmd (VarLValue q2M1G_2p_) (FalseExpr))

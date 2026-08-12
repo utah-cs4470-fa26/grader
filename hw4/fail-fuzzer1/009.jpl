@@ -1,0 +1,8 @@
+time print ""
+e
+write image a to ""
+print ""
+show void
+read image "" to t
+write image false to ""
+print ""

@@ -1,0 +1,5 @@
+(PrintCmd "o")
+(WriteCmd (FalseExpr) "")
+(AssertCmd (FloatExpr 0) "")
+(ShowCmd (VarExpr w3g_4F))
+(AssertCmd (FalseExpr) "+k")

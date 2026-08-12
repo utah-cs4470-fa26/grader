@@ -1,0 +1,4 @@
+write image 65 to ""
+write image r8B_0g1d_ to ""
+let t7l = D
+write image X to "&"

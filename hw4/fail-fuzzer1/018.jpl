@@ -1,0 +1,8 @@
+time print ""
+show P
+show true read image "" to a
+read image "" to s
+show c
+write image false to ""
+read image "" to D
+show false

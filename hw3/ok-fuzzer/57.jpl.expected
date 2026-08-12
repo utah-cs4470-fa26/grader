@@ -1,0 +1,4 @@
+(WriteCmd (IntExpr 65) "")
+(WriteCmd (VarExpr r8B_0g1d_) "")
+(LetCmd (VarLValue t7l) (VarExpr D))
+(WriteCmd (VarExpr X) "&")

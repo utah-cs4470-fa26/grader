@@ -1,0 +1,6 @@
+(ReadCmd "\" (VarLValue V1s))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr l))))
+(LetCmd (VarLValue N) (FalseExpr))
+(LetCmd (VarLValue O) (IntExpr 57))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr J)))))
+(PrintCmd "")

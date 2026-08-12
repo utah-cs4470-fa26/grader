@@ -1,0 +1,5 @@
+struct floats {
+  aaa: float[]
+  bbb: float[,]
+  ccc: bool
+}

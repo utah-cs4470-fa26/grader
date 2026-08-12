@@ -1,0 +1,6 @@
+print ""
+show J
+show false
+read image a to k
+show false
+read image "" to ""

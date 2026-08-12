@@ -1,0 +1,4 @@
+write image false to ""
+show true
+read image "z" to t5P4F9H0x_9k_7c9L7d_
+assert false, ""

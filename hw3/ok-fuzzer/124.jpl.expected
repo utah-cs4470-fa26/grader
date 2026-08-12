@@ -1,0 +1,7 @@
+(PrintCmd "")
+(AssertCmd (IntExpr 1) "dv")
+(WriteCmd (FalseExpr) "?L")
+(TimeCmd (LetCmd (VarLValue x) (ArrayLiteralExpr (VarExpr y9v))))
+(ShowCmd (TrueExpr))
+(ShowCmd (ArrayLiteralExpr (VarExpr atype) (VarExpr n) (VarExpr afloat)))
+(WriteCmd (TrueExpr) "\")

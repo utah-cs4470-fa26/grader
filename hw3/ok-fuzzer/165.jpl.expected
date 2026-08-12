@@ -1,0 +1,2 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr s)))))
+(PrintCmd ",")

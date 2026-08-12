@@ -1,0 +1,8 @@
+(PrintCmd "")
+(AssertCmd (IntExpr 6) "[m")
+(LetCmd (VarLValue D) (TrueExpr))
+(PrintCmd "dak")
+(LetCmd (VarLValue C7q3Y8u_3K7E2h) (VarExpr I5z_))
+(ShowCmd (IntExpr 2337))
+(TimeCmd (TimeCmd (ShowCmd (IntExpr 234))))
+(LetCmd (VarLValue i0u7o) (FloatExpr 0))

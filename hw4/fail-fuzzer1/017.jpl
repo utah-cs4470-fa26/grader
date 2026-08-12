@@ -1,0 +1,5 @@
+write image void , ""
+show R
+print ""
+assert false to ""
+print ""

@@ -1,0 +1,6 @@
+(PrintCmd "")
+(WriteCmd (FloatExpr 9788) "")
+(PrintCmd "hI4")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr X7c_2H6C4O_))))
+(PrintCmd "")
+(ShowCmd (TrueExpr))

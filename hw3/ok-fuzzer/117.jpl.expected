@@ -1,0 +1,7 @@
+(AssertCmd (IntExpr 5) "")
+(AssertCmd (IntExpr 426) "")
+(PrintCmd "")
+(LetCmd (VarLValue S) (TrueExpr))
+(AssertCmd (FalseExpr) "")
+(ReadCmd "" (VarLValue Y1Y3o_1z_8J))
+(ReadCmd "" (VarLValue n0T6i))

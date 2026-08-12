@@ -1,0 +1,4 @@
+(LetCmd (VarLValue R2F_) (ArrayLiteralExpr (VarExpr aint)))
+(ReadCmd "kd" (VarLValue K))
+(ShowCmd (TrueExpr))
+(WriteCmd (TrueExpr) "'`")

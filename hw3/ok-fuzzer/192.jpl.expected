@@ -1,0 +1,7 @@
+(WriteCmd (TrueExpr) "k")
+(LetCmd (VarLValue I4q) (VarExpr f))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr u5M))))
+(AssertCmd (IntExpr 9421) "")
+(AssertCmd (FloatExpr 0) "")
+(PrintCmd "NH")
+(LetCmd (VarLValue G) (FloatExpr 0))

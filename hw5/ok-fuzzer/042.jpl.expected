@@ -1,0 +1,6 @@
+(ReadCmd "`_" (ArrayLValue O edo C6___))
+(ReadCmd "s3_S_4U_78" (ArrayLValue r36 EA I_))
+(ReadCmd "u4!3#_5" (VarLValue G__3_))
+(TimeCmd (PrintCmd "_97@_D_r"))
+(AssertCmd (VarExpr RQ5m8x) "K3K96__Kbk")
+(PrintCmd "-_58N79*")

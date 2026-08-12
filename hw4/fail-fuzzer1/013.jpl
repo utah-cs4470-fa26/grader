@@ -1,0 +1,6 @@
+show true
+assert void , ""
+assert "" , ""
+show true
+print void
+assert false , ""

@@ -1,0 +1,2 @@
+(StructCmd mybool x (BoolType))
+(ShowCmd (StructLiteralExpr (StructType mybool) mybool (TrueExpr (BoolType))))

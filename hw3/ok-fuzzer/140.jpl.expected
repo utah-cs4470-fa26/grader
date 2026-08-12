@@ -1,0 +1,3 @@
+(WriteCmd (VarExpr J) "")
+(LetCmd (VarLValue I) (FloatExpr 0))
+(LetCmd (VarLValue N) (FloatExpr 0))

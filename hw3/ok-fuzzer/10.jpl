@@ -1,0 +1,3 @@
+assert false, ""
+assert false, ""
+assert .5, ""

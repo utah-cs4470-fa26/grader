@@ -1,0 +1,7 @@
+(LetCmd (VarLValue h) (TrueExpr))
+(TimeCmd (TimeCmd (ShowCmd (ArrayLiteralExpr (IntExpr 3)))))
+(PrintCmd "(")
+(ShowCmd (FalseExpr))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr d) (VarExpr s))))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr H6T_) (VarExpr b))))
+(PrintCmd "k")

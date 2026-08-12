@@ -1,0 +1,5 @@
+// ERROR
+
+fn gradient(i : int, j : int, W : int, H : int) : rgba {
+  return rgba{ 0.0, 0.0, to_float(2) }
+}

@@ -1,0 +1,10 @@
+// OK
+
+struct mt {
+}
+
+let x = [[mt{}], [mt{}], [mt{}]]
+
+fn horrible(i : int) : mt[] {
+    return x[i]
+}

@@ -1,0 +1,8 @@
+(ShowCmd (FalseExpr))
+(AssertCmd (IntExpr 7) "")
+(PrintCmd "")
+(LetCmd (VarLValue k) (IntExpr 77))
+(LetCmd (VarLValue w) (VarExpr e7c))
+(AssertCmd (TrueExpr) "")
+(WriteCmd (IntExpr 0) "")
+(ShowCmd (TrueExpr))

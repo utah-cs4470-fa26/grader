@@ -1,0 +1,1307 @@
+/*
+ * Interface: 
+ * The args are positive integers. 
+ * 1. The first arg is a 0 for not lexing or not 0 for lexing.
+ * 2. The seocnd arg is a 0 for not parsing or not 0 for parsing.
+ *    Lexing will be ran even if the lexing flag is 0, there just will 
+ *    an output lexed image.
+ *
+ * The input .jpl file is provided as an input image as source.png where each
+ * character is stored in the red channel of the pixel.
+ */
+
+/*
+ * Valid token IDs
+ *
+ * 00 = ARRAY
+ * 01 = ASSERT
+ * 02 = BOOL
+ * 03 = COLON
+ * 04 = COMMA
+ * 05 = DOT
+ * 06 = ELSE
+ * 07 = END_OF_FILE
+ * 08 = EQUALS
+ * 09 = FALSE
+ * 10 = FLOAT
+ * 11 = FLOATVAL
+ * 12 = FN
+ * 13 = IF
+ * 14 = IMAGE
+ * 15 = INT
+ * 16 = INTVAL
+ * 17 = LCURLY
+ * 18 = LET
+ * 19 = LPAREN
+ * 20 = LSQUARE
+ * 21 = NEWLINE
+ * 22 = OP
+ * 23 = PRINT
+ * 24 = RCURLY
+ * 25 = READ
+ * 26 = RETURN
+ * 27 = RPAREN
+ * 28 = RSQUARE
+ * 29 = SHOW
+ * 30 = STRING
+ * 31 = STRUCT
+ * 32 = SUM
+ * 33 = THEN
+ * 34 = TIME
+ * 35 = TO
+ * 36 = TRUE
+ * 37 = VARIABLE
+ * 38 = VOID
+ * 39 = WRITE
+ * 255 = GENERIC_ERROR
+ * 254 = UNTERMINATED_STRING
+ * 253 = UNTERMINATED_FILE
+ * 252 = UNKNOWN_TOKEN
+ */
+
+/**
+ * A marked character that stores the ASCII code of the character and its
+ * position. An ASCII code of 26 signifies end of file.
+ */
+struct mkd_c {
+  char : int
+  row : int
+  col : int
+}
+
+/**
+ * A token that stores the type, its position, and its value.
+ */
+struct tkn {
+  id : int
+  row : int
+  col : int
+  chars : int[]
+}
+
+/**
+ * A struct that holds the metadata of rows of tokens. It stores the row
+ * number, the start index of the row in the entire array of tokens, the end
+ * index of the row, inclusive, and the rgba width of the line (not the number
+ * of tokens, that can be inferred from the difference between the start and
+ * end index).
+ */
+struct tkn_row {
+  row : int
+  start : int
+  end : int
+  width : int
+}
+
+struct tkn_rows_max {
+  max : int
+  tkn_rows : tkn_row[]
+}
+
+/**
+ * An array of ints that represent the valid characters an array can have.
+ */
+// let valid_kw_chars = [97, 98, ]
+// let valid_kw_chars_length = 0
+
+fn max_i(a : int, b : int) : int {
+  return if a > b then a else b
+}
+
+fn min_i(a : int, b : int) : int {
+  return if a <= b then a else b
+}
+
+/**
+ * Convert the color float in [0.0, 1.0) to an int in [0, 255].
+ */
+fn color_f_to_i(f : float) : int {
+  return to_int(f * 255.0)
+}
+
+/**
+ * Convert the color int in [0, 255] to a float in [0.0, 1.0).
+ */
+fn color_i_to_f(i : int) : float {
+  return to_float(i) / 255.0
+}
+
+/**
+ * Convert an rgba to an integer assuming the red channel as the highest 
+ * order 8 bits green the next 8 bits, blue the next 8 bits, and alpha as the 
+ * lowest order 8 bits.
+ */
+fn p_to_i32(p : rgba) : int {
+  return color_f_to_i(p.r) * 16777216 + \
+         color_f_to_i(p.g) * 65536 + \
+         color_f_to_i(p.b) * 256 + \
+         color_f_to_i(p.a)
+}
+
+/**
+ * Convert an rgba to an integer in [0, 255] assuming the red channel
+ * contains the value.
+ */
+fn pr_to_i8(p : rgba) : int {
+  return color_f_to_i(p.r)
+}
+
+/**
+ * Convert an integer to an rgba that encodes its 32-bits with red
+ * storing the highest order 8 bits, green the next 8 bits, blue the next 8
+ * bits, and alpha as the lest order 8 bits.
+ */
+fn i32_to_p(i : int) : rgba {
+  return rgba{ \
+    color_i_to_f(i / 16777216), \
+    color_i_to_f(i / 65536 % 256), \
+    color_i_to_f(i / 256 % 256), \
+    color_i_to_f(i % 256) \
+  }
+}
+
+/**
+ * Convert an integer in [0, 255] to an rgba that encodes the 8 bits in
+ * the red channel of the rgba. The blue and green channels are 0. The alpha
+ * is 1.0.
+ */
+fn i8_to_pr(i : int) : rgba {
+  return rgba{color_i_to_f(i), 0.0, 0.0, 1.0}
+}
+
+/**
+ * Convert an integer in [0, 255] to an rgba that encodes the 8 bits in
+ * the green channel of the rgba. The red and blue channels are 0. The alpha
+ * is 1.0.
+ */
+fn i8_to_pg(i : int) : rgba {
+  return rgba{0.0, color_i_to_f(i), 0.0, 1.0}
+}
+
+/**
+ * Convert an integer in [0, 255] to an rgba that encodes the 8 bits in
+ * the blue channel of the rgba. The red and green channels are 0. The alpha
+ * is 1.0.
+ */
+fn i8_to_pb(i : int) : rgba {
+  return rgba{0.0, 0.0, color_i_to_f(i), 1.0}
+}
+
+/**
+ * Convert an integer in [0, 65535] to an rgba that encodes the higher
+ * order 8 bits in the red channel of the rgba and the lower order 8 bits in
+ * the green channel of the rgba. The blue channel is 0. The alpha is 1.0.
+ */
+fn i16_to_prg(i : int) : rgba {
+  return rgba{color_i_to_f(i / 256), color_i_to_f(i % 256), 0.0, 1.0}
+}
+
+/**
+ * Slices an rgba array. Returns the values in [start, end).
+ */
+fn slice_array_p(a[N] : rgba[], start : int, end : int) : rgba[] {
+  return \
+    if end - start == 0 then \
+      [rgba{1.0, 0.0, 1.0, 1.0}] \
+    else \
+      array[i : end - start] \
+        a[start + i]
+}
+
+/**
+ * Appends mkd_c array b to mkd_c array a and returns the resulting mkd_c array.
+ */
+fn merge_arrays_mkd_c(a[N] : mkd_c[], b[M] : mkd_c[]) : mkd_c[] {
+  return array[i : N + M] if i < N then a[i] else b[i - N]
+}
+
+/**
+ * Prepends first to a and returns the resulting mkd_c array.
+ */
+fn prepend_array_mkd_c(first : mkd_c, a : mkd_c[]) : mkd_c[] {
+  return merge_arrays_mkd_c([first], a)
+}
+
+/**
+ * Given an image, convert them to a line of marked characters with their row
+ * and column numbers attached.
+ */
+fn img_to_mkd_c_arr_helper(img[H, W] : rgba[,], index : int) : mkd_c[] {
+  let row = index / W + 1
+  let col = index % W + 1
+  let char = pr_to_i8(img[index / W, index % W])
+  return \
+    if (H * W - index == 1) then \
+      if char == 0 then \
+        [mkd_c{26, row, col}] \
+      else \
+        [mkd_c{char, row, col}, mkd_c{26, row, col + 1}] \
+    else \
+      if char == 0 then \
+        img_to_mkd_c_arr_helper(img, index + 1) \
+      else \
+        prepend_array_mkd_c( \
+          mkd_c{char, row, col}, \
+          img_to_mkd_c_arr_helper(img, index + 1) \
+        )
+}
+
+/**
+ * Given an image, convert them to a line of marked characters with their row
+ * and column numbers attached.
+ */
+fn img_to_mkd_c_arr(img : rgba[,]) : mkd_c[] {
+  return img_to_mkd_c_arr_helper(img, 0)
+}
+
+/**
+ * Appends int array b to int array a and returns the resulting int array.
+ */
+fn merge_arrays_i(a[N] : int[], b[M] : int[]) : int[] {
+  return array[i : N + M] if i < N then a[i] else b[i - N]
+}
+
+/**
+ * Prepends first to a and returns the resulting int array.
+ */
+fn prepend_array_i(first : int, a : int[]) : int[] {
+  return merge_arrays_i([first], a)
+}
+
+/**
+ * Given an array of ints, return the length of the array.
+ */
+fn is_to_length(is[N] : int[]) : int {
+  return N
+}
+
+/**
+ * Appends tkn array b to tkn array a and returns the resulting tkn array.
+ */
+fn merge_arrays_tkn(a[N] : tkn[], b[M] : tkn[]) : tkn[] {
+  return array[i : N + M] if i < N then a[i] else b[i - N]
+}
+
+/**
+ * Prepends first to a and returns the resulting tkn array.
+ */
+fn prepend_array_tkn(first : tkn, a : tkn[]) : tkn[] {
+  return merge_arrays_tkn([first], a)
+}
+
+/**
+ * Given an int that carries a character, returns if it is a digit.
+ */
+fn is_digit_char(char : int) : bool {
+  return char >= 48 && char <= 57
+}
+
+/**
+ * Given an int that carries a character, returns it if is a valid character
+ * for the second to last character of a variable or not. These include a-z,
+ * A-Z, 0-9, and _.
+ */
+fn is_valid_var_char(char : int) : bool {
+  // The paranthesis are required because && does not have higher precedence
+  // over ||
+  return \
+    (char >= 65 && char <= 90) || \
+    (char >= 97 && char <= 122) || \
+    (char >= 48 && char <= 57) || \
+    char == 95
+}
+
+/**
+ * Given an int that carries a character, returns it if is a valid character
+ * for the first character of a variable or not. These include a-z and A-Z.
+ */
+fn is_valid_first_var_char(char : int) : bool {
+  return (char >= 65 && char <= 90) || (char >= 97 && char <= 122)
+}
+
+/**
+ * Given an int that carries a character, returns it if is a valid character
+ * for a keyword or not. These include a-z.
+ */
+fn is_valid_kw_char(char : int) : bool {
+  return char >= 97 && char <= 122
+}
+
+/**
+ * Given an array of marked characters and an index, iterate forward until a
+ * non-keyword character is encounterd. Return the number of keyword
+ * characters until a non-variable keyword is encountered.
+ */
+fn get_num_kw_chars(cs[N] : mkd_c[], index : int) : int {
+  let char = cs[index].char
+  return \
+    if index >= N - 1 || char == 26 then \
+      0 \
+    else if !is_valid_kw_char(char) then \
+      0 \
+    else \
+      1 + get_num_kw_chars(cs, index + 1)
+}
+
+/**
+ * Given an array of marked characters and an index, iterate forward until a
+ * non-variable character is encounterd. Return the number of keyword
+ * characters until a non-variable character is encountered.
+ */
+fn get_num_var_chars(cs[N] : mkd_c[], index : int) : int {
+  let char = cs[index].char
+  return \
+    if index >= N - 1 || char == 26 then \
+      0 \
+    else if !is_valid_var_char(char) then \
+      0 \
+    else \
+      1 + get_num_var_chars(cs, index + 1)
+}
+
+/**
+ * Given an array of marked characters, an array of keyword characters in an int
+ * array, and an index, try matching the characters after the index to the array
+ * of keyword characters. Return if matching succeeded or failed.
+ */
+fn match_keyword(cs[N] : mkd_c[], keyword[M] : int[], index : int) : bool {
+  return \
+    if index + M >= N || cs[index + M - 1].char == 26 then \
+      false \
+    else \
+      (sum[i : M] if cs[index + i].char == keyword[i] then 1 else 0) == M
+}
+
+/**
+ * Given an array of marked characters, the number of characters to return in
+ * num, and an index, return the characters starting at index until
+ * index + num, exclusive.
+ */
+fn get_chars_from_cs(cs[N] : mkd_c[], num : int, index : int) : int[] {
+  return \
+    if index + num >= N then \
+      array[i : N - index] cs[index + i].char \
+    else \
+      array[i : num] cs[index + i].char
+}
+
+/**
+ * Given an array of marked characters and an index, which is assumed to be the
+ * index of the first / of a block comment, iterate forward until the two  
+ * termiating characters are encountered. Return the number of characters from
+ * the first / to the end /, including both the first and end /.
+ */
+fn mkd_cs_to_end_of_block_comment_length(cs[N] : mkd_c[], index : int) : int {
+  let char = cs[index].char
+  let next_char = cs[index + 1].char
+  return \
+    if index >= N - 1 || char == 26 then \
+      0 \
+    else if char == 42 && next_char == 47 then \
+      2 \
+    else \
+      1 + mkd_cs_to_end_of_block_comment_length(cs, index + 1)
+}
+
+/**
+ * Given an array of marked characters and an index, which is assumed to be the
+ * index of the first / of an inline comment, iterate forward until a NEWLINE
+ * is encountered. Return the number of characters from the / to the NEWLINE,
+ * including the / but excluding the NEWLINE.
+ */
+fn mkd_cs_to_end_of_inline_comment_length(cs[N] : mkd_c[], index : int) : int {
+  let char = cs[index].char
+  return \
+    if index >= N - 1 || char == 26 || char == 10 then \
+      0 \
+    else \
+      1 + mkd_cs_to_end_of_inline_comment_length(cs, index + 1)
+}
+
+/**
+ * Given an array of marked characters and an index, which is assumed to be the
+ * index of the first character after the quote character of a string, iterate 
+ * forward until the closing quote character is encountered. Return the string 
+ * token.
+ */
+fn mkd_cs_to_str_tkn_helper(cs[N] : mkd_c[], index : int) : tkn {
+  let row = cs[index].row
+  let col = cs[index].col
+  let char = cs[index].char
+
+  // Error is when reaching EOF or LF before closing quote.
+  let is_error = index >= N - 1 || char == 26 || char == 10
+  // Terminated is when reaching closing quote.
+  let is_terminated = char == 34
+
+  let next_str_tkn = \
+    if !is_error && !is_terminated then \
+      mkd_cs_to_str_tkn_helper(cs, index + 1) \
+    else \
+      tkn{254, 0, 0, [char]}
+
+  return \
+    if is_error then \
+      tkn{254, row, col, [char]} \
+    else if is_terminated then \
+      tkn{30, row, col, [char]} \
+    else \
+      tkn{ \
+        next_str_tkn.id, \
+        row, \
+        col, \
+        prepend_array_i(char, next_str_tkn.chars) \
+      }
+}
+
+/**
+ * Given an array of marked characters and an index, which is assumed to be the
+ * index of the first quote character of a string, iterate forward until the 
+ * closing quote character is encountered. Return the string token.
+ */
+fn mkd_cs_to_str_tkn(cs : mkd_c[], index : int) : tkn {
+  let row = cs[index].row
+  let col = cs[index].col
+  let char = cs[index].char
+
+  let next_str_tkn = mkd_cs_to_str_tkn_helper(cs, index + 1)
+
+  return \
+    if next_str_tkn.id != 30 then \
+      tkn{254, row, col, prepend_array_i(char, next_str_tkn.chars)} \
+    else \
+      tkn{ \
+        next_str_tkn.id, \
+        row, \
+        col, \
+        prepend_array_i(char, next_str_tkn.chars) \
+      }
+}
+
+/**
+ * Given an array of marked characters and an index, which is assumed to be the
+ * index of the first char of a int or float, iterate forward until a non int or
+ * float character is encountered. Return the int or float token.
+ */
+fn mkd_cs_to_num_tkn(cs[N] : mkd_c[], index : int, is_float : bool) : tkn {
+  let row = cs[index].row
+  let col = cs[index].col
+  let char = cs[index].char
+  let next_char = cs[index + 1].char
+
+  /* The number is terminated if it ends in a non-digit if it is a float
+     or it ends in a non-digit and non-period if it is an int */
+  let is_terminated = \
+    index >= N - 1 || \
+    (!is_digit_char(next_char) && \
+    (is_float || (next_char != 46 && !is_float)))
+
+  let next_num_tkn = \
+    if !is_terminated then \
+      mkd_cs_to_num_tkn(cs, index + 1, is_float || char == 46) \
+    else \
+      tkn{255, 0, 0, [char]}
+
+  return \
+    if is_terminated then \
+      tkn{ \
+        if is_float || char == 46 then 11 else 16, \
+        row, \
+        col, \
+        [char] \
+      } \
+    else \
+      tkn{ \
+        next_num_tkn.id, \
+        row, \
+        col, \
+        prepend_array_i(char, next_num_tkn.chars) \
+      }
+}
+
+/**
+ * Given an array of marked characters and an index, which is assumed to be the
+ * index of the first char of a variable, iterate forward until a non-variable
+ * character is encountered. Return the variable token.
+ */
+fn mkd_cs_to_var_tkn(cs[N] : mkd_c[], index : int) : tkn {
+  let row = cs[index].row
+  let col = cs[index].col
+  let char = cs[index].char
+  return \
+    if index >= N - 1 || !is_valid_var_char(cs[index + 1].char) then \
+      tkn{37, row, col, [char]} \
+    else \
+      tkn{ \
+        37, \
+        row, \
+        col, \
+        prepend_array_i(char, mkd_cs_to_var_tkn(cs, index + 1).chars) \
+      }
+}
+
+/**
+ * Given an array of marked characters and an index, convert them to an array
+ * of tokens. Good luck to future me for debugging and understanding this.
+ */
+fn mkd_cs_to_tkns_helper( \
+  cs[N] : mkd_c[], is_prv_tkn_NL : bool, index : int \
+) : tkn[] {
+  let char = cs[index].char
+  let row = cs[index].row
+  let col = cs[index].col
+
+  let next_char = if index < N - 1 || char != 26 then cs[index + 1].char else 0
+
+  let num_kw_chars = get_num_kw_chars(cs, index)
+  let num_var_chars = get_num_var_chars(cs, index)
+
+  return \
+    /* Checking for out of bounds or end of file. */ \
+    if index >= N - 1 || char == 26 then \
+      [tkn{07, row, col, [char]}] \
+\
+    /* Skip space character. */ \
+    else if char == 32 then \
+      mkd_cs_to_tkns_helper(cs, is_prv_tkn_NL, index + 1) \
+\
+    /* Lex NEWLINE and avoid consecutive NEWLINE tokens. */ \
+    else if char == 10 then \
+      if is_prv_tkn_NL then \
+        mkd_cs_to_tkns_helper( \
+          cs, true, index + 1 \
+        ) \
+      else \
+        prepend_array_tkn( \
+          tkn{21, row, col, [char]}, \
+          mkd_cs_to_tkns_helper( \
+            cs, true, index + 1 \
+          ) \
+        ) \
+\
+    /* Skip escaped new lines. */ \
+    else if char == 92 && next_char == 10 then \
+      mkd_cs_to_tkns_helper(cs, is_prv_tkn_NL, index + 2) \
+\
+    /* Lex COLON. */ \
+    else if char == 58 then \
+      prepend_array_tkn( \
+        tkn{03, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex COMMA. */ \
+    else if char == 44 then \
+      prepend_array_tkn( \
+        tkn{04, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex DOT. */ \
+    else if char == 46 && !is_digit_char(next_char) then \
+      prepend_array_tkn( \
+        tkn{05, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex LCURLY. */ \
+    else if char == 123 then \
+      prepend_array_tkn( \
+        tkn{17, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex LPAREN. */ \
+    else if char == 40 then \
+      prepend_array_tkn( \
+        tkn{19, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex LSQUARE. */ \
+    else if char == 91 then \
+      prepend_array_tkn( \
+        tkn{20, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex RCURLY. */ \
+    else if char == 125 then \
+      prepend_array_tkn( \
+        tkn{24, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex RPAREN. */ \
+    else if char == 41 then \
+      prepend_array_tkn( \
+        tkn{27, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex RSQUARE. */ \
+    else if char == 93 then \
+      prepend_array_tkn( \
+        tkn{28, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex two-character OP tokens. */ \
+    else if \
+        (char == 61 && next_char == 61) || \
+        (char == 33 && next_char == 61) || \
+        (char == 60 && next_char == 61) || \
+        (char == 62 && next_char == 61) || \
+        (char == 38 && next_char == 38) || \
+        (char == 124 && next_char == 124) then \
+      prepend_array_tkn( \
+        tkn{ \
+          22, \
+          row, \
+          col, \
+          get_chars_from_cs(cs, 2, index) \
+        }, \
+        mkd_cs_to_tkns_helper(cs, false, index + 2) \
+      ) \
+\
+    /* Lex single-character OP tokens. */ \
+    else if \
+        char == 43 || char == 45 || char == 42 || \
+        (char == 47 && next_char != 47 && next_char != 42) || \
+        char == 37 || \
+        char == 60 || char == 62 || \
+        char == 33 then \
+      prepend_array_tkn( \
+        tkn{22, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex EQUALS. */ \
+    else if char == 61 then \
+      prepend_array_tkn( \
+        tkn{08, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      ) \
+\
+    /* Lex FN. */ \
+    else if \
+        num_kw_chars >= 2 && num_var_chars <= 2 && \
+        match_keyword(cs, [102, 110], index) then \
+      prepend_array_tkn( \
+        tkn{12, row, col, get_chars_from_cs(cs, 2, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 2) \
+      ) \
+\
+    /* Lex IF. */ \
+    else if \
+        num_kw_chars >= 2 && num_var_chars <= 2 && \
+        match_keyword(cs, [105, 102], index) then \
+      prepend_array_tkn( \
+        tkn{13, row, col, get_chars_from_cs(cs, 2, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 2) \
+      ) \
+\
+    /* Lex TO. */ \
+    else if \
+        num_kw_chars >= 2 && num_var_chars <= 2 && \
+        match_keyword(cs, [116, 111], index) then \
+      prepend_array_tkn( \
+        tkn{35, row, col, get_chars_from_cs(cs, 2, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 2) \
+      ) \
+\
+    /* Lex INT. */ \
+    else if \
+        num_kw_chars >= 3 && num_var_chars <= 3 && \
+        match_keyword(cs, [105, 110, 116], index) then \
+      prepend_array_tkn( \
+        tkn{15, row, col, get_chars_from_cs(cs, 3, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 3) \
+      ) \
+\
+    /* Lex LET. */ \
+    else if \
+        num_kw_chars >= 3 && num_var_chars <= 3 && \
+        match_keyword(cs, [108, 101, 116], index) then \
+      prepend_array_tkn( \
+        tkn{18, row, col, get_chars_from_cs(cs, 3, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 3) \
+      ) \
+\
+    /* Lex SUM. */ \
+    else if \
+        num_kw_chars >= 3 && num_var_chars <= 3 && \
+        match_keyword(cs, [115, 117, 109], index) then \
+      prepend_array_tkn( \
+        tkn{32, row, col, get_chars_from_cs(cs, 3, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 3) \
+      ) \
+\
+    /* Lex BOOL. */ \
+    else if \
+        num_kw_chars >= 4 && num_var_chars <= 4 && \
+        match_keyword(cs, [098, 111, 111, 108], index) then \
+      prepend_array_tkn( \
+        tkn{02, row, col, get_chars_from_cs(cs, 4, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 4) \
+      ) \
+\
+    /* Lex ELSE. */ \
+    else if \
+        num_kw_chars >= 4 && num_var_chars <= 4 && \
+        match_keyword(cs, [101, 108, 115, 101], index) then \
+      prepend_array_tkn( \
+        tkn{06, row, col, get_chars_from_cs(cs, 4, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 4) \
+      ) \
+\
+    /* Lex READ. */ \
+    else if \
+        num_kw_chars >= 4 && num_var_chars <= 4 && \
+        match_keyword(cs, [114, 101, 097, 100], index) then \
+      prepend_array_tkn( \
+        tkn{25, row, col, get_chars_from_cs(cs, 4, index) }, \
+        mkd_cs_to_tkns_helper(cs, false, index + 4) \
+      ) \
+\
+    /* Lex SHOW. */ \
+    else if \
+        num_kw_chars >= 4 && num_var_chars <= 4 && \
+        match_keyword(cs, [115, 104, 111, 119], index) then \
+      prepend_array_tkn( \
+        tkn{29, row, col,get_chars_from_cs(cs, 4, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 4) \
+      ) \
+\
+    /* Lex THEN. */ \
+    else if \
+        num_kw_chars >= 4 && num_var_chars <= 4 && \
+        match_keyword(cs, [116, 104, 101, 110], index) then \
+      prepend_array_tkn( \
+        tkn{33, row, col, get_chars_from_cs(cs, 4, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 4) \
+      ) \
+\
+    /* Lex TIME. */ \
+    else if \
+        num_kw_chars >= 4 && num_var_chars <= 4 && \
+        match_keyword(cs, [116, 105, 109, 101], index) then \
+      prepend_array_tkn( \
+        tkn{34, row, col, get_chars_from_cs(cs, 4, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 4) \
+      ) \
+\
+    /* Lex TRUE. */ \
+    else if \
+        num_kw_chars >= 4 && num_var_chars <= 4 && \
+        match_keyword(cs, [116, 114, 117, 101], index) then \
+      prepend_array_tkn( \
+        tkn{36, row, col, get_chars_from_cs(cs, 4, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 4) \
+      ) \
+\
+    /* Lex VOID. */ \
+    else if \
+        num_kw_chars >= 4 && num_var_chars <= 4 && \
+        match_keyword(cs, [118, 111, 105, 100], index) then \
+      prepend_array_tkn( \
+        tkn{38, row, col, get_chars_from_cs(cs, 4, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 4) \
+      ) \
+\
+    /* Lex ARRAY. */ \
+    else if \
+        num_kw_chars >= 5 && num_var_chars <= 5 && \
+        match_keyword(cs, [097, 114, 114, 097, 121], index) then \
+      prepend_array_tkn( \
+        tkn{00, row, col, get_chars_from_cs(cs, 5, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 5) \
+      ) \
+\
+    /* Lex FALSE. */ \
+    else if \
+        num_kw_chars >= 5 && num_var_chars <= 5 && \
+        match_keyword(cs, [102, 097, 108, 115, 101], index) then \
+      prepend_array_tkn( \
+        tkn{09, row, col, get_chars_from_cs(cs, 5, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 5) \
+      ) \
+\
+    /* Lex FLOAT. */ \
+    else if \
+        num_kw_chars >= 5 && num_var_chars <= 5 && \
+        match_keyword(cs, [102, 108, 111, 097, 116], index) then \
+      prepend_array_tkn( \
+        tkn{10, row, col, get_chars_from_cs(cs, 5, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 5) \
+      ) \
+\
+    /* Lex IMAGE. */ \
+    else if \
+        num_kw_chars >= 5 && num_var_chars <= 5 && \
+        match_keyword(cs, [105, 109, 097, 103, 101], index) then \
+      prepend_array_tkn( \
+        tkn{14, row, col, get_chars_from_cs(cs, 5, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 5) \
+      ) \
+\
+    /* Lex PRINT. */ \
+    else if \
+        num_kw_chars >= 5 && num_var_chars <= 5 && \
+        match_keyword(cs, [112, 114, 105, 110, 116], index) then \
+      prepend_array_tkn( \
+        tkn{23, row, col, get_chars_from_cs(cs, 5, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 5) \
+      ) \
+\
+    /* Lex WRITE. */ \
+    else if \
+        num_kw_chars >= 5 && num_var_chars <= 5 && \
+        match_keyword(cs, [119, 114, 105, 116, 101], index) then \
+      prepend_array_tkn( \
+        tkn{39, row, col, get_chars_from_cs(cs, 5, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 5) \
+      ) \
+\
+    /* Lex ASSERT. */ \
+    else if \
+        num_kw_chars >= 6 && num_var_chars <= 6 && \
+        match_keyword(cs, [097, 115, 115, 101, 114, 116], index) then \
+      prepend_array_tkn( \
+        tkn{01, row, col, get_chars_from_cs(cs, 6, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 6) \
+\
+    /* Lex RETURN. */ \
+      ) \
+    else if \
+        num_kw_chars >= 6 && num_var_chars <= 6 && \
+        match_keyword(cs, [114, 101, 116, 117, 114, 110], index) then \
+      prepend_array_tkn( \
+        tkn{26, row, col, get_chars_from_cs(cs, 6, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 6) \
+      ) \
+\
+    /* Lex STRUCT. */ \
+    else if \
+        num_kw_chars >= 6 && num_var_chars <= 6 && \
+        match_keyword(cs, [115, 116, 114, 117, 099, 116], index) then \
+      prepend_array_tkn( \
+        tkn{31, row, col, get_chars_from_cs(cs, 6, index)}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 6) \
+      ) \
+\
+    /* Skip over inline comments. */ \
+    else if char == 47 && next_char == 47 then \
+      mkd_cs_to_tkns_helper( \
+        cs, \
+        is_prv_tkn_NL, \
+        index + mkd_cs_to_end_of_inline_comment_length(cs, index) \
+      ) \
+\
+    /* Skip over block comments. */ \
+    else if char == 47 && next_char == 42 then \
+      mkd_cs_to_tkns_helper( \
+        cs, \
+        is_prv_tkn_NL, \
+        index + mkd_cs_to_end_of_block_comment_length(cs, index) \
+      ) \
+\
+    /* Lex STRING. */ \
+    else if char == 34 then \
+      prepend_array_tkn( \
+        mkd_cs_to_str_tkn(cs, index), \
+        mkd_cs_to_tkns_helper( \
+          cs, \
+          false, \
+          index + is_to_length(mkd_cs_to_str_tkn(cs, index).chars) \
+        ) \
+      ) \
+\
+    /* Lex INTVAL and FLOATVAL. */ \
+    else if is_digit_char(char) || char == 46 then \
+      prepend_array_tkn( \
+        mkd_cs_to_num_tkn(cs, index, false), \
+        mkd_cs_to_tkns_helper( \
+          cs, \
+          false, \
+          index + is_to_length(mkd_cs_to_num_tkn(cs, index, false).chars) \
+        ) \
+      ) \
+\
+    /* Lex VARIABLE. */ \
+    else if is_valid_first_var_char(char) then \
+      prepend_array_tkn( \
+        mkd_cs_to_var_tkn(cs, index), \
+        mkd_cs_to_tkns_helper( \
+          cs, \
+          false, \
+          index + is_to_length(mkd_cs_to_var_tkn(cs, index).chars) \
+        ) \
+      ) \
+\
+    /* Lex an error token if nothing matches. */ \
+    else \
+      prepend_array_tkn( \
+        tkn{252, row, col, [char]}, \
+        mkd_cs_to_tkns_helper(cs, false, index + 1) \
+      )
+}
+
+/**
+ * Given an array of marked characters, convert them to an array of tokens.
+ */
+fn mkd_cs_to_tkns(cs : mkd_c[]) : tkn[] {
+  return mkd_cs_to_tkns_helper(cs, false, 0)
+}
+
+/**
+ * Appends rgba array b to rgba array a and returns the resulting rgba array.
+ */
+fn merge_arrays_p(a[N] : rgba[], b[M] : rgba[]) : rgba[] {
+  return array[i : N + M] if i < N then a[i] else b[i - N]
+}
+
+/**
+ * Given a token, return an array of rgbas, the first has the id in the red
+ * channel, the second has the row in the red and green channel, the third has
+ * the column in the red and green channel, this is followed by n rgbas where
+ * the characters of the token are stored in the blue channel where n is the
+ * number of characters in the token. Finally, this is followed by a transparent
+ * rgba.
+ */
+fn tkn_to_ps(t : tkn) : rgba[] {
+  let num_chars = is_to_length(t.chars)
+  return \
+    merge_arrays_p( \
+      [ \
+        i8_to_pr(t.id), \
+        i16_to_prg(t.row), \
+        i16_to_prg(t.col) \
+      ], \
+      merge_arrays_p( \
+        array[i : num_chars] i8_to_pb(t.chars[i]), \
+        [rgba{0.0, 0.0, 0.0, 0.0}] \
+      ) \
+    )
+}
+
+/**
+ * Given an array of rgbas, return the length of the array.
+ */
+fn ps_to_length(ps[N] : rgba[]) : int {
+  return N
+}
+
+/**
+ * Given a token, return the width of it in rgbas. A token is at least five
+ * rgbas wide with the first storing the id, second and third storing the
+ * position, the forth and beyond storing the characters, and finally a
+ * transparent rgba to terminate it.
+ */
+fn tkn_to_p_width(t : tkn) : int {
+  return ps_to_length(tkn_to_ps(t))
+}
+
+/**
+ * Appends tkn_row array b to tkn_row array a and returns the resulting tkn_row
+ * array.
+ */
+fn merge_arrays_tkn_row(a[N] : tkn_row[], b[M] : tkn_row[]) : tkn_row[] {
+  return array[i : N + M] if i < N then a[i] else b[i - N]
+}
+
+/**
+ * Prepends first to a and returns the resulting tkn_row array.
+ */
+fn prepend_array_tkn_row(first : tkn_row, a : tkn_row[]) : tkn_row[] {
+  return merge_arrays_tkn_row([first], a)
+}
+
+/*
+ * Given a list of tokens, finds the number of lines and width of lines in
+ * tkn[] by counting the number of newline tokens (id = 21) and the rgba width
+ * of the widest line.
+ */
+fn get_tkn_rows_helper( \
+  tkns : tkn[], row : int, start : int, accum_width : int, index : int \
+) : tkn_row[] {
+  let tkn_width = tkn_to_p_width(tkns[index])
+  let new_accum_width = accum_width + tkn_width
+  return \
+    if tkns[index].id == 07 then \
+      [tkn_row{ \
+        row + 1, start, index, new_accum_width \
+      }] \
+    else if tkns[index].id == 21 then \
+      prepend_array_tkn_row( \
+        tkn_row{ \
+          row + 1, start, index, new_accum_width \
+        }, \
+        get_tkn_rows_helper( \
+          tkns, \
+          row + 1, \
+          index + 1, \
+          0, \
+          index + 1 \
+        ) \
+      ) \
+    else \
+      get_tkn_rows_helper( \
+        tkns, \
+        row, \
+        start, \
+        new_accum_width, \
+        index + 1 \
+      )
+}
+
+/*
+ * Given a list of tokens, finds the number of lines and width of lines in
+ * tkn[] by counting the number of newline tokens (id = 21) and the rgba width
+ * of the widest line.
+ */
+fn get_tkn_rows(tkns : tkn[]) : tkn_row[] {
+  return get_tkn_rows_helper(tkns, 0, 0, 0, 0)
+}
+
+/**
+ * Given an array of token rows (metadata of a row of tokens) and an index, find
+ * the length of the longest row in terms of rgbas.
+ */
+fn find_longest_tkn_rows_helper(tkn_rows[N] : tkn_row[], index : int) : int {
+  return \
+    if N - index == 1 then \
+      tkn_rows[index].width \
+    else \
+      max_i( \
+        tkn_rows[index].width, \
+        find_longest_tkn_rows_helper(tkn_rows, index + 1) \
+      )
+}
+
+/**
+ * Given an array of token rows (metadata of a row of tokens), find the
+ * length of the longest row in terms of rgbas.
+ */
+fn find_longest_tkn_rows(tkn_rows : tkn_row[]) : int {
+  return find_longest_tkn_rows_helper(tkn_rows, 0)
+}
+
+/**
+ * Given an array of rgbas, return the length of the array.
+ */
+fn tkn_rows_to_length(tkn_rows[N] : tkn_row[]) : int {
+  return N
+}
+
+/**
+ * Given an array of tokens and a row number and a token index, return the array
+ * of rgbas corresponding to the row.
+ */
+fn tkns_to_p_row_helper( \
+  tkns : tkn[], tkn_rows : tkn_row[], row : int, index : int \
+) : rgba[] {
+  return \
+    if index == tkn_rows[row].end then \
+      tkn_to_ps(tkns[index]) \
+    else \
+      merge_arrays_p( \
+        tkn_to_ps(tkns[index]), \
+        tkns_to_p_row_helper(tkns, tkn_rows, row, index + 1) \
+      )
+}
+
+/**
+ * Given an array of tokens, the array of token row metadatas, and a row number,
+ * return the array of rgbas corresponding to the row.
+ */
+fn tkns_to_p_row(tkns : tkn[], tkn_rows : tkn_row[], row : int) : rgba[] {
+  return tkns_to_p_row_helper(tkns, tkn_rows, row, tkn_rows[row].start) 
+}
+
+/**
+ * Given an array of pixels and a width in int, return an array of rgbas of
+ * length width formed by the original array of pixels padded by transparent 
+ * black pixels.
+ */
+fn add_padding_to_p_row(p_row[N] : rgba[], width : int) : rgba[] {
+  return array[i : width] if i < N then p_row[i] else rgba{0.0, 0.0, 0.0, 0.0}
+}
+
+/**
+ * Given an array of tokens, the array of token row metadatas, the width of the
+ * image, and a row number, convert them to an array of rgbas with a length
+ * corresponding to the W * H of the final image, with padding.
+ */
+fn tkns_to_padded_img_line_helper( \
+  tkns : tkn[], tkn_rows[N] : tkn_row[], W : int, row : int \
+) : rgba[] {
+  let row_width = tkn_rows[row].width
+  let p_row = tkns_to_p_row(tkns, tkn_rows, row)
+  let padding_width = W - row_width
+  return \
+    if row == N - 1 then \
+      add_padding_to_p_row(p_row, W) \
+    else \
+      merge_arrays_p( \
+        add_padding_to_p_row(p_row, W), \
+        tkns_to_padded_img_line_helper(tkns, tkn_rows, W, row + 1) \
+      )
+}
+
+/**
+ * Given an array of tokens, the array of token row metadatas, and the width of
+ * the image, convert them to an array of rgbas with a length corresponding to 
+ * the W * H of the final image, with padding.
+ */
+fn tkns_to_padded_img_line( \
+  tkns : tkn[], tkn_rows[N] : tkn_row[], W : int \
+) : rgba[] {
+  return tkns_to_padded_img_line_helper(tkns, tkn_rows, W, 0)
+}
+
+/**
+ * Given an array of rgbas, convert them to an image of w * h.
+ */
+fn line_to_image(rgbas[N] : rgba[], w : int, h : int) : rgba[,] {
+  return \
+    array[i : min_i(N / w, h), j : w] \
+      rgbas[i * w + j]
+}
+
+/**
+ * Given an array of tokens, convert them to an image.
+ */
+fn tkns_to_img(tkns : tkn[], W : int, tkn_rows[H] : tkn_row[]) : rgba[,] {
+  return line_to_image(tkns_to_padded_img_line(tkns, tkn_rows, W), W, H)
+}
+
+fn lex(img[H, W] : rgba[,]) : rgba[,] {
+  let mkd_cs = img_to_mkd_c_arr(img)
+  let tkns = mkd_cs_to_tkns(mkd_cs)
+  let tkn_rows = get_tkn_rows(tkns)
+  let max_row_width = find_longest_tkn_rows(tkn_rows)
+  let num_rows = tkn_rows_to_length(tkn_rows)
+  let lexed_img = tkns_to_img(tkns, max_row_width, tkn_rows)
+  return lexed_img
+// For generating placeholder
+//  return array[i : 10, j : 10] \
+//    if j % 2 == 0 && i % 2 == 0 || j % 2 == 1 && i % 2 == 1 then \
+//      rgba{1.0, 0.0, 1.0, 1.0} \
+//    else \
+//      rgba{0.0, 0.0, 0.0, 1.0}
+}
+
+// assert argnum > 1, "For some reason, the reference compiler adds a 0 to the start of the array of arguments while ignoring the last one. Therefore, to get any argument in, at least two arguments must be provided, where the last one is padding."
+
+// Lex the image.
+read image "source.png" to source
+let mkd_cs = img_to_mkd_c_arr(source)
+let tkns = mkd_cs_to_tkns(mkd_cs)
+
+let is_lexing = args[0] > 0
+
+// Save the lexed image if the lex flag is provided.
+let tkn_rows = if is_lexing then get_tkn_rows(tkns) else [tkn_row{0, 0, 0, 0}]
+let max_row_width = if is_lexing then find_longest_tkn_rows(tkn_rows) else 0
+let num_rows = if is_lexing then tkn_rows_to_length(tkn_rows) else 0
+let lexed_img = \
+  if is_lexing then \
+    tkns_to_img(tkns, max_row_width, tkn_rows) \
+  else \
+/* For generating placeholder */ \
+    array[i : 10, j : 10] \
+      if (j % 2 == 0 && i % 2 == 0) || (j % 2 == 1 && i % 2 == 1) then \
+        rgba{1.0, 0.0, 1.0, 1.0} \
+      else \
+        rgba{0.0, 0.0, 0.0, 1.0}
+
+write image lexed_img to "lexed.png"
+
+let is_parsing = if argnum > 3 then args[1] > 0 else false
+
+struct node {
+  row : int // row of the node
+  col : int // column of the node
+
+  class : int // class of the node
+
+  // The mantissa of float exprs.
+  // The integer of int exprs.
+  mantissa : int
+
+  // The exponent of float exprs.
+  exponent : int
+
+  // The pointer to the strings container representing the list of variables 
+  // binded to in array lvalues.
+  strings_cnt_ptr : int
+
+  // The error string of assert cmds.
+  // The file name of read and write cmds.
+  // The string of print cmds.
+  // The name of function cmds.
+  // The name of struct cmds.
+  // The name of the variable in struct bindings.
+  // The error string of assert stmts.
+  // The name of variable exprs.
+  // The name of the type in struct literal exprs.
+  // The name of the variable to access from the expr in dot exprs.
+  // The name of the function being called in call exprs.
+  // The name of the loop variable of iterator header bindings.
+  // The name of the variable assigned to via variable lvalues.
+  // The name of the variable assigned to via array lvalues.
+  // The name of struct types.
+  string : int[]
+
+  // The pointer to the cmd in time cmds.
+  cmd_ptr : int
+
+  // The pointer to the next cmd after a cmd.
+  // cmd_ptr : int
+
+  // The pointer to the stmts container representing the body of a function
+  // cmd.
+  stmt_cnt_ptr : int
+
+  // The pointer to the exprs container representing the exprs...
+  // of array literal exprs.
+  // of struct literal exprs.
+  // to use as indices in array index exprs.
+  // to use as arguments in call exprs.
+  expr_cnt_ptr : int
+
+  // The pointer to the expr...
+  // to write to the file in write cmds.
+  // to assign to the variable in let cmds.
+  // to assert as true in assert cmds.
+  // to show the result of in show cmds.
+  // to assign to the lvalue in let stmts.
+  // to assert as true in assert stmts.
+  // to return in return stmts.
+  // to access the variable of in dot exprs.
+  // to index into in array index exprs.
+  // to perform the operation on in unary op exprs.
+  // on the left in binary op exprs.
+  // to use as the condition in if exprs.
+  // to assign to the elements in array loop exprs.
+  // to sum in sum loop exprs.
+  // to use as the max value of the loop variable in iterator header bindings.
+  expr_ptr_0 : int
+
+  // The pointer to the expr...
+  // on the right in binary op exprs.
+  // to evaluate if the condition is true in if exprs.
+  expr_ptr_1 : int
+
+  // The pointer to the expr...
+  // to evaluate if the condition is false in if exprs.
+  expr_ptr_2 : int
+
+  // The pointer to the function bindings container representing the bindings...
+  // that are the arguments of function cmds.
+  fn_binding_cnt_ptr : int
+  lvalue_ptr : int
+  return_type : int
+  dimension : int
+}

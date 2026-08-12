@@ -1,0 +1,9 @@
+assert .413, ""
+read image "N" to d
+time show [ e ]
+time show [ B ]
+write image 5026.25 to ""
+write image true to "}"
+print ""
+assert F6m9R, "}K|"
+print ""

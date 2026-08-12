@@ -1,0 +1,3 @@
+(PrintCmd "J")
+(WriteCmd (FalseExpr) "} d&c")
+(LetCmd (VarLValue q) (FloatExpr 0))

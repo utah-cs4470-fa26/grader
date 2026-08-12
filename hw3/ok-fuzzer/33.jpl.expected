@@ -1,0 +1,4 @@
+(PrintCmd "`")
+(AssertCmd (FalseExpr) "")
+(LetCmd (VarLValue N) (FloatExpr 0))
+(ShowCmd (TrueExpr))

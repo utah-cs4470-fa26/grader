@@ -1,0 +1,6 @@
+(ReadCmd "W>`" (VarLValue C))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr T))))
+(LetCmd (VarLValue P) (IntExpr 8))
+(WriteCmd (FalseExpr) ")]")
+(AssertCmd (FloatExpr 58170) "")
+(PrintCmd "B~")

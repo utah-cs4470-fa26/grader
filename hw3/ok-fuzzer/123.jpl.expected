@@ -1,0 +1,7 @@
+(ReadCmd "" (VarLValue v))
+(ReadCmd "" (VarLValue C))
+(LetCmd (VarLValue n7D_3M_9p4w7h) (FloatExpr 6))
+(LetCmd (VarLValue J5s_5v8e) (VarExpr Y7m_1R_))
+(ShowCmd (TrueExpr))
+(AssertCmd (IntExpr 6) "e")
+(PrintCmd "")

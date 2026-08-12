@@ -1,0 +1,5 @@
+write image true to "I:"
+let o = false
+time show [ h , [[[[ A2H]]]]]
+show false
+print ""

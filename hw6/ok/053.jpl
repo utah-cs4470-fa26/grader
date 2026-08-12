@@ -1,0 +1,6 @@
+struct posn {
+  x: int
+  y: int
+}
+
+show posn{1, 2}.x

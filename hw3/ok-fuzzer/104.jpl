@@ -1,0 +1,4 @@
+show false
+let o1y_ = 2
+write image 375236 to ""
+assert false, ""

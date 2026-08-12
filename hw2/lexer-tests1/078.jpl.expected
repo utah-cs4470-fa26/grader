@@ -1,0 +1,66 @@
+NEWLINE
+STRUCT 'struct'
+VARIABLE 'sixer'
+LCURLY '{'
+NEWLINE
+VARIABLE 'one'
+COLON ':'
+INT 'int'
+NEWLINE
+VARIABLE 'two'
+COLON ':'
+INT 'int'
+NEWLINE
+VARIABLE 'three'
+COLON ':'
+BOOL 'bool'
+NEWLINE
+VARIABLE 'four'
+COLON ':'
+INT 'int'
+NEWLINE
+VARIABLE 'five'
+COLON ':'
+INT 'int'
+NEWLINE
+VARIABLE 'six'
+COLON ':'
+BOOL 'bool'
+NEWLINE
+RCURLY '}'
+NEWLINE
+LET 'let'
+VARIABLE 'z'
+EQUALS '='
+VARIABLE 'sixer'
+LCURLY '{'
+INTVAL '1'
+COMMA ','
+INTVAL '2'
+COMMA ','
+FALSE 'false'
+COMMA ','
+INTVAL '4'
+COMMA ','
+INTVAL '5'
+COMMA ','
+TRUE 'true'
+RCURLY '}'
+NEWLINE
+LET 'let'
+VARIABLE 'x'
+EQUALS '='
+IF 'if'
+VARIABLE 'z'
+DOT '.'
+VARIABLE 'three'
+THEN 'then'
+VARIABLE 'z'
+DOT '.'
+VARIABLE 'three'
+ELSE 'else'
+VARIABLE 'z'
+DOT '.'
+VARIABLE 'five'
+NEWLINE
+END_OF_FILE

@@ -1,0 +1,6 @@
+write image S to ""
+assert void , ""
+assert M , ""
+time print ""
+assert void ,
+"" 

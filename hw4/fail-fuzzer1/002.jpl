@@ -1,0 +1,9 @@
+read image "" to r
+write image void read ""
+assert false , ""
+to image "" to U
+assert Y , ""
+assert true , ""
+write image void to ""
+time print ""
+assert j , ""

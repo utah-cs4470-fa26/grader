@@ -1,0 +1,4 @@
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr r0h))))
+(ReadCmd "Xe" (VarLValue Q8k))
+(AssertCmd (FalseExpr) "")
+(LetCmd (VarLValue C4M) (VarExpr a7p))

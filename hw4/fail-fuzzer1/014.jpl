@@ -1,0 +1,9 @@
+show false
+read image "" to Z
+show true
+write image true to ""
+write image false to ""
+show r
+show void
+false
+time print ""

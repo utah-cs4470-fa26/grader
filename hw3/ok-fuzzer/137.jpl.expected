@@ -1,0 +1,4 @@
+(ReadCmd "" (VarLValue J))
+(ShowCmd (FloatExpr 5721))
+(AssertCmd (FalseExpr) "")
+(LetCmd (VarLValue K) (FloatExpr 0))

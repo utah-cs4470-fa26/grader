@@ -1,0 +1,3 @@
+(ShowCmd (IntExpr 7))
+(ShowCmd (FalseExpr))
+(LetCmd (VarLValue A) (FloatExpr 0))

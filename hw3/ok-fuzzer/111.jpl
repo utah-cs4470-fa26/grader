@@ -1,0 +1,3 @@
+assert false, ""
+let b = [1,  3 , b , 5, 9]
+assert false, ""

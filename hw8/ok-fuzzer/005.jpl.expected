@@ -1,0 +1,83 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+typedef struct {
+  int64_t d0;
+  _a1_int64_t *data;
+} _a1__a1_int64_t;
+
+void jpl_main(struct args args) {
+    bool _0 = false;
+    int64_t _1 = 741;
+    int64_t _2 = 343;
+    int64_t _3 = _1 * _2;
+    int64_t _4 = 634;
+    int64_t _5 = -_4;
+    _a1_int64_t _6;
+    _6.d0 = 2;
+    _6.data = jpl_alloc(sizeof(int64_t) * 2);
+    _6.data[0] = _3;
+    _6.data[1] = _5;
+    _a1__a1_int64_t _7;
+    _7.d0 = 1;
+    _7.data = jpl_alloc(sizeof(_a1_int64_t) * 1);
+    _7.data[0] = _6;
+    int64_t _8 = 465;
+    int64_t _9 = 43;
+    int64_t _10 = -_9;
+    _a1_int64_t _11;
+    _11.d0 = 2;
+    _11.data = jpl_alloc(sizeof(int64_t) * 2);
+    _11.data[0] = _8;
+    _11.data[1] = _10;
+    int64_t _12 = 660;
+    int64_t _13 = 821;
+    int64_t _14 = _12 + _13;
+    int64_t _15 = 6;
+    int64_t _16 = _14 - _15;
+    if (_16 >= 0)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_16 < _11.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    int64_t _17 = 0;
+    _17 *= _11.d0;
+    _17 += _16;
+    int64_t _18 = _11.data[_17];
+    if (_18 >= 0)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_18 < _7.d0)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    int64_t _19 = 0;
+    _19 *= _7.d0;
+    _19 += _18;
+    _a1_int64_t _20 = _7.data[_19];
+    show("(IntType)", &_20.d0);
+    double _21 = 28.0;
+    int64_t _22 = -_20.d0;
+    int64_t _23 = -_22;
+    int64_t _24 = 970;
+    int64_t _25 = -_24;
+    int64_t _26 = _23 % _25;
+    show("(IntType)", &_26);
+    print("h");
+}
+

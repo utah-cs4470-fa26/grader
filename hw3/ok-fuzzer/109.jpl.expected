@@ -1,0 +1,5 @@
+(LetCmd (VarLValue d) (VarExpr L))
+(ShowCmd (FalseExpr))
+(ReadCmd "^V" (VarLValue J))
+(LetCmd (VarLValue k) (VarExpr T4D2e9A))
+(ShowCmd (TrueExpr))

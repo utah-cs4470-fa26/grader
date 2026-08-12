@@ -1,0 +1,9 @@
+// ERROR
+
+let a = 8
+
+struct mt {
+}
+
+fn d(e[a, b] : float[,]) : mt {
+}

@@ -1,0 +1,69 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+  int64_t d0;
+  double *data;
+} _a1_double;
+
+void jpl_main(struct args args) {
+    double _0 = 24.0;
+    double _1 = 66.0;
+    bool _2 = _0 >= _1;
+    bool _3 = !_2;
+    bool _4 = !_3;
+    show("(BoolType)", &_4);
+    int64_t _5 = 929;
+    int64_t _6 = -_5;
+    int64_t _7 = 740;
+    bool _8 = _6 == _7;
+    bool _9 = !_8;
+    int64_t _10 = 687;
+    int64_t _11 = 866;
+    int64_t _12 = 867;
+    int64_t _13 = -_12;
+    int64_t _14 = _11 - _13;
+    bool _15 = _10 > _14;
+    double _16 = 3.0;
+    _a1_double _17;
+    _17.d0 = 1;
+    _17.data = jpl_alloc(sizeof(double) * 1);
+    _17.data[0] = _16;
+    int64_t _18 = 720;
+    if (_18 >= 0)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_18 < _17.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    int64_t _19 = 0;
+    _19 *= _17.d0;
+    _19 += _18;
+    double _20 = _17.data[_19];
+    double _21 = -_20;
+    _a1_double _22;
+    _22.d0 = 1;
+    _22.data = jpl_alloc(sizeof(double) * 1);
+    _22.data[0] = _21;
+    bool _23 = false;
+    show("(BoolType)", &_23);
+    bool _24 = false;
+    if (0 != _24)
+    goto _jump3;
+    fail_assertion("f");
+    _jump3:;
+    bool _25 = true;
+    if (0 != _25)
+    goto _jump4;
+    fail_assertion("f");
+    _jump4:;
+}
+

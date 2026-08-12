@@ -1,0 +1,5 @@
+(ShowCmd (TrueExpr))
+(PrintCmd "")
+(LetCmd (VarLValue s) (FalseExpr))
+(PrintCmd "")
+(WriteCmd (VarExpr w) "p")

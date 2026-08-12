@@ -1,0 +1,3 @@
+(WriteCmd (IntExpr 6) "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (ArrayLiteralExpr (VarExpr I0J_)))))
+(AssertCmd (FloatExpr 0) "G")

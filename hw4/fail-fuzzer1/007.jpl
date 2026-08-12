@@ -1,0 +1,6 @@
+write image L to ""
+assert void , ""
+show false
+write image true to ""
+write write image R to ""
+print ""

@@ -1,0 +1,4 @@
+struct looper {
+  first: float
+  second: looper
+}

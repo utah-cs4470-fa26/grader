@@ -1,0 +1,63 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+    int64_t a;
+} one;
+
+typedef struct {
+    int64_t b;
+    int64_t c;
+    int64_t d;
+} three;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 1;
+    one _1 = { _0 };
+    int64_t _2 = _1.a;
+    int64_t _3 = 0;
+    int64_t _4 = 1;
+    int64_t _5 = 2;
+    three _6 = { _3, _4, _5 };
+    int64_t _7 = _6.c;
+    bool _8 = _2 < _7;
+    _a1_int64_t _9;
+    if (!_8)
+    goto _jump1;
+    int64_t _10 = 1;
+    int64_t _11 = 2;
+    int64_t _12 = 3;
+    _a1_int64_t _13;
+    _13.d0 = 3;
+    _13.data = jpl_alloc(sizeof(int64_t) * 3);
+    _13.data[0] = _10;
+    _13.data[1] = _11;
+    _13.data[2] = _12;
+    _9 = _13;
+    goto _jump2;
+    _jump1:;
+    int64_t _14 = 4;
+    int64_t _15 = 5;
+    int64_t _16 = 6;
+    _a1_int64_t _17;
+    _17.d0 = 3;
+    _17.data = jpl_alloc(sizeof(int64_t) * 3);
+    _17.data[0] = _14;
+    _17.data[1] = _15;
+    _17.data[2] = _16;
+    _9 = _17;
+    _jump2:;
+    show("(ArrayType (IntType) 1)", &_9);
+}
+

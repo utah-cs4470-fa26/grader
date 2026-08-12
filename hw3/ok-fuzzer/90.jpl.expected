@@ -1,0 +1,5 @@
+(ReadCmd "" (VarLValue A5i_7O_3F))
+(WriteCmd (TrueExpr) "")
+(AssertCmd (IntExpr 6) "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr M4Y_4E9g4z3J))))
+(ReadCmd "" (VarLValue E))

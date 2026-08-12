@@ -1,0 +1,4 @@
+fn f() : float {
+   assert 1, ""
+   return 1.0
+}

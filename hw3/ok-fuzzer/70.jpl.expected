@@ -1,0 +1,6 @@
+(AssertCmd (FalseExpr) "")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr l4P0R_))))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr T))))
+(AssertCmd (VarExpr N) "S")
+(PrintCmd "")
+(AssertCmd (FalseExpr) "PP")

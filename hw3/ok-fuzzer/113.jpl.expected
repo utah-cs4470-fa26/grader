@@ -1,0 +1,4 @@
+(WriteCmd (VarExpr e2m_4a) "r")
+(ReadCmd "<" (VarLValue R))
+(WriteCmd (TrueExpr) "")
+(PrintCmd "")

@@ -1,0 +1,4 @@
+(ShowCmd (TrueExpr))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr f8j))))
+(ReadCmd "" (VarLValue f9q))
+(ShowCmd (FloatExpr 0))

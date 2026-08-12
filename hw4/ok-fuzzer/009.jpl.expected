@@ -1,0 +1,5 @@
+(StructCmd B KO (ArrayType (FloatType) 1) U (StructType w1S__) N_ (BoolType) p_2_I1 (FloatType))
+(StructCmd k4 lq__6J (FloatType) pk__ (ArrayType (StructType A2A_) 2) tkw___ (IntType))
+(StructCmd P V (ArrayType (BoolType) 1) m____P (IntType) K (VoidType))
+(StructCmd v8_8_ Zj56_6 (IntType) U (BoolType))
+(StructCmd ni_0_ s1_7 (FloatType))

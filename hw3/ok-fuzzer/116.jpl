@@ -1,0 +1,5 @@
+print "o"
+write image false to ""
+assert .1, ""
+show w3g_4F
+assert false, "+k"

@@ -1,0 +1,7 @@
+write image E to ""
+time show [ M , myfloat]
+let a = 180
+write image false to "@n"
+write image false to "U"
+show false
+read image "t" to m

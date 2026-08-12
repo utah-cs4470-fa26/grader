@@ -1,0 +1,6 @@
+(WriteCmd (IntExpr 88602) "")
+(ReadCmd "*" (VarLValue V6x_))
+(AssertCmd (IntExpr 961) "F")
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr c1E3z_))))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr O5R_))))
+(TimeCmd (ShowCmd (ArrayLiteralExpr (VarExpr s6P_0j))))

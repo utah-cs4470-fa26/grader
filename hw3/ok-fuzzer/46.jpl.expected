@@ -1,0 +1,3 @@
+(LetCmd (VarLValue l) (FloatExpr 0))
+(ReadCmd "R" (VarLValue I))
+(PrintCmd "")

@@ -1,0 +1,5 @@
+(PrintCmd "~&")
+(PrintCmd "")
+(ReadCmd "" (VarLValue m7r_))
+(ShowCmd (FloatExpr 4))
+(ReadCmd ".H" (VarLValue c))

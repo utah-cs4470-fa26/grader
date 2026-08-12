@@ -1,0 +1,7 @@
+write image h to ""
+write image true to 
+assert true , ""
+print ""
+read image "" to m
+write image false to ""
+""

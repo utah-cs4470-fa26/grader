@@ -1,0 +1,25 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+void jpl_main(struct args args) {
+    int64_t _0 = 1;
+    bool _1 = true;
+    double _2;
+    if (!_1)
+    goto _jump1;
+    double _3 = 1.0;
+    _2 = _3;
+    goto _jump2;
+    _jump1:;
+    double _4 = 0.0;
+    _2 = _4;
+    _jump2:;
+    show("(FloatType)", &_2);
+}
+

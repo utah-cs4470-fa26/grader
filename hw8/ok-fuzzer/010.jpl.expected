@@ -1,0 +1,93 @@
+
+#include <math.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "rt/runtime.h"
+
+typedef struct { } void_t;
+
+typedef struct {
+    void_t a;
+    rgba b;
+} a;
+
+typedef struct {
+  int64_t d0;
+  int64_t *data;
+} _a1_int64_t;
+
+typedef struct {
+  int64_t d0;
+  bool *data;
+} _a1_bool;
+
+typedef struct {
+  int64_t d0;
+  _a1_bool *data;
+} _a1__a1_bool;
+
+void jpl_main(struct args args) {
+    print("a");
+    print("b");
+    int64_t _0 = 849;
+    int64_t _1 = 439;
+    int64_t _2 = 608;
+    _a1_int64_t _3;
+    _3.d0 = 2;
+    _3.data = jpl_alloc(sizeof(int64_t) * 2);
+    _3.data[0] = _1;
+    _3.data[1] = _2;
+    int64_t _4 = 477;
+    if (_4 >= 0)
+    goto _jump1;
+    fail_assertion("negative array index");
+    _jump1:;
+    if (_4 < _3.d0)
+    goto _jump2;
+    fail_assertion("index too large");
+    _jump2:;
+    int64_t _5 = 0;
+    _5 *= _3.d0;
+    _5 += _4;
+    int64_t _6 = _3.data[_5];
+    int64_t _7 = 655;
+    int64_t _8 = -_7;
+    int64_t _9 = _6 - _8;
+    bool _10 = _0 == _9;
+    bool _11 = false;
+    bool _12 = !_11;
+    _a1_bool _13;
+    _13.d0 = 1;
+    _13.data = jpl_alloc(sizeof(bool) * 1);
+    _13.data[0] = _12;
+    _a1_bool _14;
+    _14.d0 = 1;
+    _14.data = jpl_alloc(sizeof(bool) * 1);
+    _14.data[0] = _10;
+    _a1__a1_bool _15;
+    _15.d0 = 2;
+    _15.data = jpl_alloc(sizeof(_a1_bool) * 2);
+    _15.data[0] = _13;
+    _15.data[1] = _14;
+    int64_t _16 = 721;
+    if (_16 >= 0)
+    goto _jump3;
+    fail_assertion("negative array index");
+    _jump3:;
+    if (_16 < _15.d0)
+    goto _jump4;
+    fail_assertion("index too large");
+    _jump4:;
+    int64_t _17 = 0;
+    _17 *= _15.d0;
+    _17 += _16;
+    _a1_bool _18 = _15.data[_17];
+    int64_t _19 = 411;
+    int64_t _20 = _18.d0 * _18.d0;
+    int64_t _21 = 593;
+    int64_t _22 = -_21;
+    int64_t _23 = _20 - _22;
+    bool _24 = _19 <= _23;
+}
+

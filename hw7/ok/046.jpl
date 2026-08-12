@@ -1,0 +1,8 @@
+struct pair {
+  a: int
+  b: bool
+}
+
+let p = pair{1, false}
+show p.a
+show p.b
