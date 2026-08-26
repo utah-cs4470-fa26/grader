@@ -11,12 +11,7 @@ ifndef OS
 	else
 		UNAME_S := $(shell uname -s)
 		ifeq ($(UNAME_S),Linux)
-			GLIBC_SUBV := $(shell ldd --version | head -n1 | sed 's/.*2\.\([0-9]*\).*/\1/g')
-			ifeq ($(shell test $(VER) -ge 35; echo $$?),0)
-				OS ?= linux
-			else
-				OS ?= linux
-			endif
+			OS ?= linux
 		endif
 		ifeq ($(UNAME_S),Darwin)
 			OS ?= macos
