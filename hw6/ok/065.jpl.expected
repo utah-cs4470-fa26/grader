@@ -1,0 +1,1 @@
+(ShowCmd (ArrayLiteralExpr (ArrayType (VoidType) 1) (VoidExpr (VoidType))))

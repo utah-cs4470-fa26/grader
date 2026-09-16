@@ -1,0 +1,2 @@
+(StructCmd foo a (VoidType) b (IntType) c (ArrayType (VoidType) 1))
+(ShowCmd (StructLiteralExpr (StructType foo) foo (VoidExpr (VoidType)) (IntExpr (IntType) 8) (ArrayLiteralExpr (ArrayType (VoidType) 1) (VoidExpr (VoidType)) (VoidExpr (VoidType)) (VoidExpr (VoidType)))))
