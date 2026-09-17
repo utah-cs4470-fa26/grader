@@ -4,7 +4,7 @@ let a22l7 = i_MoI_ ( true,true,T,U )
 //w_R9__j?_zy_30_
 fn  lQ_2E_(R__5_[b55_,Fm9__8] : int):void{  
  
-let b___3[I] = ( O )
+let b___3[I] = O
    
 return 77.
 let O = 7834842.//_196_2_
@@ -18,7 +18,7 @@ let L_[l] = [ void ]
    
 assert G ( void,true ) , ""   
   
-assert ( e . M ) , "1"//`A\_uFPa
+assert e . M , "1"//`A\_uFPa
 }
 //6'
 struct   V589 {//hc_jT]__93_:;_l|n_161D

@@ -1,7 +1,7 @@
 fn Qg5u ( ) : float {
 return 47928.
 return void
-assert X_z0b ( void , false ) [ ( J ) , ( V ) , g , ( false ) ] , "{?"
+assert X_z0b ( void , false ) [ J , V , g , false ] , "{?"
 assert B9 ( true , void , true . D ) , "#61_7_"
 assert [ void , void ] , "SA_"
 assert 7772 , "gyD_"
@@ -13,7 +13,7 @@ let l___W_ = void
 assert .69344422 , "_"
 return IP_7k_
 return 2124
-assert ( ( void ) ) . G18_A , "5_0r)N7_"
+assert void . G18_A , "5_0r)N7_"
 return [ 3229 ]
 assert 917745. , "7S_"
 return n_ ( false , false ) . R
@@ -27,18 +27,18 @@ assert 0 , "2e9"
 return .131
 return L60 ( false )
 let T9_ [ H , , D3 , j_ , H5 , r_ ] = b2i_v ( L ) . pA
-let z_3_AM = [ void . Y , ( H ) , void ]
+let z_3_AM = [ void . Y , H , void ]
 }
 fn O1_c ( Wv44 : bool , JZPbdH [ o , E9D , hxK , j ] : bool ) : float {
-let F2__02 [ yVU , zj__W , w0Nx_ , Q , TE7__I ] = ( false )
+let F2__02 [ yVU , zj__W , w0Nx_ , Q , TE7__I ] = false
 assert USce_ { B , false , K , 7 } , "\__I7=__q4y"
-let w3a__n = true [ false , ( false ) , 8495881 , false ]
+let w3a__n = true [ false , false , 8495881 , false ]
 let u_0l [ bl62 , Qn4 , t3g__ ] = x30 [ 29847049 , void ]
 }
 fn f6_ ( M : bool , k : int , I : N ) : bool [ ] {
 let wGZ5U_ = 38922044.508312
 return .5569942307
-assert ( x_ ) , "Pi>_9<0m"
+assert x_ , "Pi>_9<0m"
 let i = Q_0g { void , true , false }
 assert 1.1856957509 , "_V2f"
 assert .804927 , "*_6__u"
@@ -51,7 +51,7 @@ assert C_3 { 436457654 , void , true , false . p } , "v`6"
 assert false , ""
 assert [ void , false ] , "4_{___73ig_"
 let NJ [ i__x_w , y , BE , V__7_n , Z__ ] = void
-assert [ ( void ) , false , void , false ] , "VV_?&*"
+assert [ void , false , void , false ] , "VV_?&*"
 let Kz__ [ l_17N , i_ , kJn , w6y_6 , Cqo ] = 112471128
 assert k2D_79 , "O/7d"
 assert true . i43 . UX , "d<\_]Y_"
@@ -70,7 +70,7 @@ let up_4W [ wZ6 ] = void
 }
 fn y_Wz ( lV5en : float , w7_5_7 : int , YWz [ A9_ , lY , Cz_ ] : int ) : int [ , ] {
 assert .2987366890 , "da_'_^7{%"
-return ( ( false ) )
+return false
 let N_ = 252371
 assert 72725.5 , "l}[3T8"
 return false

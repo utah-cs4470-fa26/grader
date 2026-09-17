@@ -3,15 +3,15 @@ return 387560893.8108
 let w_ = false
 let Q_D [ v22 ] = 5
 return true
-assert ( .707 ) , ""
+assert .707 , ""
 }
 fn dx53 ( ) : int {
-let r09_ = ( void ) . q5X_
+let r09_ = void . q5X_
 return 2
 return false
 assert x [ z ] [ true . T , false . V ] , ";~\$n+1<_"
 return void
-return ( w_ )
+return w_
 let f_Y_ = void
 assert void , "2"
 assert true [ true , E , true ] [ f , 0 ] , "1zO4M_"
@@ -21,10 +21,10 @@ fn sf1Zb ( v_0 [ f64ew0 ] : Su , Z3_ [ U_5 , d9BK ] : bool , bmn_ : int [ , , ] 
 return false
 assert D7 , "_%"
 return 13
-( sw2c { false , P , void } )
+sw2c { false , P , void }
 let So6_ = 5
 assert void , "_%"
-let O58 = true [ ( false ) , true , true , d ]
+let O58 = true [ false , true , true , d ]
 let J_ [ W80 , NRk_8 , d_ ] = 778763908.43
 let V [ cL1Yvw , z2 , sr3tA4 ] = false . hkC_ . C5
 assert G ( B , void ) [ true , 30801 , void , false ] , "$@4_4w"
@@ -32,13 +32,13 @@ assert G ( B , void ) [ true , 30801 , void , false ] , "$@4_4w"
 fn xW ( ) : void {
 let f [ d , A4dl , nub6Kv ] = false . N8__Qs
 let m8_9Gf = false
-return [ true , ( false ) , void ]
+return [ true , false , void ]
 assert GPY__ { true , void , void } , "}5_n%t_"
 assert 000 , "4X"
 assert false , "_9c_"
-assert NT39 { S , void . Q , true , true , ( false ) } , "F'^_6'"
+assert NT39 { S , void . Q , true , true , false } , "F'^_6'"
 assert false , "j"
-let z [ xM43_ , F_814 , K ] = ( 235062965.4 )
+let z [ xM43_ , F_814 , K ] = 235062965.4
 }
 fn I7N ( F4__Yd [ lM__ , SVIG , c_r ] : void ) : O___ {
 assert false , "3_Ye2S"
@@ -49,7 +49,7 @@ fn G_ ( w69016 [ t049q_ , O , w_b8 ] : int , Q [ f6jXQB ] : x ) : float {
 assert [ i , false ] . U30_0s , "1_m"
 return false
 assert Z4 , ""
-return ( void . P_b__ )
+return void . P_b__
 assert true , "_p~u"
 return 02
 assert [ false , M ] , "__2*_jN7_"
@@ -60,7 +60,7 @@ return [ true , 78068 , true , o . e , 14970 ]
 assert .9028 , "_8__+"
 let U31329 = 93998.
 assert true , "L_je}"
-return x91 ( ( void ) , 890 , void , ( Y ) , void )
+return x91 ( void , 890 , void , Y , void )
 return 02566785.22
 }
 fn E7 ( FwmZ_ : bool , kK2_5 : y_ ) : int {

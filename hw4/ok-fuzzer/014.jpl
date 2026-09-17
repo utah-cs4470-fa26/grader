@@ -8,7 +8,7 @@ assert void , "4|"
 
 assert k_0_ ( false,false ) , "KW2o_'"  
 
-return ( ( false ) )//Ty_/bQ6_
+return false //Ty_/bQ6_
 }
 
 struct   i4_47K   {//O["}X__\#8_r#ff;0
@@ -22,7 +22,7 @@ S1_ : bool//RS$2_8hk51xP_3_1____/*
 //__9s_5h|"7oX~\
 }//_YpD__5k_a0C(8<
 fn xgN(ZD_P_j : void):bool{//Y_3+_89__`uWs
-let b[i] = ( true ) . Z_20  
+let b[i] = true . Z_20  
 
 return W_1M_5 
  
@@ -30,7 +30,7 @@ return S75 { true,void,false,false }
 return true  
 let X6__3I = I_ ( void,false,void,void )//8 _F_}a7_\f5N2+7|__
 let L4_[A,b] = ts ( false,false,g )
-assert ( void ) , "gs,5[k_"
+assert void , "gs,5[k_"
 
 let Z[b,G] = E74b { false,F,true,void,true }  
 

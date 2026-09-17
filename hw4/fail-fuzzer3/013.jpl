@@ -4,12 +4,12 @@ return true
 }
 fn I0_c_ ( J2Q [ j5_ , lO0V2_ , q8_p9n , c5_ ] : float , A_ : bool ) : bool {
 assert 14299753.9454 , "_6&_"
-return ( 741181565 )
+return 741181565
 return V78_ ( false , 30 , true , r )
-return ( true . D [ false ] )
+return true . D [ false ]
 }
 fn KK ( r_Lqe5 : float , o [ W_6oD_ ] : float ) : F {
-let G6b = ( true ) [ true ] [ void , void ]
+let G6b = true [ true ] [ void , void ]
 assert [ true , 268 ] , ")@_"
 let g = [ false , void ]
 let cm_2 = void
@@ -19,7 +19,7 @@ return 520
 let x_19A = b
 return 87814.55376
 assert 8 , "&XO"
-let q___7 [ KF__L , k_j , U04__n ] = cN ( ( true ) , Z , J , void )
+let q___7 [ KF__L , k_j , U04__n ] = cN ( true , Z , J , void )
 assert ce__91 ( R , 84921 , false ) , ""
 }
 fn lK_8_ ( ) : X5s0w7 {
@@ -32,9 +32,9 @@ return E6Z
 }
 fn e_in__ ( mw [ w7F25r , bi_565 , i1 ] : bool [ , , ] , yd___ [ v9G , P_S5_5 , L_ ] : int ) : float {
 let TY6 [ p ] = false
-return M__ { i , ( false ) , false }
+return M__ { i , false , false }
 assert false , "__2_1Q39_["
-return [ ( false ) , false ]
+return [ false , false ]
 assert z_ , "__pRl64__8"
 assert true , "rE{[4_3~"
 return 77961

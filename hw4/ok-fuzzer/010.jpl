@@ -47,7 +47,7 @@ assert .232541116 , "_"//P_x61<b&_9j[
 return 26461
  
 assert true . i , ")4__>E_]"//u8\*
-assert ( true ) , "_o_dh%" 
+assert true , "_o_dh%" 
 }  
 struct Cx_ {
 
@@ -64,7 +64,7 @@ assert Y_E67 { true,void,false,Y,W } , "_d2H-L_Apm"//8fP'_\__uaE 28`S<86;
 return false//R_t)3_j481$@Z
 assert r__f_ { void,void } , "1~"//?8_Pr%3vR\4Z
    
-assert ( U ) , "z_73B0_'7"  
+assert U , "z_73B0_'7"  
 }
 fn   y3(p[A___5,m_,KB,D4F06R,B4__57] : void,F__[v_p,W__,R_,Ku8_] : W1G_,e9_[z6vZ_a,wK,d_75p] : int):bool [ ,, ]{
 assert N__i , "73"//z3_P21_5,__5D_

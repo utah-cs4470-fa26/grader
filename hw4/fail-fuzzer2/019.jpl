@@ -11,7 +11,7 @@ K : float
 f_8 : int
 }
 let L_6BP0 = 303
-let K_S63_ = D8_ ( void , void , false , ( void ) ) . VZ_
+let K_S63_ = D8_ ( void , void , false , void ) . VZ_
 struct aQ_5V0 {
 t : int
 }

@@ -12,7 +12,7 @@ f : E3_
 struct B7L_ {
 J : void
 }
-let WT = [ ( X ) , true . b5___w , false ]
+let WT = [ X , true . b5___w , false ]
 struct j {
 h4253_ : float
 gVZ_88 : int
@@ -20,4 +20,4 @@ M8o_z : void
 J2 : e540_
 z4 : int [ , , , ]
 }
-let P [ T2c65 , k_9x_ ] = [ F ] . dH_ [ D5_ , MT_ ( w ) ]
+let P [ T2c65 , k_9x_ ] = [ F ] . dH_ [ D5_ , MT_ w ]

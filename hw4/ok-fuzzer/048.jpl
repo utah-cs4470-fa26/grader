@@ -57,7 +57,7 @@ R_ : bool
 }//
 fn  rSm_q8(b8jTJ : float,E54h90 : bool [ , ],e5[aa,p_iB8] : r__0_G [ ,,, ]):M4K7 [  ]{ 
 assert true . p_L , "5_6__"//4\s_;8
-let Ba = ( void )
+let Ba = void
 let c = 09 . X_or_Y 
 //I_>5_V(%S
 let x_3 = N21 { void }//fI'_3:
@@ -69,7 +69,7 @@ return ph8v ( false,void,true,s,true )
  
 assert true , "g2" 
 //>207/2x_
-assert ( true . Y ) , "B" 
+assert true . Y , "B" 
 
 assert .3951170166 , "8_899,"//2d6p3
 }  

@@ -27,5 +27,5 @@ struct a46z_ {
 c_l : bool
 w5 : bool
 }
-let B3_ = ( .17 )
+let B3_ = .17
 :

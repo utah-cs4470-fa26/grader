@@ -31,7 +31,7 @@ fn   F4():U22{
 let FbBq[u,h,j] = 838//_r_W1_"_G_oh__[4\{t_
 
 return void  
-let F31q0_ = ( void )
+let F31q0_ = void
 
 let r7_4J[q,C] = false   
 //;T_oBS44_N7~u
@@ -58,14 +58,14 @@ fn   X_k_95(k : bool):float{//9;XZ85_
 
 let Ag_d_[M,o,x,l,Y] = true   
 
-let d[m,r] = ( void ) . CW 
+let d[m,r] = void . CW 
 assert 611217262.51 , "+" 
    
 let M[X,t,f,t,g] = T . jj6  
 return void
 return false//____5_=9('\__308O=1?/_
 
-assert ( f ) [ w,false,J,W,false ] , "0]<Hs^I:_>"
+assert f [ w,false,J,W,false ] , "0]<Hs^I:_>"
 //_0.?86mA_
 let CBu1i_ = p3_ 
    

@@ -26,7 +26,7 @@ XF : int
 }  
   
 fn m(W__52R : int [ ,, ]):int [ , ]{ 
-let i = ( false )
+let i = false
 //80___9&_Uaj_!6B_0JI3`W
 return 808399.286662989
 //97f_?Z8_;e:w,6\"T

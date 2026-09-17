@@ -12,5 +12,5 @@ Mo_ : bool
 m_eG38 : void
 f__6C6 : void
 uB : bool . }
-let kX = ( Il_7_V { Z , true } ) . n8_7
+let kX = Il_7_V { Z , true } . n8_7
 let pnk = void [ true , 064 , t_ { false } ]

@@ -1,6 +1,6 @@
 fn w8 ( qM [ M30 ] : float ) : float {
 let q_421_ = false
-let O_0 [ LhS_v , EU , E_546 ] = [ ( false ) , ( true ) , false , P , S ]
+let O_0 [ LhS_v , EU , E_546 ] = [ false , true , false , P , S ]
 assert 9529154. , "$59__86_{"
 assert 242210891 [ s , false , void , false , false ] [ true , 482 , false , X . m ] , "l9"
 return u_irE3 ( void )
@@ -11,10 +11,10 @@ let w6_a6 = true
 return [ X . n , void ]
 }
 fn Wi_5_2 ( ) : int {
-let x7rw_6 [ p_ ] = ( false )
-return [ void , ( true ) ]
+let x7rw_6 [ p_ ] = false
+return [ void , true ]
 let y92 [ S_i_i5 , K4 , q71_4_ , L ] = C__
-return ( k___bl )
+return k___bl
 return 754.0915
 }
 fn b973L ( h_luu [ T_ ] : B_ , Pk9__ : float [ , ] , fR [ fZ , rWk , u38 , w_LN2 , H_s ] : bool ) : int {
@@ -41,13 +41,13 @@ assert t0X_O { V , false , o . v , i , 662414940 } , "- "
 return true
 }
 fn D__ ( B : float , F [ v9H6p0 , H2c__ , Y___76 , Ic9_5_ ] : d , G_ : .363193767 ) : bool {
-assert [ false , 35646 , ( false ) ] , ""
+assert [ false , 35646 , false ] , ""
 return fbh8_ ( z , void , P ) . Q
 assert float , "2"
-return ( true ) . w0LL_M
+return true . w0LL_M
 return false
 return l { Q , false . m }
-let F8_0 = [ ( false ) , 7692485 ]
+let F8_0 = [ false , 7692485 ]
 let qer = false
 return 66.
 }
@@ -55,7 +55,7 @@ fn Y_U ( Dx0 : float [ ] , N [ oY_ , p_G5e_ , r , K6J_9 , WE95 ] : void , JW2y_ 
 let Xb_KO [ g__ ] = Z_ ( 721972193 , false . c , void )
 assert 114567654 , "D_55\_Mj"
 assert S_8 { I } , "8l_X/0-\,_w"
-return ( true )
+return true
 }
 fn D0Pev ( a_750 [ Ut4_s_ ] : void , A8_k07 : t26__ ) : bool {
 assert 22168913 , "_8_"

@@ -1,6 +1,6 @@
 fn  J_(c1Bj6_[T7_9,r8c_S] : float,o14f[r56] : int):void{  
  
-return ( ( true ) )   
+return true
 assert [ false,void ] , "_ff"   
 
 return cGLP7R  

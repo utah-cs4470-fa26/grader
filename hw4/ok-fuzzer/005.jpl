@@ -2,7 +2,7 @@ fn O4h(vg__5 : X01):int{
 return true   
    
 assert true , "*1"//5C~05
-assert ( void ) [ C ] , "_"//_N\n|-_10+H+s0_~M_<`\
+assert void [ C ] , "_"//_N\n|-_10+H+s0_~M_<`\
 } 
 struct   z9_j_   {//
 
@@ -19,11 +19,11 @@ fn CuD_(uK : float [  ]):float{//
 assert H ( false,void,false,false ) , "H3"
 let V[F,L,V] = I5A ( S,false )//66_
    
-let Ytk_[O,I,G] = ( void ) [ true ]
-let ge[b,D,J] = ( true ) 
+let Ytk_[O,I,G] = void [ true ]
+let ge[b,D,J] = true
 //B0U})
 return false
-assert ( ( T ) ) , "b3A`8_"
+assert T , "b3A`8_"
 
 return void   
    
@@ -38,7 +38,7 @@ assert Io_8__ ( true ) , "2I_'"//17_1]_70Y
 //1\1
 return true
 
-let p73L8I = ( void . T ) 
+let p73L8I = void . T
   
 assert 8106837828. , "92_g%/"  
 let k[i,U] = 318312
@@ -62,7 +62,7 @@ F_f_ : bool
 
 }
 fn K_(D7N : cO3,Z_w_ : bool):int{   
-assert ( void . z ) , "zl_C4p^68"  
+assert void . z , "zl_C4p^68"  
 return L . b . J_kN//q_c89[2;__n3z064mX|__)
   
 let o0__2[i] = true
@@ -81,7 +81,7 @@ return false
 let y6 = c0_ ( false,W,true,true,y )//#
 return Nep66N { false } 
 
-let l9[p,S,E,M] = ( S ) [ false ]//92
+let l9[p,S,E,M] = S [ false ]//92
 //_E_96
 assert false , "-"   
 

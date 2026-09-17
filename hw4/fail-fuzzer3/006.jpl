@@ -7,24 +7,24 @@ let j43 = true
 fn i_36_ ( VH354 [ ex6__ , u6H3 ] : void [ , ] ) : g__ {
 assert j6_H { 991787109 , 9729123312 } , "9ss6"
 assert false , "31"
-assert ( K ) [ true , D , void , false ] [ void . o , ( false ) , true ] , "_7U[___<"
+assert K [ true , D , void , false ] [ void . o , false , true ] , "_7U[___<"
 }
 fn oxd ( ) : bool {
 assert m52__ { l } , "9_y"
 assert true , ""
 return
-assert n_M_84 { true , true , true , ( true ) , false . y } , "0z(3w"
+assert n_M_84 { true , true , true , true , false . y } , "0z(3w"
 return void
 return true
-assert [ C , void , t , ( true ) , void ] , "_6._e"
+assert [ C , void , t , true , void ] , "_6._e"
 assert 9771 , "_$"
 assert true , "eH*8<2XZ;"
 }
 fn gK_ ( ) : bool [ , ] {
-let I_U_F6 = 7622973 [ void , true , void ] [ 67433 , false , ( false ) , M , void ]
+let I_U_F6 = 7622973 [ void , true , void ] [ 67433 , false , false , M , void ]
 return gaU_2o { false }
 assert M25 { false } , "c3_"
-let U_x = ( void )
+let U_x = void
 let F2017o = y ( true . a , true . b )
 assert void , "5uVU7_0__"
 let j = 4837
@@ -39,7 +39,7 @@ assert dAfP , "=_B"
 }
 fn tR ( S91Y [ s_Gt_ , XB7fq ] : int ) : void {
 assert .58773688 , "32+_T)v=G"
-let V__ [ BGi ] = V_v_4 { C , ( true ) , false }
+let V__ [ BGi ] = V_v_4 { C , true , false }
 return 2
 let J39G_ = false
 assert true , "4&_I__p[0"

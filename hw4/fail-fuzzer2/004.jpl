@@ -17,7 +17,7 @@ vDh__ : void
 i4GYf0 : float
 B : float
 }
-let u_ = ( [ true , void , void , false , void ] ) . x
+let u_ = [ true , void , void , false , void ] . x
 let T_ [ mowsw0 , c_12 , C__5_ , m3__ ] = BRr_C_
 struct j_50 {
 U1_85 : w7

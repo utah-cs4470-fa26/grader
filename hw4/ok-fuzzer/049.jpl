@@ -22,7 +22,7 @@ gk : float
 fn i__():void{//2c_a_x_V6_4o_f_@
 
 assert [ false,K ] , ""//=_#_'_R_981Lk0a_
-let I_Q_[j] = ( void )//aq
+let I_Q_[j] = void //aq
 let jT[u,e,p,n,y] = [ void ]//
  
 }//J~1.

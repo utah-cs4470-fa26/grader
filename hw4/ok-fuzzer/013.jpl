@@ -28,11 +28,11 @@ Ox0_n3 : float//_3?q
   
 fn g___():bool{
 return 40
-let Y_5_ = ( Y ) . v33_  
+let Y_5_ = Y . v33_  
 
-let aQ_[B,z,U,z] = ( y ) [ true,G ] 
+let aQ_[B,z,U,z] = y [ true,G ] 
 
-let E0[o,G,p,B,o] = ( ( false ) )
+let E0[o,G,p,B,o] = false
 assert void , "3`"   
 //L1#v_4I_tj2__e_5+`s_
 return F54a0_ { false,true }//ly_?|)02391}9

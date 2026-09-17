@@ -15,7 +15,7 @@ let N4Q8 = Q38 ( true )
 let L = L6___ { false }//_9_75
 return false   
   
-let p__ = ( true . P )
+let p__ = true . P
  
 assert t [ true,void ] , "_B*"
 // m0_/qh/}_3
@@ -25,12 +25,12 @@ assert x_4 { D,true } , "]1$j"//;
 fn E(pw : float):bool [ ,, ]{//____1)!58@_6
    
 let R[y,G] = void  
-let a3 = ( false ) . F_s_
+let a3 = false . F_s_
 
 return [ false,void ]//64_@6 4
 assert void , "z8m926"//
 //_<qN\W Zi#?@=+<#1E_7
-return ( ( false ) )   
+return false
 let U1_y1[c,W,u] = d { Q,Q }   
 
 let a1_ = false . S [ true ]

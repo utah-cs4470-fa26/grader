@@ -2,7 +2,7 @@ fn jc ( T8_g [ Y1I14 , A , Z_ , l__ ] : float , v__j5_ [ p14r , yzk ] : f_8uF_ ,
 assert true , "20"
 assert v ( false , r ) . R , "5;_805Q"
 return .098120867
-return ( S__ { void , void } )
+return S__ { void , void }
 assert true , "T!_8`k_"
 assert IV { R , false } . L_ , "4"
 let z__ [ q2__6 , Zg , C272_ ] = void . W____4 [ Q , s , true . R , true . l ]
@@ -14,11 +14,11 @@ let Q_ [ z5__7_ , P44 ] = v_2SX
 }
 fn N0825 ( M : q ) : bool {
 let g07 = DZ ( void , false , ( false ) , void )
-assert 661 [ 105753446 , ( void ) , 1 ] , "+"
+assert 661 [ 105753446 , void , 1 ] , "+"
 let RW_pf_ [ P_yz_ , Ec__ , T_S46 ] = WC
 let f4 [ Nk_7 ] = void . j5_a . FX_
 assert [ 8 , 4278 , y ] , "\OE"
-let AD0 = ( [ false , false ] )
+let AD0 = [ false , false ]
 let j6_54 = .88457975
 let p = O_N_8_ ( M ) [ false , H . g ]
 }
@@ -36,9 +36,9 @@ let X_1oV = k0 [ true . M , q , false , void ]
 }
 fn Er5 ( Fzk_7y [ Bm55 , O1 , j , u50_ ] : float , R : float ) : void {
 assert false , "y)9i8"
-return ( true )
+return true
 return true . HF8
-return ( [ void , Y , void ] )
+return [ void , Y , void ]
 }
 fn P ( C [ TN , JM , y1 , Tf9ao , u ] : Y8__ , lx16_ : V121 , qDJZG : void ) : bool {
 let DP_e = true
@@ -46,9 +46,9 @@ return Q251m_ ( x , Z )
 }
 fn j ( z [ rJ ] : void , C2l_ : void , O_Q__ : y_f_I0 ) : wa_ {
 let I8 [ K2 , UfFT_ , K , pH ] = B9A_
-return ( false [ void , false , true , false , true ] )
-return ( void )
-return ( true ) . A9E . c39
+return false [ void , false , true , false , true ]
+return void
+return true . A9E . c39
 let h_4620 = [ void , 8125 , void . N ]
 assert void , "Z_"
 return d
@@ -64,9 +64,9 @@ let J5_80 [ i_6_k_ ] = h_l_2 ( void . S , false )
 return void
 assert fZE8c_ { void . U , true , void , U . n , 0179 } , "$_y"
 let y9hq = 7 [ void , 69353 , c . x ]
-let J6a__ [ PQ , b__ , Y_F7_2 , P_8 ] = rD_ { ( void ) , 0600460 , 5109210 , false , 35150565 }
+let J6a__ [ PQ , b__ , Y_F7_2 , P_8 ] = rD_ { void , 0600460 , 5109210 , false , 35150565 }
 assert y_6 ( 76215596 , 63447 , false , t , false . a ) , "Z$w1,_"
 }
 fn Z_9_5 ( s9_W : float , S : float ) : s_ {
-assert [ 2562100 , ( void ) , 189431 , Y , 62 ] , "0f1_}2[964B"
+assert [ 2562100 , void , 189431 , Y , 62 ] , "0f1_}2[964B"
 }

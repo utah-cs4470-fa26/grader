@@ -13,14 +13,14 @@ D_7 : int//_&<_\!_6Y_3'y_4
  
 fn L_5(U_m[C___t_,v,W_Z,hx_3] : void,s_jMj[QJ__,Vw_0Nz,NQ4H_] : int):int{  
 
-assert ( false ) , "+__?D_7Xu"  
+assert false , "+__?D_7Xu"  
 //__[4_'57_^ 
 assert void , "_!B4,5pB_?"//i3_!|ryL2_@_0
 assert void [ false ] , "?"//#
 let S[D,W,X,p,B] = b58X9  
 //_
 let HX8[K,p,a,y,K] = true [ true,true,void,void ]  
-return ( true . y ) 
+return true . y
    
 return aT__ ( void )//x_m_^
 let m91[G,T,Z,w] = bJA558 { false,void }//=0=7_M8@9
@@ -39,7 +39,7 @@ let Vc07 = r_99 { void }
 
 return false//_7__21_6S
    
-let Z58__ = ( true )   
+let Z58__ = true
 }//4
 //644_5o_9_Bd\:
 struct N__3  {  
@@ -64,10 +64,10 @@ let QB1[H,r] = [ A ]
 //4&_"M771133_!36n
 return void//c__{_f}D2 \_
  
-assert ( X ) , "-:=.i"
+assert X , "-:=.i"
 return nF { void,false } 
  
-let Y_[P,D,N,j,q] = ( false )//3Z*`o._
+let Y_[P,D,N,j,q] = false //3Z*`o._
 
 } 
  

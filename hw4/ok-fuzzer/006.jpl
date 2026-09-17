@@ -8,9 +8,9 @@ return void
 assert false , "998r"//_[_8a_l92LE5'8m5
 
 assert 587507 , "$Xp80F%\__"//
-return ( ( false ) )
+return false
  
-assert ( false ) , "4_8942" 
+assert false , "4_8942" 
 //22,>3$t\(4|_t_Of6X@0
 assert false , "U3"
 }   
@@ -26,12 +26,12 @@ L_Q_ : float//e1__
 }  
 
 fn  InXk5g(Qh__u_ : void,R_9 : float):gU{//Ke__5A_5_:__(L2;Q
-return ( true . o )   
+return true . o
 let k4Ae5[y,z,a] = .401//1r`3_]__@[!_78c0^;
 //\e=gy_9j0
 assert 2646737290 [ true,false,Q ] , "t_!"
 
-assert ( 824132 ) , "%" 
+assert 824132 , "%" 
 //_e4*]TJ_3Bm]32
 return void
 //_a}}4_/_*`_G_\$32

@@ -8,7 +8,7 @@ let e_58[B,F] = void//s<%__7
   
 assert d_78__ ( void ) , "SF@_9f,s"
 return g_ ( void,f )
-assert ( ( true ) ) , "[_"
+assert true , "[_"
 }//527J_45M_9____
 
 fn   Q(v_G[cL,QPsOj] : float):float{ 
@@ -27,7 +27,7 @@ assert false , "_"//<_b,kP3(u_\
 fn  G(I_ : float,A_2B_[j0_5,D_z] : int,K[i0__,mh,iU4Q,z7_8_,b] : int [  ]):float{
 assert uD ( true,false ) , "__6"
   
-return ( g . v )  
+return g . v
   
 let A = u54C ( void )   
 } 

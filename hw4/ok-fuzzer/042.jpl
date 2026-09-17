@@ -10,7 +10,7 @@ return L . W//6}wSQp4[___j{/
  
 return [ void ]   
   
-return ( g ) [ false,false,false ]   
+return g [ false,false,false ]   
 //]
 }
 
@@ -37,11 +37,11 @@ fn   C__():void{
 return r_J2__ { true,false,o,true }//-3fVa_26_6h
 assert P_44Vq , ".9(8%\__w_"//7_#_X__~___t
 assert false . i . IW , "7_,i"//'9_[E5;88pp`&_p_)_)5
-assert ( true ) [ true,false,void,void ] , "-_4_8"
+assert true [ true,false,void,void ] , "-_4_8"
 }//6h9F_J1g_
 
 fn m(n5_8_[ytDE_] : bool,XP_o_ : m9,a_x9_[Dbk__,pTM] : int):bool{  
-return ( true ) 
+return true
 
 return true . q [ true,N,true,true ]
 assert Y___d ( true,true,W ) , "0`S_i2L()$"//_N

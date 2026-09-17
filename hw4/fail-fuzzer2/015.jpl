@@ -9,7 +9,7 @@ wj : bool
 QA___ : bool
 }
 let P_a_7 = true { H__9O_
-let Cac_ = ( void . I__qCN )
+let Cac_ = void . I__qCN
 let b_47 [ Pd2tV ] = void
 struct s {
 i_ : void [ , , ]

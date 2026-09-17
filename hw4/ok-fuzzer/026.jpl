@@ -1,6 +1,6 @@
 fn  ll4(lc2ae[C4by34] : bool,v[G___,i] : d__5):float{   
 let Bc[U,Z,M,a] = 440  
-assert ( p ) , "~*_10 _9;"//{F*_X
+assert p , "~*_10 _9;"//{F*_X
 let K_79_[M,I,C,s,s] = 365  
 return false
 //_P3_z&t,f^_\_;_6@_
@@ -21,7 +21,7 @@ return FFL ( void,void,o )
 //*VW2(Ly94_wA_Y_S_3_7
 fn   c_0_W7(V3c[p] : bool):float{
 return E5___2//_),]w_\_:0}
-assert ( void ) , ">_9_o_"  
+assert void , ">_9_o_"  
 return [ e,false ]
 //7\4'}
 return r . D [ true ]

@@ -9,13 +9,13 @@ return true
 return 3   
 //
 return false  
-let c_ = ( e . w )//_0[7St_810?74~80-\
+let c_ = e . w //_0[7St_810?74~80-\
 let R[b] = true
 let j2m8[Z,z,O] = true 
 }//3@K__H7___KGq0
 fn  A_l4_e(U_k24u : int,ro__ : bool,SNw : int):y76T_{
 return 3//_8_8_f9D}2
-assert ( void ) , ":a6"
+assert void , ":a6"
  
 }//.D_G__t_ __5_!7
 //.m
@@ -30,7 +30,7 @@ return .803400281
 }   
 
 fn  W_(M[D_,l4,O] : J [  ] [ , ],U : float [ ,,, ],v_8iP : Qj9bW):int{//V_]*
-assert ( false ) , ""
+assert false , ""
 assert [ p ] , "\=_h_e"//54sW&O_.MmzZq___31_ZP
 //c __,O)481.=_
 return true   
@@ -42,7 +42,7 @@ let U3__2[F,h,L,F] = void
 let p7k_[M,H,q,s,h] = f5_hX { false }
 return y_Q { true,void,void,l,void }  
 assert false , "_U__<_x_;(L"
-return ( void ) . l3C_  
+return void . l3C_  
    
 }
 
@@ -61,7 +61,7 @@ let ewG = true
 assert void , "_@_\6N"
 //#65__ws80$yF;
 return f . f5   
-assert ( false ) , "v>!1Xo2"
+assert false , "v>!1Xo2"
 assert r3_MB , ""//_[5_h_5(g1k@U"2
 let c__R_[g,Q,F] = uX9 ( void,false,void,false,void )  
 let vx93O = true//a<Xy2{=(\g[)v`mH~05
@@ -80,7 +80,7 @@ let GRqwJ[S,S] = false . t__
 return Z { false }
 assert 8597.873475 , "33_A|"
  
-return ( false )  
+return false
 
 return [ void,void,false ]//0_4_z5_]9__d_0Z#-90
    

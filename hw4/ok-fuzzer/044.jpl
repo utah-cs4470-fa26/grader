@@ -23,7 +23,7 @@ Pma__ : bool
 }   
 fn  A___3Y(K3_4j : c_2he):void{
 
-return ( void . b )
+return void . b
    
 assert true [ void ] , "P;W7"
 
