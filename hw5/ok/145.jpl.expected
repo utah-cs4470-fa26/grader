@@ -1,0 +1,1 @@
+(ShowCmd (BinopExpr (IntExpr 1) + (ArrayLoopExpr i (IntExpr 3) (VarExpr a))))
