@@ -1,59 +1,52 @@
-show (if (if true then false else (false || true)) then false else (if (! ((887 + 461) > (656 * 921))) then ((if (! (! false)) then (- (- 75)) else ((- 685) + (- 353))) >= (- (925 - 218))) else (true && (! (76.49 < (- 43.18))))))
+show (if true then rgba {[(- 68.97), 58.49][(- 666)], 8.38, 39.56, (- 71.91)} else [0.37][(if true then (867 % 976) else (- 95)), ((576 - 656) % (- 437))][929, ((- (147 + 51)) + 992)]).g
 
 struct a {
-a : float
+a : int
+b : float[,][,][,][]
 }
-show ((if (! (! (! false))) then (if (((- 34.14) < 92.54) && (if true then true else true)) then (- (- 976)) else (- ((- 437) * (- 459)))) else (470 / (- 74))) - (270 + (- (((156 * 347) % 173) + (- (- 518))))))
+show rgba {86.94, (if ((73.37 <= (- 44.19)) == (true == (if false then true else false))) then 89.09 else ((- 99.08) / (- 95.3))), ((if (! true) then (- 59.07) else (if false then 0.57 else 33.87)) * (- (- (22.7 - 7.34)))), (- (- (- (if true then 53.94 else 29.08))))}.b
 
-show (! ((31.68 > (- a {76.03}.a)) != (((if false then 418 else (890 % 725)) != (359 * 476)) || (921 == (- (- 198))))))
+show (- (if true then 72.78 else (- (47.37 * (- (- 31.06))))))
 
 struct b {
-a : rgba
-b : rgba
-}
-struct c {
-a : void
-b : a
-}
-struct d {
 a : int
 b : int
-c : int
+c : rgba
 }
-show (((- 475) + (if (! (if (! false) then true else false)) then ((if (! false) then (- 831) else (- 343)) + d {795, 728, 828}.b) else 708)) < 663)
+show (- (- (- 52.48)))
 
-struct e {
-a : void
-b : rgba
-c : c
+show void
+
+show (! (51.57.b <= (- (120 - 53))))
+
+struct c {
+a : b[]
+b : void
 }
-struct f {
-a : c
-b : rgba
+struct d {
+a : void[,,]
+b : a
 c : a
 }
-struct g {
-a : bool
-b : c
+show ((- 514[16, 83, (- 685)][825, 557]) > 16)
+
+show (! (982 == (if ((! false) || (22.83 > (84.57 - 74.75))) then (- 521) else false)))
+
+show ((972 / 292) < 669)[(965 % (if (997 <= 232) then 24 else 854)), (570 - 99)][(- ((- 319) + ((- 447) + 876))), (- (- 71))].a
+
+struct e {
+a : a
+b : bool
+c : bool
 }
-struct h {
-a : e
-b : rgba[,]
-c : void
-}
-show [((if false then d {725, 62, 585}.a else (352 * 915)) % (- (- (55 / 567)))), (- (if true then (776 + 458) else (if (! false) then 39 else 885)))][(if ((! true) && (if (20.45 <= 82.02) then (true && (327 > 121)) else (84.01 != 6.49))) then ((- (if (3.11 <= 63.99) then 481 else (59 + 850))) % 257) else (- 47.88[565, (- 414), 227].b))]
+show (! (! ((! (if 35.61 then true else false)) == ((92.62 - 92.73) > 70.12))))
 
-show (if false then (if (! true) then [d {295, 46, 910}.a, (- 971)] else [122])[d {(true == false), 468, (- 366)}.c] else (if (! false) then ((- (- 95)) + (- (if (55.55 < 64.45) then 642 else 323))) else 155))
+show c {((! false) || (135 > 492)).a, void}.a
 
-struct i {
-a : bool
-b : c
-}
-show (! [(! false), (if (! false) then false else ((if true then 334 else 67) <= 654))][403])
-
-show 409
-
-struct j {
-a : c
+struct f {
+a : float
 b : int
+}
+struct g {
+a : b
 }

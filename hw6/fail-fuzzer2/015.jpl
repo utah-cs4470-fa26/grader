@@ -1,57 +1,58 @@
-show 963
-
-show [819, (- (- (if true then 421 else (if true then 968 else 288))))][(if ((if (970 != (374 * 670)) then 31.67 else (! false)) < (if true then (if (544 <= 569) then (- 54.9) else 97.2) else 26.18)) then (- (if (true && (true || true)) then (- (- 679)) else (- 385))) else (if ((882 + (if true then 791 else 881)) != ((- 268) - (- 241))) then 274 else (- (863 - (- 608)))))]
-
-show ((((- 192) < ((867 / (if false then 657 else 537)) - (- false))) || (if (false && (! (! false))) then (if false then (! true) else ((! false) || false)) else (false && ((496 + 738) < 919)))) == (! ((99.72 != 67.86) != (if ((if false then true else true) || (! false)) then false else (222 > 984)))))
-
-show ([(70.32 + 38.48), 1.58, (- 30.83)][((- (if true then 615 else 609)) + (- (if false then 157 else 677)))] != 52.89)
-
 struct a {
-a : rgba
-b : void
+a : float
+b : int
 c : float
 }
-show ((((((- 881) - 808) + (- 495)) % (560 / (402 - 779))) * (if 874[(- 49), (if (781 == 545) then 194 else (928 - 341)), (- 462)] then (if true then (- 223) else (775 % 172)) else (if false then 259 else 604))) / (720 % [(987 % (- 81))][702]))
-
-show 88.13
-
-show 838
+show 14.11
 
 struct b {
-a : int
-}
-struct c {
-a : float
-}
-struct d {
-a : rgba
-b : a
+a : a
+b : float
 c : a
 }
-struct e {
-a : bool
-b : b
-c : d
+show (371 * 23)
+
+struct c {
+a : a
+b : float
 }
-show (- (- ((if (! (35.28 < 10.67)) then (- 864) else 331) % (((- 886) % (if true then 911 else 905)) + 97))))
+show 75.9
+
+struct d {
+a : int
+b : a
+}
+show d {487, (if false then 20.17 else true)[348.b, 440, 88].c}.a
+
+show (if true then [true, (if ((! true) != false) then (! (! true)) else true)] else [[true]][(- (- (- 71)))])[(- 123)]
+
+struct e {
+a : d
+}
+show ([[305, 736], [118, 9.61], (if (false && true) then [26] else [921, 64])][383][void.b] > void.a.b.b)
+
+show b {d {694, c {void, 33.04}.a}.b, 60.11, (if false then ((! false) || (if false then false else true)).c else a {11.08, 749, (- 70.11)})}
 
 struct f {
-a : c
+a : d
+b : rgba
+c : bool
 }
 struct g {
-a : e
-b : e
-c : e[,]
+a : rgba
+b : d
 }
 struct h {
-a : c
-b : float[,,]
+a : b
 }
 struct i {
-a : b
-b : void
+a : float[,][]
+b : d
 }
 struct j {
 a : int
-b : e
+}
+struct k {
+a : h
+b : int
 }

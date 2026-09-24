@@ -1,51 +1,60 @@
-show (! (true && ((if (! (! false)) then false else true) == true)))
+show ((if (((- 89.48) + 87.98) <= (if true then 43.16 else (if false then 48.21 else 48.71))) then (if (! (! false)) then ((62.33 * 12.03) + (if (false || true) then 83.09 else 40.62)) else (- 19.66)) else 62.05) * 21.82)
 
-show (((- 160) * (if ((! true) == (872 == 831)) then (if 901 then 258 else (38 % 601)) else (- [392, 332][287]))) >= (- (if (((827 / 446) >= (505 % 498)) != (! false)) then (- 798) else (if (! (false && false)) then (- 908) else [153][(- 758)]))))
+show true
 
 struct a {
-a : rgba
-b : rgba
-}
-struct b {
 a : bool
-b : void
-c : float
-}
-show (! ((- (- 60.32)) >= [(- 58.74), 61.23, [17.28, 88.58][523]][(- 314)]))
-
-show [76.27][(- (742 + false)), (- 263)][(if (! (18.91 <= (- 87.71))) then 174 else (((- 376) * (- 21)) % (788 / (- 815)))), (890 / (644 / 745))][(- (- (if true then (559 % 464) else 579))), (if false.a then [[661]][(515 % 65)] else (if (! true) then [431, 324, (- 638)] else (if false then [982] else [167])))[(987 % (- (- 339)))], 153]
-
-show (- 69.08)
-
-show 697
-
-struct c {
-a : bool
-b : b
+b : int
 c : bool
 }
-struct d {
-a : float
-b : void
+struct b {
+a : rgba
+b : bool
+c : int
 }
+struct c {
+a : float
+}
+show (a {(! true), (if (! (604 > 499)) then 19 else 330), a {(29.65 >= 16.77), 782, false}.c}.b > a {[true][360], true[535, (374 + 941)], (true || true)}.b)
+
+struct d {
+a : b
+b : c
+}
+show (! ((- 74.69) <= (- c {8.51}.a)))
+
 struct e {
 a : float
+b : rgba
 }
-show 192
-
-show (if true then (- (- 75.33)) else (- 48.18))[(- 864), 973].c
-
 struct f {
-a : void
-b : b
+a : a
+b : void
+c : void
 }
-show 441
-
-show false[173, 181, 403[(- (- 842))]].c
+show f {a {((- 42.5) <= (- 79.19)), 873, (false || false)}, void, void}.a
 
 struct g {
 a : int
-b : f
+b : void[,,]
+c : int
 }
-show ((- (if (if ((- 243) < 763) then false else ((363 + 489) < 920)) then 701 else (518 / 180))) + (238 * (112 / (629 * (118 + 930)))))
+struct h {
+a : e
+b : c
+c : float
+}
+struct i {
+a : rgba
+b : g
+}
+show 961
+
+show [(753 != 303), ((538 <= (- 752)) || (if false then false else (if (! false) then false else true))), true][82.42.a.b]
+
+struct j {
+a : c
+b : bool
+}
+show (46.05 - (((39.57 - 67.02) / void.b.a) % 7.63))
 

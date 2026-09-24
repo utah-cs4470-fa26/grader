@@ -1,49 +1,53 @@
+show (! (! false))
+
 struct a {
-a : float
+a : int
+b : rgba
+c : void[,]
 }
 struct b {
-a : bool
-b : float
+a : a
 }
-show b {true, 57.13}.b
+show rgba {rgba {((- 63.81) / (- 6.75)), 855, (32.03 * 43.16), (- 36.19)}.a, (if ((13.25 - (- 22.22)) == (- (- 46.35))) then (- (- 658)) else 37.07), (if false then 18.94 else 2.73), ((63.76 % (- 54.58)) - (- 79.35))}.g
 
 struct c {
-a : float
+a : int
 }
-show true
-
-show c {[42.83[(- 847)]][(if ((true || true) || true) then ((- 302) % (- 607)) else (if true then (if true then 383 else 936) else 74))].a}
-
-show a {(if ((- (- 60.03)) != (if (! true) then (- 25.48) else 67.87)) then true[(- (- 667))] else true).g}
-
-show a {(- 74.82)}.a
-
-show a {58.71}
-
 struct d {
-a : int[,,]
+a : void
+b : float
 }
-show a {((! true).a + 84.12)}.a
+show (282 + (- (((- 928) * 766) + 559)))
 
 struct e {
-a : rgba
-b : a
+a : bool
 }
-show ((! (((- 700) % (if false then 889 else 168)) == (343 * (if false then (- 705) else 425)))) != (if (20.94 >= (50.88 - 46.66)) then (b {(! true), 21.39}.a && ((false && true) || [true, true][(- 623)])) else ((if (true || (24.83 > 19.56)) then ((- 16.43) <= (- 19.0)) else true) || (71 < (- 650)))))
+show 11
 
 struct f {
-a : a
+a : b
 b : e
 c : rgba
 }
-show 74.25
-
 struct g {
-a : rgba
-b : bool
-c : bool
+a : bool
+b : e
 }
-show false[336, (644 / 276), (- 58)][(- (490 % (101 * 208))), 74].c.a
+struct h {
+a : f
+}
+show a {(- (if true then 253 else (if (20.77 > 7.32) then c {767} else c {31}).a)), 695.b, (if (- 325) then e {(! false)} else e {true}).a}
 
-show true.a
+struct i {
+a : a
+b : h
+c : rgba
+}
+show g {((- (- 93)) <= [538, (337 / 392)][713]), e {false.a}}.a
+
+show (if ((if (37.64 > (- 100.0)) then (595 + c {158}.a) else ((806 * (- 374)) / (157 + 537))) > ((- c {108}.a) * 104)) then [void, void] else [d {d {void, 84.33}.a, 58.76}.a])
+
+show 453
+
+show ((if (((- 24.05) < (- 81.58)) && (false != (! (true || false)))) then (if ((106 == 140) == true) then c {234} else c {607}).a else 510) >= [(c {257}.a % (- 438))][(755 + c {193}.a)])
 

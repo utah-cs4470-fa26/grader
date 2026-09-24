@@ -1,52 +1,53 @@
-show (- (if (if (126 == (if (63 < 575) then 171 else 847)) then ((! true) != false) else (if (! true) then ((255 / 945) <= 281) else ((90.64 >= 68.34) && (true == false)))) then (- [397][((if false then 892 else 547) % 276)]) else (if [true][928] then (if true then (if (0.08 <= 11.96) then 82 else 850) else 439) else 314)))
-
 struct a {
-a : bool
-b : float
+a : float[,,]
 }
-show ((476 % 175) / ((- 403) % (if (if false then (249 <= 239) else ((- 40) != 619)) then ((if true then 650 else (- 567)) + (- (- 646))) else (if a {true, 58.6}.a then 51 else ((- 759) - 688)))))
-
-show (if false then 2.16 else [71.75, 28.52][837])
-
 struct b {
-a : float
+a : bool
 }
-show [(if (! (! (! false))) then b {(95.72 % 82.0)} else b {66.07}).a, (if false then (- [(- 95.38), 56.39][(- (691 - 711))]) else 71.19)]
-
-show 822
+show rgba {64.46, (if false then (if (if (65.9 >= 17.09) then (- 530) else (if (14.45 < 4.73) then (75.87 <= 97.7) else (if false then true else true))) then (if (! false) then 58.19 else (0.2 / (if false then 26.4 else 53.7))) else (- (- 9.68))) else (- 51.28)), 85.36, 11.63}
 
 struct c {
-a : bool[,]
+a : void
 }
-show a {false, (- 62.83)}.a
-
-show ((- (if (! (967 != 317)) then b {(- 46.32)}.a else 58.52)) != (if false then (- 260) else 815)[(- (- (565 % 22)))][779, ((- (- 456)) / 842), (- (if ((14 > 490) || true) then 689 else 260))])
-
-show b {(- b {84.7}.a)}.a
-
 struct d {
 a : bool
 }
-show [[((if (! false) then ((- 550) + (- 80)) else 786) <= (- (if true then 561 else (- 826)))), (! ((- (- 974)) < ((if true then 452 else 149) % (- 541))))], [(a {(! true), 40.12}.a != ((- 52.36) != (- 77.82)))], [829][(- (if (247 >= 54) then 143 else (- (787 + 21))))]]
+show a {620.a}.a[(- (if true then (603 * 933) else (if ((31.41 != 28.83) && (! true)) then (- 111) else (287 - (920 + 33))))), (if b {b {false}.a}.a then (- (- 455)) else 937), (if true then (if [true][(false - 908)] then (- (958 % 486)) else 24) else (if (- (- 733)) then 84 else (((- 256) % (960 / 305)) - 86)))]
 
 struct e {
-a : int[]
-b : int
+a : rgba[,,]
+b : d
 }
-show a {a {(! (918 == 460)), (- 58.0)}.a, [b {43.93}][99].a}.b
+show void
+
+show 65.08
 
 struct f {
-a : rgba
-b : rgba
-c : e
+a : b
 }
 struct g {
-a : void
-b : b
-c : void
+a : a
 }
 struct h {
+a : g[,]
+b : c
+}
+struct i {
+a : a
+b : b
+}
+show b {false}
+
+struct j {
+a : int
+}
+show void[862, 72.a][998].a[(if false then j {136} else j {885}).a, 940]
+
+struct k {
 a : f
-b : f
-c : g
+b : int
+c : void
+}
+struct l {
+a : rgba
 }

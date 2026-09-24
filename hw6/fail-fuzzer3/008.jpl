@@ -1,59 +1,52 @@
-show rgba {(! (! false)).a, 56.9, true[(850 - (- 639)), [628, 849][(- 336)], (((- 494) / 707) * (- (- 126)))], (if (if (! (false && false)) then true else 29.3) then (66.96 + (- 78.46)) else (((14.65 % 61.07) / 98.92) * (- 27.06)))}.g
-
-show 46.05
-
-show 86.02
-
-show 212
+show 402
 
 struct a {
-a : int
-}
-struct b {
-a : float
-b : void[,,]
-c : int[,]
-}
-struct c {
-a : int
-b : void
-c : bool
-}
-struct d {
-a : a
-}
-struct e {
-a : float
-}
-struct f {
-a : void
-b : void
-}
-struct g {
-a : c
-b : c
-}
-struct h {
-a : g
-b : f
-c : rgba
-}
-struct i {
-a : void[,]
-b : b
+a : bool
+b : float
 }
 show true
 
-show rgba {e {38.01}.a, (- e {21.48}.a), (- (if (! (185 < 643)) then e {(85.82 + 22.61)} else (if false then e {94.07} else e {66.77})).a), (- e {e {63.1}.a}.a)}
+show a {(if a {(if true then (! true) else false), 85.86}.a then false else ((- (- 89.12)) == (if true then 36.2 else void))), (if ((((false || true) && (504 > 860)) != (729 == 793)) && ((- 94.29) > void.g)) then (- [(- 7.25), (- 76.3)][(- 66)]) else a {void, ((if false then 6.59 else 41.51) + 99.43)}.b)}
 
-struct j {
+show void
+
+show (if a {([true][(- 874)] || ((- 877) <= 607)), (- 14.04)}.a then 50 else [192, (if a {false, 96.29}.a then 948 else void)][(- 550)])
+
+struct b {
+a : rgba
+b : int
+c : rgba
+}
+struct c {
+a : bool
+}
+show (- (if (! (! true)) then (if true then a {(! true), true} else a {(! true), 6.82}) else (133 <= (- 30))).b)
+
+struct d {
+a : float
+b : b
+c : int
+}
+struct e {
+a : rgba
+}
+show rgba {true.b, a {true, (- 83.57)}.b, rgba {(a {true, 76.59}.b + 5.36), 24.67, (- (85.21 - (- 17.43))), 91.c.a}.g, (if (6.28 < (- (- (- 76.15)))) then 60.31 else 16.77)}
+
+show 32.46
+
+struct f {
 a : e
 }
-struct k {
-a : f
-b : e
-}
-struct l {
+show c {c {(! (139 == 246))}.a}.a
+
+show b {rgba {(a {(! true), true}.b / (if true then (20.03 + 21.0) else [91.98, 74.97][200])), ([(92.97 - 35.04), 0.33][520] % 85.93), a {void.a, rgba {35.93, 70.81, 41.45, 97.67}.g}.b, 91.25}, (- (- (if false then 880 else (if false then 720 else (278 / 780))))), rgba {45.89, 30.49, (- 990), (if false then (((28.9 + 37.96) / 7.84) / (- 9.67)) else 87.33)}}
+
+struct g {
 a : float
-b : a
+b : rgba
+}
+struct h {
+a : float[]
+b : float
+c : rgba
 }

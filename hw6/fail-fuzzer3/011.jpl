@@ -1,49 +1,51 @@
-show 173
-
 struct a {
 a : void
-b : rgba
-c : float
+b : bool[][,,]
 }
+show 293
+
 struct b {
-a : rgba
-b : bool
+a : float
+b : float[,,]
+c : a[,,]
 }
-show 674[740, 4][(- (497 % 292)), 278, 845].b.b
+show rgba {(if ((((13 == 266) != (! false)) && ((- 131) > (- 576))) || (! ((- 952) >= (688 - 307)))) then (- 20.12) else 23.97), false[(- (308 / 483)), (- 238), 560].b[(if ((! false) && ((if true then 894 else 773) > 630)) then [(958 / 405), 70][((- 364) - (- 528))] else (- (- (- 764)))), (- 99), (if (false || (90 > 692)) then 291 else [239][false])], (if false then (93.93 % 57.3) else (if (if (true == (false || true)) then (! true) else (950 >= 598)) then 66.89 else [22.06, 18.47][(- 435)])), ([(- 40.55), (- 96.48), 1.3][(- 798)] + 88.48)}
 
-show (91.03 % (if false then (- (rgba {49.79, 27.58, 9.41, 48.77}.r * ((if true then 83.22 else 42.88) / 19.42))) else 1.24))
-
-show ((927 / 490)[(986 - 938), (- 651)].a.a >= rgba {(! false), (- 27.59), 96.3, 1.03}.r)
+show 95.81
 
 struct c {
+a : int
+}
+struct d {
+a : void
+}
+struct e {
+a : float
+}
+show 55.2
+
+show void
+
+struct f {
 a : b
 }
-show ((555 - [(- 565), (- (- 488))][(- 827)]) - 114)
+show (if ((3 == 283) && [false, true][25]) then c {(- (- 876))} else c {(- (- ((- 477) + 141)))})
 
-show true
+show (! true)
 
-struct d {
-a : c
-}
-show c {b {91.06.a, ((- 46.35) == (- 73.2))}}.a
+show e {c {639}.a.a.a}
 
-show b {[rgba {(- (- 42.99)), (- 11.29), (- 244), 88.36}, 175][692], c {(452 <= 830).a}}
+show e {e {(- 58.73)}.a}.a
 
-struct e {
-a : d
-}
-struct f {
-a : e
-b : e
-}
 struct g {
-a : c
+a : float
 }
-show d {c {b {rgba {36.79, (- 88.35), 63.44, 86.8}, (! true)}}}.a
-
 struct h {
-a : g
-b : float
+a : float
+b : bool
+c : a
 }
-show d {c {b {rgba {11.24, 50.01, (6.12 - 40.19), 85.23}, ((if (448 >= 258) then (- 100) else (- 199)) != (- 252))}}}
-
+struct i {
+a : f
+b : a
+}

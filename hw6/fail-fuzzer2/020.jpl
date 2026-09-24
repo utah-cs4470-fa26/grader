@@ -1,53 +1,53 @@
-show ([313, (if false then (false - 317) else 640), (833 * 904)][(if (330 != 439) then ((621 * (867 - 832)) + (371 + 126)) else (- 229)[(- (- 562)), true[982, (- 132)], (if false then 217 else 341)])] < 397)
-
-show (rgba {85.22, ((- 32.14) * (- 25.56)), (- 2.2), (if (false != (71 >= 119)) then 82.91 else 13.45)}.b < (- 92.73))
-
 struct a {
-a : int[,,]
-b : void[,,]
-c : float[,]
+a : float[]
+b : float
+c : int
 }
 struct b {
-a : bool
-}
-show (if ((35.39 % (- (- (- 57.16)))) > 9.35) then 81.77 else ((- (- 92.14)) / 26[149]))
-
-show ([41.28][(if (if false then (! true) else false) then (451 - (if (! false) then (- 398) else 10)) else (if b {false}.a then 736 else ((- 41) / 627)))] > rgba {((46.87 + (- 41.09)) - (33.03 / 17.0)), 27.44, (if ((190 <= 907) == (! true)) then 86.42 else 75.05), (if (false || true) then (if (! true) then (75.49 / 26.54) else 14.78) else 42.54)}.r)
-
-struct c {
-a : a
-b : a[,]
-}
-show b {(! (if true then b {true}.a else (25.7 <= 98.76)))}
-
-struct d {
-a : int
-b : void
-}
-struct e {
 a : rgba
+}
+struct c {
+a : float
+b : b
+c : a
+}
+struct d {
+a : c
+}
+show rgba {12.1, (if (if (33 < (400 + 735)) then (111 >= 342) else (true || (true || true))) then 72.23 else 55.24), 57.22, 42.17}.a
+
+show ((if (((325 * (- 842)) < 51) || (793 < ((- 46) + (- 36)))) then ((72.29.c % 23) + 504) else 370) != (- ((69 % ((- 717) - 132)) + (- 14))))
+
+show (if (! ((- void.b) != (16.53 + (if (! true) then 84.84 else 13.7)))) then 707 else ((- 748) % (((if (! true) then (- 812) else 671) - (658 / 491)) / 783)))
+
+show d {d {(- 493)[(- 32), (331 % 585)]}.a}
+
+struct e {
+a : d
 }
 struct f {
-a : e
-b : void[,]
-c : void
+a : a
 }
+show e {d {void[163].a}}.a
+
 struct g {
-a : rgba
-b : d
+a : c
+b : f
 }
-show b {(if false then true else true)}.a
-
-show false
-
-show (if true then b {false}.a else (d {209, 351.b}.a > ((- (- 363)) / 637)))
+show ([(! false), (if ((! true) && true) then (! false) else ((501 == 584) || (! false)))][[(- (670 + 457)), 903][((- (- 285)) * (if (! false) then 172 else 991))]] || false)
 
 struct h {
-a : e
+a : g
+b : rgba
 }
 struct i {
-a : e
+a : h
 }
+show void
+
+show (307 % (723 / ((if (! (false && false)) then 731 else (- (if true then 599 else 650))) % (406 / (- 810)))))
+
 struct j {
-a : i
+a : void
+b : g
 }

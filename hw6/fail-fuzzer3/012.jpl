@@ -1,63 +1,54 @@
+show true
+
 struct a {
-a : rgba[,,]
-b : void
-c : int
+a : int
+b : float
+c : rgba
 }
+show a {930, 3.63, (! (12.75 < 70.17))[(- (67.95 - (845 * 576))), 245, (void[785, 817, 359] * 313)]}.c
+
+show rgba {(if (false && (! true)) then [(- (- 65.16))] else false)[(! true)[163, [373, 815][(- 322)]][619, ((- (- 477)) * (- (- 730))), ((590 + 819) * 396)]], ((if false then false else false) || false)[(- 598), (- 824), (- 786)][(737 * (- (if (! false) then 354 else 805))), ([646][401] - (- 881))], a {795, (- 82.71), rgba {48.48, (- 55.55), 44.9, 31.71}}.b, ((- (5.7 / 78.34)) % (if false then 997 else 569).b)}
+
+show (! false)
+
 struct b {
-a : bool
+a : rgba
 }
 struct c {
-a : void
-b : b
+a : b
+b : a
 c : b
 }
-show (rgba {rgba {9.3, (- 97.24), 81.5, 16.69}.g, 12.92, (- [52.09][(- 160)]), (- true)}.g * (if (! (if ((- 77.45) < 39.88) then (! true) else (! (! true)))) then (if (! (! false)) then 2.36 else ((if true then 96.58 else 5.11) - 2.28)) else (706 * 256)[(- (983 + 936)), 442, 617].a))
+show (((377 % (380 + 201)) == 588) != (if ((3.27 % (if false then 76.19 else (77.57 / 81.41))) < 10.63) then (440 != (- (if (547 <= 505) then 732 else 393))) else false))
 
 struct d {
-a : b
-b : bool
+a : rgba
+}
+show [true, false, ((14.51 * (1.54 * 35.62)) != 25.64)]
+
+show ((- (! false)[(545 * 491), (if true then (165 * 204) else (901 + 903))][(- 831), (if (true && (! false)) then 544 else (if false then (- 303) else 317)), (- 697)]) * void[(- 12.13)][477, 625].b)
+
+struct e {
+a : int
+b : rgba
 c : int
 }
-struct e {
-a : b
-b : float
-}
 struct f {
-a : b
-b : c
+a : c
 }
 struct g {
-a : rgba
-b : e
+a : e
 }
-show (- (- 90.64))
-
 struct h {
 a : float
+b : float
 }
-show (- 64.47)
+show (! (491 < (if false then (- (- 816)) else 406)))
 
 struct i {
-a : f
-b : float[,,]
-c : float
+a : bool
+b : h
+c : void
 }
-show 21.39
-
-struct j {
-a : i
-b : f
-c : int[,,]
-}
-show (d {b {(! (! false))}, (b {true}.a && true), (- (- (- 320)))}.c != (if (h {(- 34.03)}.a <= 2.38) then (if true then (- (- 660)) else 585) else (if d {71, (if false then false else true), 248}.b then (- 502) else 26)))
-
-struct k {
-a : int
-b : bool
-}
-struct l {
-a : j
-b : i
-}
-show 83.57
+show 98.56
 
