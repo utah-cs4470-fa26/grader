@@ -1,0 +1,7 @@
+struct foo {
+    a : void
+    b : int
+    c : void[]
+}
+
+show foo { void, 8, [ void, void, void ] }
