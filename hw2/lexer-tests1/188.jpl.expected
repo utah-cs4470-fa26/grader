@@ -1,0 +1,7 @@
+READ 'read'
+IMAGE 'image'
+STRING '""'
+TO 'to'
+VARIABLE 'x'
+NEWLINE
+END_OF_FILE

@@ -1,0 +1,12 @@
+ASSERT 'assert'
+OP '!'
+TRUE 'true'
+OP '=='
+TRUE 'true'
+OP '!='
+OP '!'
+FALSE 'false'
+COMMA ','
+STRING '"wow"'
+NEWLINE
+END_OF_FILE

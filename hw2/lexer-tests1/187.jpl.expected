@@ -1,0 +1,6 @@
+ASSERT 'assert'
+TRUE 'true'
+COMMA ','
+STRING '""'
+NEWLINE
+END_OF_FILE

@@ -1,0 +1,8 @@
+LET 'let'
+VARIABLE 'x'
+EQUALS '='
+INTVAL '23'
+SHOW 'show'
+TRUE 'true'
+NEWLINE
+END_OF_FILE
