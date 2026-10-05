@@ -1,0 +1,61 @@
+show 557
+
+show ((- (if true then (675 + 156) else (((if false then 815 else 471) - (- 372)) - (- (- 887))))) / (- (if (! void) then 518 else (- (if false then 718 else 904)))))
+
+struct a {
+a : int[,,]
+b : void
+c : void
+}
+struct b {
+a : bool
+b : void
+c : a
+}
+struct c {
+a : int
+}
+struct d {
+a : void
+b : rgba
+}
+struct e {
+a : d
+b : b
+}
+struct f {
+a : rgba
+b : rgba
+}
+struct g {
+a : c
+b : rgba
+}
+show ((195 % 14) <= (- (if (80.1 < (- 81.05)) then c {581} else (if true then c {510} else c {232})).a))
+
+show rgba {(if (530 != 896) then 40.24 else (- (- 48.99))), (if true then 32.58 else rgba {59.1, 3.85, 85.16, 86.17}.r), 39.46, 82.07}.b
+
+show (- (if ((- 62.01) != 37.6) then 39.39 else (83.75 + ((- (- 29.27)) % 78.34))))
+
+struct h {
+a : float
+b : e
+c : float
+}
+struct i {
+a : g
+b : e
+c : f
+}
+struct j {
+a : d
+}
+show 415
+
+struct k {
+a : float[]
+b : rgba
+c : h
+}
+show ((((- 560) + (c {171}.a - 814)) == (((180 / 99) + 738) / (c {178}.a * (if true then 254 else 44)))) && true)
+

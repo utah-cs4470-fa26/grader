@@ -1,0 +1,48 @@
+struct a {
+a : bool[]
+b : bool
+}
+struct b {
+a : rgba[]
+b : a
+}
+show void
+
+show 47.52
+
+show (((if true then 174 else 7) * ((- (- 897)) - 93)) == 973)
+
+show (! ((! ((if false then 261 else 828) < (- (429 + 970)))) && ((122 / 581) >= (if false then 3.9 else 75.43))))
+
+show void
+
+show false
+
+show a {[(! (685 < (- 684))), true.b.b], a {[false], false}.b}.a
+
+struct c {
+a : int
+}
+struct d {
+a : bool
+b : bool
+}
+struct e {
+a : c
+}
+struct f {
+a : a
+}
+show d {(! a {63.4.a, ((- 642) > false)}.b), ((if ((- 710) != ((760 / 578) * (- 17))) then 27.95 else 61.01) < rgba {(if false then 33.22 else 66.53), (- (- 86.16)), 90.75, 61.53}.g)}
+
+show d {(if (if (380 != (687 / 381)) then false else true) then ((! ((10.57 >= 49.89) && (23.25 > 20.86))) || ((! (! false)) == (22.02 < (6.41 + 89.24)))) else (! (! true))), (((if true then (if false then 73.8 else (24.73 % 92.29)) else rgba {78.31, 35.74, 76.56, 62.56}.b) <= ((if false then (- 28.52) else (- 0.99)) + [11.73, 83.11, 39.8][(- 134)])) && (false && [void, void]))}
+
+show 84
+
+struct g {
+a : int
+}
+struct h {
+a : bool
+b : bool
+}

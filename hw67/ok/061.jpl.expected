@@ -1,0 +1,1 @@
+(ShowCmd (ArrayLiteralExpr (ArrayType (IntType) 1) (IfExpr (IntType) (BinopExpr (BoolType) (ArrayIndexExpr (FloatType) (ArrayLiteralExpr (ArrayType (FloatType) 1) (FloatExpr (FloatType) 0) (FloatExpr (FloatType) 0)) (IntExpr (IntType) 0)) > (FloatExpr (FloatType) 0)) (IntExpr (IntType) 0) (IntExpr (IntType) 1)) (IntExpr (IntType) 0)))

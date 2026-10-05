@@ -1,0 +1,60 @@
+show ((if (((- 89.48) + 87.98) <= (if true then 43.16 else (if false then 48.21 else 48.71))) then (if (! (! false)) then ((62.33 * 12.03) + (if (false || true) then 83.09 else 40.62)) else (- 19.66)) else 62.05) * 21.82)
+
+show true
+
+struct a {
+a : bool
+b : int
+c : bool
+}
+struct b {
+a : rgba
+b : bool
+c : int
+}
+struct c {
+a : float
+}
+show (a {(! true), (if (! (604 > 499)) then 19 else 330), a {(29.65 >= 16.77), 782, false}.c}.b > a {[true][360], true[535, (374 + 941)], (true || true)}.b)
+
+struct d {
+a : b
+b : c
+}
+show (! ((- 74.69) <= (- c {8.51}.a)))
+
+struct e {
+a : float
+b : rgba
+}
+struct f {
+a : a
+b : void
+c : void
+}
+show f {a {((- 42.5) <= (- 79.19)), 873, (false || false)}, void, void}.a
+
+struct g {
+a : int
+b : void[,,]
+c : int
+}
+struct h {
+a : e
+b : c
+c : float
+}
+struct i {
+a : rgba
+b : g
+}
+show 961
+
+show [(753 != 303), ((538 <= (- 752)) || (if false then false else (if (! false) then false else true))), true][82.42.a.b]
+
+struct j {
+a : c
+b : bool
+}
+show (46.05 - (((39.57 - 67.02) / void.b.a) % 7.63))
+

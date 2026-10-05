@@ -1,0 +1,2 @@
+(StructCmd empty)
+(ShowCmd (ArrayLiteralExpr (ArrayType (StructType empty) 1) (StructLiteralExpr (StructType empty) empty) (StructLiteralExpr (StructType empty) empty) (StructLiteralExpr (StructType empty) empty) (StructLiteralExpr (StructType empty) empty)))

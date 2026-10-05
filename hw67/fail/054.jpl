@@ -1,0 +1,3 @@
+fn argnum(a : float) : float {
+   return a
+}

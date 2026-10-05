@@ -1,0 +1,2 @@
+(StructCmd mt)
+(ShowCmd (StructLiteralExpr (StructType mt) mt))

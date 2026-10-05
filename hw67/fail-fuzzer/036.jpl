@@ -1,0 +1,58 @@
+struct a {
+a : float
+b : int
+c : float
+}
+show 14.11
+
+struct b {
+a : a
+b : float
+c : a
+}
+show (371 * 23)
+
+struct c {
+a : a
+b : float
+}
+show 75.9
+
+struct d {
+a : int
+b : a
+}
+show d {487, (if false then 20.17 else true)[348.b, 440, 88].c}.a
+
+show (if true then [true, (if ((! true) != false) then (! (! true)) else true)] else [[true]][(- (- (- 71)))])[(- 123)]
+
+struct e {
+a : d
+}
+show ([[305, 736], [118, 9.61], (if (false && true) then [26] else [921, 64])][383][void.b] > void.a.b.b)
+
+show b {d {694, c {void, 33.04}.a}.b, 60.11, (if false then ((! false) || (if false then false else true)).c else a {11.08, 749, (- 70.11)})}
+
+struct f {
+a : d
+b : rgba
+c : bool
+}
+struct g {
+a : rgba
+b : d
+}
+struct h {
+a : b
+}
+struct i {
+a : float[,][]
+b : d
+}
+struct j {
+a : int
+}
+struct k {
+a : h
+b : int
+}

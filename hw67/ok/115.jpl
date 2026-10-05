@@ -1,0 +1,9 @@
+struct mpair {
+  x: int
+  y: bool
+}
+
+let ab = mpair{1, false}
+let xx = ab.x
+show xx
+show ab.y

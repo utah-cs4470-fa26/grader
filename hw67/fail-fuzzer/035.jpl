@@ -1,0 +1,58 @@
+struct a {
+a : void
+b : float
+c : rgba
+}
+show 265
+
+struct b {
+a : int
+b : rgba
+c : rgba
+}
+show true
+
+struct c {
+a : b
+b : bool
+c : float
+}
+struct d {
+a : int
+}
+show (c {69.59[512, d {402}.a], ((- (- 87.68)) != 79.73), (- 28.18)}.c >= (if [(799 <= 658), 73][d {631}.a] then void[556, (- (669 + 287)), (322 * (- 963))].b else [(17.79 - 41.91)][(791 + ((291 + 1000) / (- 242)))]))
+
+struct e {
+a : int
+}
+show (! ((- (424 % (798 - 307))) > ((d {144}.a % d {706}.a) - (- (- 581)))))
+
+struct f {
+a : void
+b : int
+c : c
+}
+show d {((- 518) + 660.a)}.a
+
+show true
+
+struct g {
+a : f
+b : e
+c : c
+}
+show (! e {350})
+
+struct h {
+a : b
+}
+show (- 752)
+
+struct i {
+a : bool
+}
+struct j {
+a : int
+b : float
+c : int
+}

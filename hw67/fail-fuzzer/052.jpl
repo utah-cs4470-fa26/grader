@@ -1,0 +1,51 @@
+struct a {
+a : void
+b : bool[][,,]
+}
+show 293
+
+struct b {
+a : float
+b : float[,,]
+c : a[,,]
+}
+show rgba {(if ((((13 == 266) != (! false)) && ((- 131) > (- 576))) || (! ((- 952) >= (688 - 307)))) then (- 20.12) else 23.97), false[(- (308 / 483)), (- 238), 560].b[(if ((! false) && ((if true then 894 else 773) > 630)) then [(958 / 405), 70][((- 364) - (- 528))] else (- (- (- 764)))), (- 99), (if (false || (90 > 692)) then 291 else [239][false])], (if false then (93.93 % 57.3) else (if (if (true == (false || true)) then (! true) else (950 >= 598)) then 66.89 else [22.06, 18.47][(- 435)])), ([(- 40.55), (- 96.48), 1.3][(- 798)] + 88.48)}
+
+show 95.81
+
+struct c {
+a : int
+}
+struct d {
+a : void
+}
+struct e {
+a : float
+}
+show 55.2
+
+show void
+
+struct f {
+a : b
+}
+show (if ((3 == 283) && [false, true][25]) then c {(- (- 876))} else c {(- (- ((- 477) + 141)))})
+
+show (! true)
+
+show e {c {639}.a.a.a}
+
+show e {e {(- 58.73)}.a}.a
+
+struct g {
+a : float
+}
+struct h {
+a : float
+b : bool
+c : a
+}
+struct i {
+a : f
+b : a
+}

@@ -1,0 +1,2 @@
+(StructCmd boolint a (BoolType) b (IntType))
+(ShowCmd (StructLiteralExpr (StructType boolint) boolint (TrueExpr (BoolType)) (IntExpr (IntType) 1)))

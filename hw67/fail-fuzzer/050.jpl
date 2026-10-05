@@ -1,0 +1,53 @@
+struct a {
+a : int
+b : bool
+}
+struct b {
+a : bool
+}
+show ((if true then (20.3 != (- 42.36)).a else a {371, (1.88 != 37.69)}.a) == ((- 294) % 577))
+
+show (608 * (((885 % a {824, true}.a) * 406) % 770))
+
+show 23
+
+struct c {
+a : b[,]
+b : void
+c : rgba
+}
+show 44.12
+
+struct d {
+a : c
+b : b
+c : bool
+}
+struct e {
+a : int
+}
+show ((- 510) == a {(994 * 438), (! false[97, 37.72, (- 338)])}.a)
+
+show b {((99.42 + 39.92) != (- 14.77))}
+
+show rgba {16.39, (16.99 - 32.37), true[e {571}.a][a {e {697}.a, (66.78 >= (if false then 97.02 else 47.15))}.a, a {(if true then (- 376) else 17), (668 >= 18.97)}.a], ((! true)[862].r % (- (if ((! false) && (! false)) then ((- 26.9) - (- 61.55)) else (- 25.24))))}
+
+show (a {468, true}.b != b {a {(- 146), (! true)}.b}.a)
+
+struct f {
+a : c
+}
+show (! ([e {723}][(- 608)].a <= (a {614, false}.a - (- (- 690)))))
+
+struct g {
+a : c
+b : bool
+c : a
+}
+show ((if void[287].c.b then rgba {(- 68.07), 73.44, (54.89 / (- 88.36)), (- 62.68)} else b {(! false)}.a) || ((- (- ((- 51) % (- 954)))) >= (if (if true then true else false) then a {331, (true != true)} else void.c).a))
+
+struct h {
+a : d
+b : e
+c : float
+}

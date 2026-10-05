@@ -1,0 +1,54 @@
+struct a {
+a : void
+b : void
+c : int
+}
+show (! (false && false))
+
+show (((- 37.1) + (- (if (if true then (! true) else false) then (if (! false) then 77.23 else 22.7) else (730 + (- 36.65))))) == (- 40.16))
+
+struct b {
+a : bool
+b : float
+c : rgba
+}
+show (((if (! (! (! true))) then (607 * (- (- 700))) else (- ((- 297) - 775))) * (- a {void, 65, 817}.c)) * (if false then void[(- 15)] else (if (! true) then 295 else (- (- 824)))))
+
+show a {void, a {void, void, ((- 725) + ((- 666) * 687))}.a, [(112 % 104)][657]}
+
+show [((! false) != (! false))]
+
+show ((if (! false.a) then ((- 70.69) != 79.5) else [false, [true][190]]) && [false, (- (598 % 679)), (! true)][(if (60.62 > (if (0.01 >= 97.95) then 62.35 else 60.87)) then ((- (- 983)) * 377) else (- (- 938)))])
+
+show void
+
+struct c {
+a : float
+b : void
+c : void
+}
+show (- 60.06)
+
+struct d {
+a : b
+}
+struct e {
+a : b
+b : rgba
+c : a
+}
+show 47.57
+
+struct f {
+a : void
+}
+struct g {
+a : rgba
+b : c
+c : a
+}
+show a {void, false.b.b, (- ((- true) - 252))}.c
+
+struct h {
+a : float
+}

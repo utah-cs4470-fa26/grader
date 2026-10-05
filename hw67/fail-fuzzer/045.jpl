@@ -1,0 +1,64 @@
+struct a {
+a : bool
+b : float
+}
+show rgba {((- 76.08) % a {(94.65 < 51.49), 9.32}.b), (if ((56.63 % 81.6)[(799 % (- 385))] <= 128) then ((((- 52.16) / 77.62) + (57.34 + 62.87)) + (- 43.54)) else (if (! false) then (- 45.76) else 32.56)), (- [[2.71]][(- 284)][false]), (if (! ([64, 706][(34 * 126)] >= 412)) then (! (63.47 != (- 37.14))) else ((- void.r) / 14.4))}
+
+struct b {
+a : void
+b : int
+}
+show void
+
+struct c {
+a : void
+b : bool
+}
+struct d {
+a : bool
+b : b
+}
+struct e {
+a : int
+}
+struct f {
+a : c
+b : float
+c : e
+}
+struct g {
+a : f
+b : e
+c : bool
+}
+show c {void, (! true)[362].c}
+
+struct h {
+a : c
+}
+struct i {
+a : h
+b : b
+c : c
+}
+show d {(! ((63 - b {void, 205}.b) != b {895, 460}.b)), (if 464[(- 626), 186][374, 252, (- ((- 470) + 1))] then b {c {void, true}.a, (if true then b {void, 537}.b else e {253}.a)} else d {true, b {void, 418}}.b)}
+
+struct j {
+a : a
+b : g
+}
+struct k {
+a : void
+}
+struct l {
+a : float
+b : j
+}
+struct m {
+a : k
+}
+struct n {
+a : b
+b : a
+c : i
+}

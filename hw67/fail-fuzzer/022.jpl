@@ -1,0 +1,58 @@
+struct a {
+a : int
+}
+struct b {
+a : float
+b : a
+c : int
+}
+show ((136 * 355[(if true then (51 + 764) else 557)][(if true then (18 / 977) else (if (! true) then (- 936) else (- 415))), (456 / 18)]) - (if (((- (- 74.52)) - 41.42) != 31.83) then (if true then (- ((- 663) * (- 57))) else (678 - (- 576))) else 241))
+
+show ((- (54.66 + (75.7 % 92.62))) % (if (91.15 != (- (- 68.44))) then b {6.31, true.b, 423} else b {61.65, (if (! false) then a {393} else a {601}), (- 385)}).a)
+
+struct c {
+a : float
+}
+struct d {
+a : rgba
+}
+show false
+
+struct e {
+a : rgba
+}
+struct f {
+a : bool
+b : bool
+}
+struct g {
+a : rgba[,]
+b : b[,,]
+c : d
+}
+struct h {
+a : void
+b : float
+}
+show a {236[(604 / a {(- 942)}.a), ((- 278) / 515)]}
+
+show b {(82.6 / (8.14 + 33.1)), (if (! (! false)) then a {596} else a {((- 941) + (- 128))}), 736}.b
+
+struct i {
+a : a
+b : c[]
+c : rgba
+}
+struct j {
+a : i
+}
+struct k {
+a : float
+}
+struct l {
+a : d
+b : f
+}
+struct m {
+a : void
+}

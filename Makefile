@@ -1,6 +1,6 @@
 .PHONY: test-current test-hw1 count-hw1 upgrade
 
-CURRENT=hw5
+CURRENT=hw67
 PART=all
 DIR=..
 
@@ -49,6 +49,9 @@ test-hw6:
 
 test-hw7:
 	@ python3 grader.py test --hw 7 --dir $(DIR) --part $(PART)
+
+test-hw67:
+	@ python3 grader.py test --hw 67 --dir $(DIR) --part $(PART)
 
 test-hw8:
 	@ python3 grader.py test --hw 8 --dir $(DIR) --part $(PART)

@@ -1,0 +1,5 @@
+struct mt {
+
+}
+
+show if true then mt{} else mt{}

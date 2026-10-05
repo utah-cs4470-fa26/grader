@@ -1,0 +1,44 @@
+show (true && ((- (if false then (- 158) else (if (if true then false else true) then 345 else 689))) <= [(if (if true then true else false) then (- 971) else 168)][(- (11.73 % (412 / 404)))]))
+
+show (if (! (! (! (if (if true then false else true) then false else (! true))))) then (- (- [350][643])) else ((if (! ((- 16.05) != 4.3)) then (- 711) else (- (- 428))) + (- (- 591))))
+
+struct a {
+a : rgba
+b : float
+}
+show true
+
+show void
+
+show (a {(517 > 287)[678, 661, ((332 + 989) * (419 - 641))], 71.71}.b > (if (if (false && true) then [(813 > 74), (! false)] else [(! true)])[504] then 62.89 else a {rgba {(86.32 % 5.88), (- 59.91), 92.13, (12.11 / 92.09)}, (- (14.07 / 20.33))}.b))
+
+show ((- (- (if true then 741 else (if (77.1 != 10.12) then 579 else (- 856))))) > 890)
+
+show (if false then [(((if false then 10.75 else 21.8) / 13.48) > 29.99), (true == ((if (590 <= 3) then false else (834 > 266)) && false)), (if ((if (391 == 622) then (true && true) else false) || (568 >= (- 664))) then (418 != 509) else (true || (790 != 912)))] else (if false then (if true then (true && false) else false)[837, 774, (if true then (if true then (if false then 189 else 887) else (- 650)) else (if (2 <= 10) then 135 else 87))] else [(false && (true && false)), 45.23]))
+
+struct b {
+a : int
+b : bool
+}
+show ((false && b {(- 293), (662 < (- 892))}.b) && true)
+
+show (true == b {(if (! (17.62 == 35.08)) then (- (613 + 807)) else (- (if false then 543 else 963))), (! true)}.b)
+
+show (if b {222, b {(- 888), true}.b}.b then [318, (- (- ((- 817) % 2))), (- 225)] else [(394 % (((- 918) - 317) % 669)), (if true then 269 else b {611, (true && true)}.a)])
+
+struct c {
+a : b
+}
+show 979
+
+show b {(- (- 470)), (((- (- (- 980))) % (- (- (- 912)))) >= (if ((! (if false then true else true)) || (false || true)) then (20 * ((- 100) - 731)) else (if true then (if (! false) then 51.74 else 392) else (997 + (- 411)))))}
+
+show a {(if b {(- 427), (13 == 823)}.b then rgba {35.08, [383].b, (- (- 13.35)), 1.96} else rgba {false.a.a, (- 11.15), 3.89, 29.67}), a {rgba {30.42, (- (- 53.19)), 75.21, 56.39}, ((if (! false) then 88.3 else (- 40.8)) / (- 50.02))}.b}
+
+show rgba {95.04, 20.23, ((- 73.92) % 87.78), (- 50.8)}.b
+
+struct d {
+a : b
+b : b
+c : c
+}

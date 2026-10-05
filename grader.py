@@ -438,6 +438,12 @@ HWS = {
        "3": NullPart(DiffSpec, "hw7/ok-fuzzer/", "-t", normalize=unpp),
        "4": NullPart(InvalidSpec, "hw7/fail-fuzzer/", "-t"),
    },
+   "67": {
+       "1": ManualPart(DiffSpec, "hw67/ok.jpl", "hw67/ok/", "-t", normalize=unpp),
+       "2": NullPart(DiffSpec, "hw67/ok-fuzzer/", "-t", normalize=unpp),
+       "3": ManualPart(InvalidSpec, "hw67/fail.jpl", "hw67/fail/", "-t"),
+       "4": NullPart(InvalidSpec, "hw67/fail-fuzzer/", "-t")
+   },
    "8": {
        "1": NullPart(DiffSpec, "hw8/ok/", "-i", normalize=ppc),
        "2": NullPart(DiffSpec, "hw8/ok-fuzzer/", "-i", normalize=ppc),
