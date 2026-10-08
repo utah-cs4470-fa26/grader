@@ -1,0 +1,10 @@
+struct posn {
+  x: int
+  y: float
+}
+
+struct posn {
+  x: int
+  y: float
+}
+
