@@ -5,8 +5,6 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
 int64_t f(int64_t a, int64_t b, int64_t c, int64_t d, int64_t e, int64_t g) {
     int64_t _0 = a + b;
     int64_t _1 = _0 + c;
@@ -16,7 +14,7 @@ int64_t f(int64_t a, int64_t b, int64_t c, int64_t d, int64_t e, int64_t g) {
     return _4;
 }
 
-void jpl_main(struct args args) {
+void jpl_main(_a1_int64_t args) {
     int64_t _0 = 1;
     int64_t _1 = 2;
     int64_t _2 = 3;

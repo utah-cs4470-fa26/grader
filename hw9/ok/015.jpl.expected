@@ -5,9 +5,7 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
-void jpl_main(struct args args) {
+void jpl_main(_a1_int64_t args) {
     int64_t _0 = 7;
     _a2_rgba _1 = read_image("a.png");
     int64_t H = _1.d0;

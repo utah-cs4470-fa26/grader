@@ -5,8 +5,6 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
 typedef struct {
   int64_t d0;
   int64_t d1;
@@ -22,7 +20,7 @@ _a6_int64_t f() {
     return _0;
 }
 
-void jpl_main(struct args args) {
+void jpl_main(_a1_int64_t args) {
     _a6_int64_t _0 = f();
     show("(ArrayType (IntType) 6)", &_0);
 }

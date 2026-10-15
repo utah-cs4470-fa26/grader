@@ -5,7 +5,10 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
+typedef struct {
+  int64_t d0;
+  _a2_rgba *data;
+} _a1__a2_rgba;
 
 typedef struct {
   int64_t d0;
@@ -19,90 +22,13 @@ typedef struct {
 
 typedef struct {
   int64_t d0;
-  int64_t d1;
-  int64_t d2;
-  int64_t *data;
-} _a3_int64_t;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  _a3_int64_t *data;
-} _a2__a3_int64_t;
-
-typedef struct {
-  int64_t d0;
-  int64_t *data;
-} _a1_int64_t;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  int64_t d2;
-  _a2__a3_int64_t *data;
-} _a3__a2__a3_int64_t;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  _a3__a2__a3_int64_t *data;
-} _a2__a3__a2__a3_int64_t;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  int64_t *data;
-} _a2_int64_t;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  int64_t d2;
-  bool *data;
-} _a3_bool;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  bool *data;
-} _a2_bool;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  int64_t d2;
-  double *data;
-} _a3_double;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  double *data;
-} _a2_double;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  int64_t d2;
   rgba *data;
-} _a3_rgba;
+} _a1_rgba;
 
 typedef struct {
   int64_t d0;
-  int64_t d1;
-  _a3_double *data;
-} _a2__a3_double;
-
-typedef struct {
-  int64_t d0;
-  _a3_double *data;
-} _a1__a3_double;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  _a2_double *data;
-} _a2__a2_double;
+  void_t *data;
+} _a1_void_t;
 
 typedef struct {
   int64_t d0;
@@ -113,70 +39,26 @@ typedef struct {
 typedef struct {
   int64_t d0;
   int64_t d1;
-  _a3_bool *data;
-} _a2__a3_bool;
-
-typedef struct {
-  int64_t d0;
-  _a3_bool *data;
-} _a1__a3_bool;
+  bool *data;
+} _a2_bool;
 
 typedef struct {
   int64_t d0;
   int64_t d1;
-  _a2_int64_t *data;
-} _a2__a2_int64_t;
-
-typedef struct {
-  int64_t d0;
-  _a2_int64_t *data;
-} _a1__a2_int64_t;
+  double *data;
+} _a2_double;
 
 typedef struct {
   int64_t d0;
   int64_t d1;
-  int64_t d2;
-  _a1__a2_int64_t *data;
-} _a3__a1__a2_int64_t;
-
-typedef struct {
-  int64_t d0;
-  rgba *data;
-} _a1_rgba;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  int64_t d2;
-  void_t *data;
-} _a3_void_t;
+  int64_t *data;
+} _a2_int64_t;
 
 typedef struct {
   int64_t d0;
   int64_t d1;
   void_t *data;
 } _a2_void_t;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  int64_t d2;
-  _a3_rgba *data;
-} _a3__a3_rgba;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  int64_t d2;
-  _a2_void_t *data;
-} _a3__a2_void_t;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  int64_t d2;
-  _a3_void_t *data;
-} _a3__a3_void_t;
 
 typedef struct {
   int64_t d0;
@@ -189,8 +71,165 @@ typedef struct {
   int64_t d0;
   int64_t d1;
   int64_t d2;
+  bool *data;
+} _a3_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  double *data;
+} _a3_double;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  int64_t *data;
+} _a3_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  rgba *data;
+} _a3_rgba;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  void_t *data;
+} _a3_void_t;
+
+typedef struct {
+  int64_t d0;
+  _a1_void_t *data;
+} _a1__a1_void_t;
+
+typedef struct {
+  int64_t d0;
+  _a2_bool *data;
+} _a1__a2_bool;
+
+typedef struct {
+  int64_t d0;
+  _a2_int64_t *data;
+} _a1__a2_int64_t;
+
+typedef struct {
+  int64_t d0;
+  _a3_bool *data;
+} _a1__a3_bool;
+
+typedef struct {
+  int64_t d0;
+  _a3_double *data;
+} _a1__a3_double;
+
+typedef struct {
+  int64_t d0;
+  _a3_int64_t *data;
+} _a1__a3_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a1_void_t *data;
+} _a2__a1_void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a2_double *data;
+} _a2__a2_double;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a2_int64_t *data;
+} _a2__a2_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a3_bool *data;
+} _a2__a3_bool;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a3_double *data;
+} _a2__a3_double;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a3_int64_t *data;
+} _a2__a3_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a2_void_t *data;
+} _a3__a2_void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
   _a3_int64_t *data;
 } _a3__a3_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a3_rgba *data;
+} _a3__a3_rgba;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a3_void_t *data;
+} _a3__a3_void_t;
+
+typedef struct {
+  int64_t d0;
+  _a1__a1_void_t *data;
+} _a1__a1__a1_void_t;
+
+typedef struct {
+  int64_t d0;
+  _a2__a1_void_t *data;
+} _a1__a2__a1_void_t;
+
+typedef struct {
+  int64_t d0;
+  _a3__a3_int64_t *data;
+} _a1__a3__a3_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  _a2__a1_void_t *data;
+} _a2__a2__a1_void_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a1__a2_int64_t *data;
+} _a3__a1__a2_int64_t;
+
+typedef struct {
+  int64_t d0;
+  int64_t d1;
+  int64_t d2;
+  _a2__a3_int64_t *data;
+} _a3__a2__a3_int64_t;
 
 typedef struct {
   int64_t d0;
@@ -201,55 +240,9 @@ typedef struct {
 
 typedef struct {
   int64_t d0;
-  void_t *data;
-} _a1_void_t;
-
-typedef struct {
-  int64_t d0;
-  _a1_void_t *data;
-} _a1__a1_void_t;
-
-typedef struct {
-  int64_t d0;
-  _a1__a1_void_t *data;
-} _a1__a1__a1_void_t;
-
-typedef struct {
-  int64_t d0;
   int64_t d1;
-  _a1_void_t *data;
-} _a2__a1_void_t;
-
-typedef struct {
-  int64_t d0;
-  _a2__a1_void_t *data;
-} _a1__a2__a1_void_t;
-
-typedef struct {
-  int64_t d0;
-  int64_t d1;
-  _a2__a1_void_t *data;
-} _a2__a2__a1_void_t;
-
-typedef struct {
-  int64_t d0;
-  _a2_bool *data;
-} _a1__a2_bool;
-
-typedef struct {
-  int64_t d0;
-  _a3__a3_int64_t *data;
-} _a1__a3__a3_int64_t;
-
-typedef struct {
-  int64_t d0;
-  _a3_int64_t *data;
-} _a1__a3_int64_t;
-
-typedef struct {
-  int64_t d0;
-  _a2_rgba *data;
-} _a1__a2_rgba;
+  _a3__a2__a3_int64_t *data;
+} _a2__a3__a2__a3_int64_t;
 
 double f(bool g) {
     _a2_bool _0;
@@ -8404,7 +8397,7 @@ _a1_void_t F() {
     return _227;
 }
 
-void jpl_main(struct args args) {
+void jpl_main(_a1_int64_t args) {
     int64_t _0 = 894;
     bool _1 = false;
     int64_t _2;

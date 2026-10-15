@@ -5,14 +5,12 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
 int64_t f() {
     int64_t _0 = 4;
     return _0;
 }
 
-void jpl_main(struct args args) {
+void jpl_main(_a1_int64_t args) {
     int64_t _0 = f();
     show("(IntType)", &_0);
 }
