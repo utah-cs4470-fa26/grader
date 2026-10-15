@@ -5,22 +5,6 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
-typedef struct {
-    bool a;
-} c;
-
-typedef struct {
-  int64_t d0;
-  double *data;
-} _a1_double;
-
-typedef struct {
-  int64_t d0;
-  _a1_double *data;
-} _a1__a1_double;
-
 typedef struct {
   int64_t d0;
   bool *data;
@@ -28,10 +12,19 @@ typedef struct {
 
 typedef struct {
   int64_t d0;
-  int64_t *data;
-} _a1_int64_t;
+  double *data;
+} _a1_double;
 
-void jpl_main(struct args args) {
+typedef struct {
+    bool a;
+} c;
+
+typedef struct {
+  int64_t d0;
+  _a1_double *data;
+} _a1__a1_double;
+
+void jpl_main(_a1_int64_t args) {
     print("a");
     int64_t _0 = 66;
     double _1 = 42.0;

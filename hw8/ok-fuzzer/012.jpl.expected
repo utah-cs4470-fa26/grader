@@ -5,18 +5,16 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
-typedef struct {
-    int64_t a;
-} b;
-
 typedef struct {
   int64_t d0;
   rgba *data;
 } _a1_rgba;
 
-void jpl_main(struct args args) {
+typedef struct {
+    int64_t a;
+} b;
+
+void jpl_main(_a1_int64_t args) {
     double _0 = 92.0;
     show("(FloatType)", &_0);
     double _1 = 9.0;

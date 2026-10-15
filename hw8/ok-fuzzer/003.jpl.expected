@@ -5,7 +5,10 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
+typedef struct {
+  int64_t d0;
+  bool *data;
+} _a1_bool;
 
 typedef struct {
   int64_t d0;
@@ -17,12 +20,7 @@ typedef struct {
   _a1_double *data;
 } _a1__a1_double;
 
-typedef struct {
-  int64_t d0;
-  bool *data;
-} _a1_bool;
-
-void jpl_main(struct args args) {
+void jpl_main(_a1_int64_t args) {
     double _0 = 10.0;
     _a1_double _1;
     _1.d0 = 1;

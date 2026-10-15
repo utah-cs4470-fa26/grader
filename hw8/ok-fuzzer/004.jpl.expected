@@ -5,32 +5,25 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
-typedef struct {
-    double a;
-} a;
-
-typedef struct {
-  int64_t d0;
-  int64_t *data;
-} _a1_int64_t;
-
 typedef struct {
   int64_t d0;
   _a1_int64_t *data;
 } _a1__a1_int64_t;
 
 typedef struct {
-    double a;
-} e;
-
-typedef struct {
   int64_t d0;
   double *data;
 } _a1_double;
 
-void jpl_main(struct args args) {
+typedef struct {
+    double a;
+} a;
+
+typedef struct {
+    double a;
+} e;
+
+void jpl_main(_a1_int64_t args) {
     int64_t _0 = 904;
     int64_t _1 = -_0;
     int64_t _2 = 41;

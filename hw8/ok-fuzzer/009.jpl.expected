@@ -5,8 +5,6 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
 typedef struct {
   int64_t d0;
   double *data;
@@ -19,20 +17,20 @@ typedef struct {
 
 typedef struct {
   int64_t d0;
-  _a1_rgba *data;
-} _a1__a1_rgba;
+  void_t *data;
+} _a1_void_t;
 
 typedef struct {
   int64_t d0;
-  void_t *data;
-} _a1_void_t;
+  _a1_rgba *data;
+} _a1__a1_rgba;
 
 typedef struct {
     _a1_void_t a;
     double b;
 } e;
 
-void jpl_main(struct args args) {
+void jpl_main(_a1_int64_t args) {
     double _0 = 42.0;
     double _1 = 73.0;
     double _2 = 25.0;

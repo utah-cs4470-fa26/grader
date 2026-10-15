@@ -5,9 +5,7 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
-void jpl_main(struct args args) {
+void jpl_main(_a1_int64_t args) {
     bool _0 = true;
     bool _1 = true;
     bool _2 = _0 == _1;

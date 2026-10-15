@@ -5,8 +5,6 @@
 #include <stdio.h>
 #include "rt/runtime.h"
 
-typedef struct { } void_t;
-
 typedef struct {
   int64_t d0;
   double *data;
@@ -17,7 +15,7 @@ typedef struct {
   _a1_double *data;
 } _a1__a1_double;
 
-void jpl_main(struct args args) {
+void jpl_main(_a1_int64_t args) {
     bool _0 = false;
     bool _1 = false;
     bool _2 = _0 != _1;
