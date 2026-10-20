@@ -1,10 +1,10 @@
-
 #include <math.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
 int64_t f(void_t x) {
     int64_t _0 = 4;
     return _0;

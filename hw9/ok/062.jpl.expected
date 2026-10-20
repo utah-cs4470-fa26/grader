@@ -1,10 +1,10 @@
-
 #include <math.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
 double f(double a, double b, double c, double d, double e, double g, double h, double i) {
     double _0 = a + b;
     double _1 = _0 + c;

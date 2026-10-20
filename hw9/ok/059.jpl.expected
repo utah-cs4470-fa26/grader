@@ -1,10 +1,10 @@
-
 #include <math.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
 int64_t f(double a) {
     int64_t _0 = to_int(a);
     return _0;

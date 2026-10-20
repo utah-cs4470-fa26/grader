@@ -1,10 +1,10 @@
-
 #include <math.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
 #include "rt/runtime.h"
 
+typedef struct { } void_t;
 void jpl_main(_a1_int64_t args) {
     bool _0 = false;
     bool _1 = false;
