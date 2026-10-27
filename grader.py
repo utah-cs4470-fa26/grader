@@ -452,14 +452,6 @@ HWS = {
        "1": NullPart(DiffSpec, "hw9/ok/", "-i", normalize=ppc),
        "2": NullPart(DiffSpec, "hw9/ok-fuzzer/", "-i", normalize=ppc),
    },
-   "89": { # lol delete this after sp25
-       "1": NullPart(DiffSpec, "hw8/ok/", "-i", normalize=ppc),
-       "2": NullPart(DiffSpec, "hw8/ok-fuzzer/", "-i", normalize=ppc),
-       "3": NullPart(DiffSpec, "hw9/ok/", "-i", normalize=ppc),
-       "4": NullPart(DiffSpec, "hw9/ok-fuzzer/", "-i", normalize=ppc),
-   },
-
-
    "10": {
        "1": NullPart(DiffSpec, "hw10/ok/", "-s", normalize=ppasm, comment=commentasm),
        "2": NullPart(DiffSpec, "hw10/ok-fuzzer1/", "-s", normalize=ppasm, comment=commentasm),
