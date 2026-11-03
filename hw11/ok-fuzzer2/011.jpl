@@ -6,7 +6,6 @@ let e = a
 let f = e
 fn g(h : float, i : float, j : bool, k : float) : float {
   let l = (- 701)
-  return i
   let m = true
   let n = 47.76
   let o = f
@@ -35,13 +34,11 @@ fn h() : int {
 let i = 5.22
 fn j() : bool {
   let k = e
-  return a
   let l = c
   let m = 612
   let n = h()
   let o = h()
   let p = b
-  return k
   let q = d
   let r = d
   return true
@@ -57,7 +54,6 @@ fn k(l : bool, m : float, n : float) : int {
   let u = q
   let v = (480 % h())
   let w = p
-  return (- v)
   return ((92 * 892) % h())
 }
 
@@ -76,27 +72,20 @@ let q = k(e, g(d, d, a, (i * i)), o)
 let r = (- h())
 let s = p
 fn t(u : bool, v : int) : int {
-  return (v - q)
   let w = l
-  return r
   let x = (j() != (! u))
   let y = u
   let z = c
   let A = m
-  return q
-  return l
   let B = (w / v)
   return (q + v)
 }
 
 fn u(v : float, w : float, x : bool, y : bool) : bool {
-  return f
   let z = h()
   let A = (t(false, q) % h())
   let B = x
-  return x
   let C = c
-  return m
   let D = i
   let E = m
   let F = m
@@ -111,9 +100,7 @@ fn w(x : int) : bool {
   let B = (g(c, i, e, g(g(g(b, 99.93, e, ((- (d * (- (- (- c))))) - b)), 13.45, j(), d), g(62.42, d, (b > o), d), false, o)) != c)
   let C = u(b, c, B, u((- c), i, j(), p))
   let D = y
-  return u(o, (- b), u(o, 21.73, B, B), true)
   let E = i
-  return (! f)
   let F = B
   return p
 }
@@ -132,11 +119,9 @@ show C
 
 fn F(G : bool, H : float, I : bool, J : int) : bool {
   let K = (! m)
-  return D
   let L = (! y)
   let M = (x > q)
   let N = (- x)
-  return y
   let O = E
   let P = A
   let Q = n
@@ -157,7 +142,6 @@ fn K(L : bool, M : bool, N : bool, O : float) : int {
   let U = h()
   let V = I
   let W = G
-  return 809
   let X = I
   return (S - U)
 }
@@ -168,14 +152,12 @@ fn N(O : float) : float {
   let P = E
   let Q = a
   let R = I
-  return R
   let S = F(((o > (O - A)) == j()), A, B, t(j(), L))
   let T = D
-  return g(3.49, I, F(C, b, (! H), K(v, T, S, o)), I)
   let U = z
   let V = A
   let W = (- d)
-  return c
+  return g(3.49, I, F(C, b, (! H), K(v, T, S, o)), I)
 }
 
 let O = p
@@ -185,7 +167,6 @@ fn P(Q : int) : float {
   let T = (! E)
   let U = A
   let V = R
-  return M
   let W = u(R, d, D, (T != D))
   let X = H
   let Y = W
@@ -197,31 +178,26 @@ let Q = q
 let R = N(P(k(true, g((- 84.5), G, w(x), g(N(N(G)), d, f, N(z))), I)))
 let S = E
 fn T(U : float, V : float, W : bool, X : bool) : bool {
-  return m
   let Y = L
   let Z = (o / U)
   let aa = J
   let ab = I
   let ac = r
-  return w((- n))
   let ad = U
   let ae = A
   let af = 42.73
-  return y
+  return w((- n))
 }
 
 fn U() : bool {
-  return (l == k(y, R, b))
   let V = z
-  return false
   let W = A
   let X = E
   let Y = z
-  return w(r)
   let Z = G
   let aa = F(p, Z, F(a, Y, m, h()), K(E, a, S, d))
   let ab = s
-  return ab
+  return (l == k(y, R, b))
 }
 
 let V = P((469 / (r - K(e, f, S, o))))
@@ -230,14 +206,12 @@ let X = R
 let Y = 697
 let Z = Q
 fn aa(ab : float, ac : float, ad : bool, ae : float) : int {
-  return x
   let af = (V % o)
   let ag = y
   let ah = R
   let ai = 7.91
   let aj = g(11.89, ah, p, ac)
   let ak = Y
-  return Q
   let al = ad
   let am = a
   return Z

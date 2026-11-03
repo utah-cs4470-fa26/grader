@@ -2,14 +2,9 @@ fn a() : int {
   let b = ((! ((((- 526) / (924 * ((- 621) - (- 983)))) * (- (- (- (((- (- 51)) / ((745 * 781) / (- 359))) - (- (- (- 232)))))))) <= ((((- 520) + 753) % 287) % (- (951 - 686))))) != (false != true))
   let c = (- ((- (274 / (- (((- 848) * (- (- (- (- 458))))) % 669)))) - (- 86)))
   let d = (! b)
-  return (859 % c)
   let e = (- ((- 118) % (932 % c)))
-  return 320
   let f = ((- 401) + e)
-  return 173
   return (- e)
-  return 424
-  return f
 }
 
 show 447
@@ -27,7 +22,6 @@ fn k(l : bool, m : int, n : float, o : int) : int {
   let p = l
   let q = a()
   let r = c
-  return f
   let s = false
   let t = (- o)
   let u = f
@@ -42,11 +36,9 @@ let m = 13.5
 fn n() : bool {
   let o = (b == a())
   let p = b
-  return o
   let q = i
   let r = j
   let s = c
-  return h
   let t = e
   let u = k(((! (b >= l)) != o), r, 56.27, b)
   let v = f
@@ -55,7 +47,6 @@ fn n() : bool {
 
 fn o(p : int) : int {
   let q = d
-  return (- c)
   let r = 829
   let s = c
   let t = s
@@ -100,8 +91,6 @@ fn x(y : bool, z : bool, A : float, B : float) : bool {
   let G = h
   let H = j
   let I = F
-  return I
-  return D
   let J = g
   return I
 }
@@ -109,15 +98,12 @@ fn x(y : bool, z : bool, A : float, B : float) : bool {
 let y = 16.48
 fn z(A : int, B : bool, C : int, D : int) : int {
   let E = e
-  return 745
   let F = e
   let G = 225
-  return i
   let H = (- (m - y))
   let I = g
   let J = E
   let K = q(H, g, y)
-  return f
   return i
 }
 
@@ -179,7 +165,6 @@ fn F() : float {
   let K = k((! t), i, A(m, j, y), (- (- l)))
   let L = E(((m / (- (- A((- ((- (- E(m))) / m)), l, 81.76)))) + E(A(E((- y)), j, y))))
   let M = z(f, H, G, B(g, G, p))
-  return E(E(E((- L))))
   let N = I
   let O = v
   return E((A(L, j, 73.34) - L))
@@ -187,10 +172,8 @@ fn F() : float {
 
 fn G() : float {
   let H = F()
-  return 15.72
   let I = k(s, c, 53.18, a())
   let J = E(82.97)
-  return E(F())
   let K = I
   let L = g
   let M = I
@@ -205,12 +188,9 @@ let J = j
 fn K() : float {
   let L = i
   let M = 54.39
-  return A((- y), c, E(A(A(y, 461, F()), l, M)))
-  return M
   let N = C
   let O = true
   let P = w
-  return M
   let Q = a()
   let R = M
   return 30.11
@@ -241,25 +221,17 @@ fn T(U : bool) : bool {
   let V = D
   let W = t
   let X = k(O, o(B(n(), a(), w)), (- K()), B(U, i, d))
-  return W
-  return v
-  return h
   let Y = w
   let Z = U
-  return Y
   return q((m + (A(A(y, (- a()), S), (V + c), m) * A(F(), (z(u, Y, o(X), J) * J), F()))), s, F())
-  return L()
 }
 
 fn U(V : bool) : int {
-  return D
   let W = q(A(S, f, (- (K() / K()))), r, E(F()))
   let X = n()
   let Y = x(x(Q, r, F(), 84.14), ((- G()) < G()), S, E((G() - (- 56.01))))
   let Z = H
   let aa = A(65.43, b, G())
-  return I
-  return z(z(M, Q, J, J), p, b, 135)
   let ab = o(z(299, w, u, 548))
   let ac = t
   return B((! (aa != S)), o(a()), ac)
@@ -272,10 +244,8 @@ show f
 fn X(Y : int, Z : int, aa : int) : bool {
   let ab = S
   let ac = U(V)
-  return p
   let ad = U(d)
   let ae = Y
-  return V
   let af = L()
   let ag = o(Y)
   let ah = i

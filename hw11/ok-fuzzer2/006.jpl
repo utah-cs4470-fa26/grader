@@ -15,7 +15,6 @@ fn a(b : bool, c : float, d : int, e : float) : float {
 let b = 69.08
 fn c() : bool {
   let d = b
-  return (! false)
   let e = a(((- (- (- ((703 - (- (- (- 672)))) + (591 * (((- 126) / (- (28 % 906))) - ((- (905 % 226)) + (- (342 / 421))))))))) >= (- (954 + (- ((- 957) - 677))))), d, 162, (- 38.78))
   let f = (- 840)
   let g = a((! (! (! (! false)))), (a(((- d) != e), a(false, (- a((f == 282), a((53.53 != 99.37), d, f, 12.16), (- (((- (- f)) - (- f)) * 925)), (- a(false, d, f, a(((- f) >= (- 120)), d, 386, (- d)))))), (f + (f / ((135 % ((- 514) * f)) + (- f)))), 95.47), ((254 * 826) % (f * f)), d) / a((! (156 == (- (321 + (f % f))))), a((! (f >= ((- (f / 437)) * (610 - 591)))), d, f, (- (- a((! false), (a((! (b > b)), ((d * 34.45) % a(false, e, f, 30.71)), f, (d * b)) * 61.1), 977, e)))), (- 21), 25.15)), (- 437), b)
@@ -37,10 +36,8 @@ let h = f
 fn i(j : float, k : bool, l : float, m : bool) : int {
   let n = (h <= h)
   let o = e
-  return 770
   let p = 720
   let q = (- 89.9)
-  return p
   let r = (e != (c() != ((- b) == d)))
   let s = (d < (f * f))
   let t = o
@@ -53,12 +50,10 @@ show (d == (- d))
 
 fn k() : float {
   let l = ((- (- 326)) <= (- 918))
-  return 70.05
   let m = h
   let n = b
   let o = a(false, g, 636, ((- a((! l), b, (- (- (- (i((g / b), c(), f, j) + i(57.05, true, (- f), e))))), 43.26)) - 36.75))
   let p = false
-  return b
   let q = m
   let r = false
   let s = 750
@@ -69,14 +64,11 @@ show d
 
 let l = (! (i(g, e, d, e) < i(g, e, 53.61, ((i(((- 47.23) * h), c(), k(), (86.19 > (k() % k()))) <= (- ((- ((i(f, j, f, e) * i(k(), e, k(), false)) * i(g, (! j), f, e))) - (- (- ((784 % 768) % 868)))))) != e))))
 fn m() : bool {
-  return ((d % k()) >= (a(e, d, i(b, true, (g / f), e), (h + (k() - b))) % 52.93))
-  return true
   let n = g
   let o = a((j == c()), 66.68, i(30.67, ((b < b) != e), 46.87, l), b)
   let p = h
   let q = g
   let r = ((o + k()) <= g)
-  return (543 == (i((n % a(c(), p, (- (- i((- p), l, b, (f <= (p - d))))), q)), false, f, c()) - (- (((- (884 % ((- (i(43.69, r, p, r) * i(n, c(), 7.75, j))) + 103))) - i(h, (! (! (! l))), o, r)) * i(q, l, p, e)))))
   let s = l
   let t = k()
   return j
@@ -87,8 +79,6 @@ let o = 407
 fn p(q : int) : int {
   let r = h
   let s = r
-  return (o + (n * q))
-  return i(h, (n < n), k(), l)
   let t = r
   let u = (o <= n)
   let v = r
@@ -110,7 +100,6 @@ fn u() : float {
   let z = r
   let A = i(g, v, q, c())
   let B = l
-  return s
   let C = b
   let D = (! true)
   return f
@@ -147,11 +136,8 @@ fn F(G : float, H : float) : bool {
   let I = q
   let J = v
   let K = i((- r), true, u(), m())
-  return c()
-  return c()
   let L = b
   let M = (A >= D)
-  return l
   let N = 94.2
   let O = k()
   return w
@@ -160,7 +146,6 @@ fn F(G : float, H : float) : bool {
 fn G(H : bool) : int {
   let I = B
   let J = i(z, m(), z, y)
-  return 612
   let K = a(c(), r, n, f)
   let L = (- h)
   let M = F(q, ((- 96.33) + z))
@@ -175,11 +160,8 @@ let H = G(e)
 let I = e
 fn J(K : int, L : float, M : bool) : int {
   let N = (! e)
-  return 142
-  return (v + (n / t))
   let O = A
   let P = t
-  return t
   let Q = q
   let R = (i(B, C(F(q, k())), d, M) <= (K % p(H)))
   let S = w
@@ -202,7 +184,6 @@ fn T(U : bool, V : bool, W : float, X : bool) : int {
   let Y = u()
   let Z = k()
   let aa = n
-  return P
   let ab = w
   let ac = K
   let ad = l
@@ -222,13 +203,9 @@ let W = T(c(), l, f, e)
 fn X(Y : int, Z : float) : int {
   let aa = g
   let ab = U
-  return 868
   let ac = (i(Z, true, a((V > N), k(), t, 34.04), C(M)) >= V)
   let ad = i(O, (z != (s % f)), O, F(b, h))
-  return t
   let ae = i(a(y, D, L, g), (D == D), f, j)
-  return v
-  return P
   let af = 88
   return Y
 }

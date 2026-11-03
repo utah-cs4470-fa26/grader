@@ -18,13 +18,10 @@ show true
 
 fn d(e : int, f : float, g : int, h : float) : float {
   let i = (- (h / (- (- (59.81 % 14.42)))))
-  return f
   let j = g
   let k = 61.48
   let l = 777
   let m = 142
-  return i
-  return h
   let n = ((l / e) != 174)
   let o = (- g)
   return h
@@ -55,9 +52,7 @@ fn l() : int {
   let n = d(((- k) + k), d(118, (- ((- h(((d(c(f, h(33.06), j, k), (- 36.45), ((k - 641) / (496 / 336)), h(h(38.36))) - (68.82 / ((49.31 + 10.8) * 31.46))) / (d((- k), 51.56, (c(i, 91.24, f, k) / (- k)), d((- k), h(84.61), (- 465), (- 81.31))) / (1.28 * h(98.97)))))) - (- (((- d(((- 762) + k), h(52.04), ((- k) - k), d(19, 40.47, k, 76.53))) % h(h((- 78.22)))) + d(k, (- (- (d(403, 50.93, k, 9.48) / h(35.24)))), ((- (191 * k)) - (964 * (- c(f, 38.38, j, 707)))), ((- d((k / k), h(26.66), c(j, 95.95, g, k), h(16.29))) % (- (h(88.58) + h(85.37))))))))), (k * (c(b, 96.93, m, 323) - ((- k) / k))), d(k, d((- 925), (d(343, (h((- (82.35 / 43.02))) * ((- 20.06) % d((- c(true, 25.82, g, 2)), (98.02 + h(89.37)), k, (36.78 * (77.47 / 17.98))))), ((- 856) * (- k)), d(k, 92.46, c(j, (- 86.36), j, (- k)), (- h(77.14)))) * h((- h(d((k - (- 261)), d(k, 92.91, 174, (- 6.44)), k, d(k, 85.74, k, h(65.21))))))), 575, (h(d((- c(m, h(18.21), g, c(g, 36.56, g, (- 483)))), ((h((87.91 + 18.24)) + (- 55.81)) + d((442 - (- k)), (50.54 % 16.93), ((- k) - k), (26.59 % 46.02))), (- c(m, 13.75, false, k)), d(c(j, (h(46.01) / (9.5 * 68.58)), (c(true, 75.88, f, k) <= 367), k), (- (- 92.66)), k, 36.89))) + 80.27)), 144, ((- h(d((- k), 25.35, (- k), h(h((- d(k, 50.74, k, 4.1))))))) * 49.32))), (- (((- (857 - k)) % 810) + (- c((c(m, d(c(f, d(654, 62.95, (- k), h(43.82)), g, k), d((- (515 * 609)), 63.77, k, ((- 33.8) - (- 32.03))), (- ((894 * 616) % 911)), h(79.09)), (! i), c((! g), d((- (k * 570)), (- h(50.65)), 61, 64.67), (k <= (- c(a, 78.24, b, k))), (((- k) % 33) + (670 / k)))) == c(i, h(85.23), m, ((k % (- (- k))) + c(i, (5.58 - h(42.34)), g, c((45 >= k), (- 84.87), g, (k % 667)))))), 11.72, (i == g), ((- c((30.37 >= d(k, 41.75, (- 771), (- 14.4))), (95.74 / (h(81.19) * h(53.36))), f, c(j, 39.8, b, c(g, h(82.51), g, 104)))) / 649))))), (- d(((- 561) / (683 + k)), h((- 58.6)), (- k), d((- (k - c(a, 68.45, m, k))), 88.12, (- c(m, h(d((- (- 989)), (- (- (94.21 - 29.16))), (823 % (791 + (k - 27))), h(d((- k), 14.24, 44, (- 56.12))))), m, k)), h(65.63)))))
   let o = i
   let p = m
-  return c(j, h(((- (d((- c(a, (((- n) + 18.35) / d((- 455), (- 88.84), (755 - k), (- 43.91))), f, (731 - (k + (416 * k))))), n, c(o, 58.59, b, (- k)), (- 71.17)) - n)) / n)), false, (- k))
   let q = 777
-  return c(o, (n + d(k, d((- q), 10.47, ((756 * q) - c((! (((- k) % k) == c(f, n, (h(55.42) > n), c((35.55 <= n), n, i, c(p, n, false, 957))))), (h(d((- c(i, n, i, k)), (- (- 75.25)), k, n)) / d(q, (d(q, n, q, n) * (29.9 - 12.38)), c(i, (- (- n)), e, (- k)), n)), (o == g), 286)), n), 186, 31.16)), f, (k * 71))
   let r = (- h(h((h(54.14) / n))))
   let s = i
   let t = q
@@ -69,9 +64,6 @@ fn n(o : float, p : float) : float {
   let q = (! a)
   let r = q
   let s = (! b)
-  return 27.53
-  return h(p)
-  return d(k, (- d((997 - 887), p, c((187 == c(true, (- (((h(p) / (p % 39.52)) * h(o)) * 11.06)), a, 275)), o, s, (- c(j, (o / (- p)), (854 > 534), k))), o)), (c(g, 84.62, g, k) % k), (- o))
   let t = p
   let u = h(t)
   let v = q
@@ -102,10 +94,8 @@ fn p(q : float, r : int, s : float) : float {
   let u = d(k, (- t), k, s)
   let v = l()
   let w = (k / (c(i, u, b, 579) * c((h((- t)) >= s), (- h(t)), j, l())))
-  return n(h(s), d((321 * k), u, l(), ((((- t) + 52.09) % d(k, t, l(), ((- s) - h(q)))) % d(v, q, k, q))))
   let x = r
   let y = (h(t) != (n(11.65, (- 17.64)) * s))
-  return (- t)
   let z = h(s)
   let A = v
   return s
@@ -136,13 +126,10 @@ fn J(K : int, L : float) : bool {
   let M = H
   let N = s
   let O = v
-  return M
   let P = O
   let Q = H
-  return f
   let R = n(62.2, G)
   let S = z
-  return A
   return Q
 }
 
@@ -151,9 +138,7 @@ fn L(M : float, N : int) : int {
   let O = A
   let P = i
   let Q = e
-  return N
   let R = r
-  return 870
   let S = (- t)
   let T = K
   let U = q
@@ -181,27 +166,23 @@ fn P() : float {
 fn Q(R : float) : float {
   let S = K
   let T = p(I, (L(G, L(37.44, (u * c((d(959, t, 319, x) == o(L((- d(u, 44.12, u, t)), l()), u)), p(h(D), l(), P()), false, (- u))))) / l()), P())
-  return p(n(O, R), L(O, (- 416)), O)
   let U = b
   let V = U
   let W = false
   let X = g
   let Y = b
   let Z = f
-  return R
   return t
 }
 
 fn R() : bool {
   let S = A
   let T = D
-  return g
   let U = h(d((295 % L(D, u)), p(t, l(), P()), (- (694 / L(T, L(T, l())))), I))
   let V = L(n(h(U), (- P())), L(x, (- c(H, Q(T), F, l()))))
   let W = u
   let X = W
   let Y = Q(h(O))
-  return B
   let Z = true
   return Z
 }
@@ -219,7 +200,6 @@ show f
 fn Y() : bool {
   let Z = t
   let aa = g
-  return b
   let ab = h(o(l(), 498))
   let ac = l()
   let ad = q
@@ -247,7 +227,6 @@ fn aa(ab : float, ac : bool, ad : int) : float {
 
 fn ab(ac : float, ad : int) : int {
   let ae = K
-  return 866
   let af = aa(ac, Y(), L(G, (- L(T, 30))))
   let ag = k
   let ah = (- k)

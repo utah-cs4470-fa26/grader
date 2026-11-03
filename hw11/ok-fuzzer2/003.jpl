@@ -3,14 +3,12 @@ let b = (! (((- (- 867)) * (755 / (a / a))) <= ((((a * (- a)) / 220) - 169) + (-
 fn c(d : int, e : float, f : float, g : float) : int {
   let h = (false == (g > f))
   let i = f
-  return d
   let j = (a + ((- a) + 264))
   let k = i
   let l = d
   let m = (d > (l * (- j)))
   let n = j
   let o = e
-  return 148
   return n
 }
 
@@ -19,7 +17,6 @@ let e = b
 let f = a
 fn g(h : int, i : int, j : float, k : float) : int {
   let l = i
-  return (- c(l, (j * (- (k + (k - (- 53.34))))), (- 58.79), j))
   let m = (! e)
   let n = 62
   let o = (h == 527)
@@ -36,12 +33,9 @@ let i = e
 let j = false
 fn k(l : int, m : int, n : int, o : bool) : bool {
   let p = h
-  return o
   let q = false
   let r = e
-  return (((- 0.19) / 48.63) <= (- ((- ((- 45.83) / ((- 20.9) + 15.27))) % 81.19)))
   let s = g(153, c(p, 4.6, 80.84, 70.11), (((15.17 / (- (- 79.75))) / 2.43) % (- (- 54.57))), (- 72.85))
-  return (q == (! o))
   let t = l
   let u = q
   let v = (9.18 + 46.03)
@@ -56,10 +50,8 @@ fn o(p : bool, q : bool) : bool {
   let s = (p != ((- 83.07) > (- 66.38)))
   let t = k(r, r, r, s)
   let u = 260
-  return j
   let v = n
   let w = ((- f) == 939)
-  return (u < h)
   let x = (! p)
   let y = c(h, 88.86, (- (- (- (((87.63 * 21.73) * (- (28.01 * (- ((- 88.54) + (47.46 % 60.02)))))) / 29.31)))), 89.66)
   return false
@@ -72,7 +64,6 @@ let s = m
 let t = e
 fn u(v : int, w : float, x : int) : float {
   let y = (! l)
-  return q
   let z = w
   let A = 41.07
   let B = l
@@ -89,16 +80,13 @@ let w = c(s, q, (52.22 + 90.38), (- ((10.42 % (- (u(c((m - f), 46.37, 25.14, (- 
 let x = h
 let y = f
 fn z(A : int) : int {
-  return A
   let B = e
   let C = o(j, B)
   let D = n
-  return x
   let E = D
   let F = d
   let G = x
   let H = (u(s, (42.73 % u((f + 86), q, d)), w) <= (- u(F, q, F)))
-  return f
   return m
 }
 
@@ -109,7 +97,6 @@ fn B(C : float) : bool {
   let F = h
   let G = e
   let H = (c(F, q, u((c(a, 38.78, (- 20.89), q) % m), C, z(y)), q) >= (D / f))
-  return n
   let I = a
   let J = I
   let K = J
@@ -156,7 +143,6 @@ fn R(S : float, T : bool) : int {
   let X = Q
   let Y = y
   let Z = h
-  return Y
   let aa = g(a, (V % C), u((- c(s, 78.84, (S * u(C, 76.98, G)), u(K, (- (- (S + u(G, (- (- 88.86)), 22)))), 500))), 30.28, U), q)
   let ab = D
   let ac = x
@@ -176,13 +162,11 @@ let ab = F
 let ac = M
 let ad = a
 fn ae(af : float, ag : int, ah : float, ai : float) : float {
-  return u(W, q, c(C, ah, (- af), (72.24 / u(N, af, (w / N)))))
   let aj = ah
   let ak = N
   let al = (aa <= g(z(Q), m, ai, q))
   let am = c(h, aj, af, ai)
   let an = B(5.05)
-  return 43.91
   let ao = v
   let ap = m
   let aq = S

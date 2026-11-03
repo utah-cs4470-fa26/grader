@@ -19,10 +19,7 @@ let p = k
 let q = e
 let r = b
 fn s(t : int, u : float) : int {
-  return a
   let v = b
-  return l
-  return (- 920)
   let w = u
   let x = f
   let y = f
@@ -35,13 +32,9 @@ fn s(t : int, u : float) : int {
 fn t(u : bool) : bool {
   let v = u
   let w = o
-  return ((! d) != (g != m))
   let x = n
-  return d
-  return q
   let y = (! (i <= (- f)))
   let z = l
-  return y
   let A = r
   return (h <= m)
 }
@@ -49,12 +42,9 @@ fn t(u : bool) : bool {
 fn u(v : float, w : bool) : int {
   let x = j
   let y = (! (! d))
-  return j
   let z = a
   let A = c
   let B = (- s((x + h), p))
-  return j
-  return j
   let C = n
   let D = d
   return l
@@ -64,7 +54,6 @@ fn v(w : int, x : bool) : bool {
   let y = x
   let z = e
   let A = s(h, c)
-  return q
   let B = true
   let C = o
   let D = (! z)
@@ -86,9 +75,7 @@ fn y(z : float, A : int, B : float, C : float) : bool {
   let H = t(E)
   let I = (79.32 < B)
   let J = false
-  return v(A, D)
   let K = 60.08
-  return x
   return J
 }
 
@@ -102,7 +89,6 @@ fn A(B : int, C : float) : float {
   let I = b
   let J = f
   let K = f
-  return n
   let L = t(d)
   return (p % i)
 }
@@ -115,7 +101,6 @@ fn D() : bool {
   let G = v(o, false)
   let H = n
   let I = H
-  return v(u((- i), x), q)
   let J = G
   let K = (J == G)
   let L = n
@@ -130,9 +115,7 @@ fn F(G : int, H : bool) : int {
   let K = (- 723)
   let L = i
   let M = l
-  return M
   let N = (C >= s(l, r))
-  return (- h)
   let O = v(u(i, J), J)
   let P = s(s(g, (k / w)), p)
   return (G + P)
@@ -146,11 +129,9 @@ fn I(J : int) : float {
   let M = D()
   let N = C
   let O = (k == w)
-  return (f + 74.4)
   let P = H
   let Q = z
   let R = M
-  return i
   return A(G, A(F((- j), y(p, z, (- n), i)), A(o, L)))
 }
 
@@ -188,7 +169,6 @@ fn R(S : int, T : int, U : int, V : int) : bool {
   let Z = l
   let aa = (G > Z)
   let ab = h
-  return false
   let ac = y((L * L), X, b, L)
   let ad = Z
   let ae = r
@@ -203,8 +183,6 @@ fn S(T : float) : bool {
   let Y = q
   let Z = B
   let aa = T
-  return v(Q, (W != (! d)))
-  return v(481, Z)
   let ab = B
   return q
 }
@@ -221,7 +199,6 @@ fn W(X : int, Y : float) : float {
   let ac = q
   let ad = 700
   let ae = ad
-  return k
   let af = E
   let ag = t(v(685, R(m, Q, H, a)))
   let ah = (a >= m)
@@ -234,7 +211,6 @@ fn Z(aa : bool, ab : float, ac : bool) : int {
   let ad = d
   let ae = A((N % C), P(P(c, Y, Q, h), (! v(255, false)), M, J))
   let af = D()
-  return h
   let ag = E
   let ah = U
   let ai = J
@@ -246,12 +222,9 @@ fn Z(aa : bool, ab : float, ac : bool) : int {
 
 fn aa(ab : int, ac : bool, ad : int) : int {
   let ae = d
-  return Q
   let af = ac
-  return (m % u(p, t(v(u(I((z * a)), Y), U))))
   let ag = h
   let ah = u(w, (P(11.8, false, G, ab) > 1.83))
-  return H
   let ai = 109
   let aj = b
   let ak = 92.85

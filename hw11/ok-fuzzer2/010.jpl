@@ -2,7 +2,6 @@ fn a() : bool {
   let b = (! ((((- ((- ((- 481) - ((- (372 * 718)) * (- (- 756))))) + 776)) * (((- (- 681)) % ((((- 350) - (264 - 197)) / 992) % ((- 961) / (826 - 348)))) + ((- (- (- (- 538)))) + (63 / 774)))) / ((- 967) % (- (((((- (- 418)) / 128) / (- (- (843 - 421)))) % 660) + (- (- (- (- (545 / 556))))))))) < (- 296)))
   let c = b
   let d = 93.8
-  return c
   let e = b
   let f = (! (! (d != 71.14)))
   let g = e
@@ -23,10 +22,8 @@ fn h(i : float, j : float, k : bool) : int {
   let m = g
   let n = b
   let o = (j >= (- c))
-  return 934
   let p = ((273 % e) - (345 * 788))
   let q = ((e <= p) != o)
-  return 775
   let r = k
   let s = q
   return (e / p)
@@ -41,7 +38,6 @@ fn n(o : int, p : bool, q : float) : float {
   let r = f
   let s = false
   let t = m
-  return (c - k)
   let u = (m <= t)
   let v = u
   let w = e
@@ -96,7 +92,6 @@ fn T(U : int, V : bool, W : int) : float {
   let ab = ((- H) % K)
   let ac = F
   let ad = I
-  return c
   let ae = A
   let af = t
   return H
@@ -108,7 +103,6 @@ fn U(V : int) : float {
   let Y = r
   let Z = q
   let aa = F
-  return K
   let ab = h(c, H, A)
   let ac = (! v)
   let ad = h(c, H, a())
@@ -129,7 +123,6 @@ fn Y(Z : float, aa : int, ab : bool) : bool {
   let ag = Q
   let ah = v
   let ai = Q
-  return B
   let aj = W
   let ak = V
   return C
@@ -142,11 +135,9 @@ fn aa(ab : bool, ac : bool) : int {
   let af = w
   let ag = z
   let ah = ae
-  return ah
   let ai = T(206, A, m)
   let aj = u
   let ak = Q
-  return E
   return h(T(ah, R, h((- k), H, s)), q, true)
 }
 
@@ -156,7 +147,6 @@ fn ac(ad : float, ae : float) : bool {
   let ag = S
   let ah = ag
   let ai = E
-  return ah
   let aj = S
   let ak = l
   let al = J

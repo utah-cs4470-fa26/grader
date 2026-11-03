@@ -35,14 +35,12 @@ fn q(r : int) : float {
   let w = l
   let x = d
   let y = true
-  return 96.38
   let z = y
   let A = v
   return w
 }
 
 fn r(s : int, t : float, u : bool) : int {
-  return j
   let v = i
   let w = n
   let x = p
@@ -63,14 +61,10 @@ let w = c
 let x = ((l + (- 86.46)) > m((! h), (l == q((- e))), 0.77, k))
 let y = w
 fn z(A : bool, B : bool) : bool {
-  return k
   let C = i
   let D = r(t, l, w)
-  return true
   let E = c
-  return k
   let F = o
-  return (a <= C)
   let G = a
   let H = g
   return s
@@ -85,7 +79,6 @@ fn A(B : bool) : float {
   let H = (b / (- p))
   let I = F
   let J = I
-  return q(j)
   let K = x
   return D
 }
@@ -99,7 +92,6 @@ fn C() : float {
   let H = o
   let I = x
   let J = g
-  return m(H, false, A(w), z(I, v))
   let K = v
   let L = H
   return 44.98
@@ -116,7 +108,6 @@ fn E(F : bool, G : float) : int {
   let N = M
   let O = D
   let P = a
-  return 786
   return 41
 }
 
@@ -125,13 +116,11 @@ let G = s
 let H = z(false, o)
 fn I() : int {
   let J = r(j, l, G)
-  return (- a)
   let K = 434
   let L = H
   let M = (- 54.4)
   let N = v
   let O = (i >= d)
-  return j
   let P = h
   let Q = j
   return j
@@ -143,15 +132,12 @@ let J = (l <= l)
 let K = f
 let L = ((! u) != false)
 fn M(N : bool, O : bool) : bool {
-  return w
-  return c
   let P = true
   let Q = P
   let R = (q(d) > 71.7)
   let S = o
   let T = x
   let U = E(Q, 19.46)
-  return h
   let V = (! u)
   return B
 }
@@ -161,7 +147,6 @@ let O = A(z(H, F))
 fn P() : int {
   let Q = e
   let R = m(false, x, 19.81, u)
-  return j
   let S = C()
   let T = M(B, true)
   let U = v
@@ -177,11 +162,8 @@ show z(true, G)
 
 let R = (r(f, (l * (- m((k != w), (! G), (q(485) / q(p)), (N >= q(K))))), u) < I())
 fn S(T : bool, U : float, V : int) : float {
-  return q(e)
   let W = P()
-  return D
   let X = H
-  return D
   let Y = j
   let Z = Q
   let aa = P()
@@ -225,7 +207,6 @@ let W = T((! false), T(L, r(e, C(), c)))
 fn X(Y : bool, Z : int) : float {
   let aa = w
   let ab = y
-  return O
   let ac = aa
   let ad = (! U)
   let ae = I()

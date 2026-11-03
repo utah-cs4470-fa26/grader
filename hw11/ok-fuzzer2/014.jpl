@@ -25,10 +25,7 @@ fn j(k : bool, l : bool, m : float) : float {
 
 let k = (! (c != (! d)))
 fn l(m : bool, n : bool, o : bool) : int {
-  return h
-  return (- h)
   let p = n
-  return (- (- 785))
   let q = a
   let r = 828
   let s = 988
@@ -71,12 +68,10 @@ let A = c
 fn B() : int {
   let C = i
   let D = j(A, k, j(d, x, i))
-  return q(j(c, o, 31.51), k)
   let E = j(z, ((- l(z, d, c)) <= l(true, true, r)), (- e))
   let F = w
   let G = n
   let H = q(m, A)
-  return h
   let I = b
   let J = t
   return (- h)
@@ -94,14 +89,10 @@ show s
 
 fn I(J : int, K : bool, L : bool) : float {
   let M = x
-  return j(H, C, i)
   let N = D
   let O = r
-  return e
   let P = (- q(N, p))
   let Q = s
-  return (y * m)
-  return b
   let R = F
   return b
 }
@@ -118,7 +109,6 @@ fn N(O : float, P : float, Q : int) : bool {
   let T = l(z, R, C)
   let U = z
   let V = (G == y)
-  return x
   let W = r
   let X = g
   let Y = u
@@ -156,8 +146,6 @@ fn Z(aa : bool, ab : bool) : bool {
   let ae = t
   let af = ae
   let ag = false
-  return O
-  return (! o)
   let ah = O
   let ai = x
   let aj = v
@@ -172,9 +160,7 @@ fn aa(ab : float) : bool {
   let ag = S(s)
   let ah = W
   let ai = y
-  return d
   let aj = t
-  return F
   return (E < v)
 }
 
@@ -186,7 +172,6 @@ fn ab(ac : bool, ad : bool) : bool {
   let ai = v
   let aj = J
   let ak = Q
-  return L
   let al = aj
   let am = ag
   return T
@@ -194,12 +179,10 @@ fn ab(ac : bool, ad : bool) : bool {
 
 fn ac(ad : float) : int {
   let ae = k
-  return q(g, V)
   let af = x
   let ag = ab((ad != (- b)), c)
   let ah = s
   let ai = s
-  return E
   let aj = t
   let ak = ab(N(e, m, ai), n)
   let al = t
