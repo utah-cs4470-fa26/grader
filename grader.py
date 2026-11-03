@@ -464,20 +464,6 @@ HWS = {
        "4": NullPart(DiffSpec, "hw11/ok-fuzzer1/", "-s", normalize=ppasm, comment=commentasm),
        "5": NullPart(DiffSpec, "hw11/ok-fuzzer2/", "-s", normalize=ppasm, comment=commentasm),
    },
-   "1011": {
-       "1": NullPart(DiffSpec, "hw10/ok/", "-s", normalize=ppasm, comment=commentasm),
-       "2": NullPart(DiffSpec, "hw10/ok-fuzzer12/", "-s", normalize=ppasm, comment=commentasm),
-       ##"2": NullPart(DiffSpec, "hw10/ok-fuzzer1/", "-s", normalize=ppasm, comment=commentasm),
-       ## "3": NullPart(DiffSpec, "hw10/ok-fuzzer2/", "-s", normalize=ppasm, comment=commentasm),
-       "3": NullPart(DiffSpec, "hw11/ok1/", "-s", normalize=ppasm, comment=commentasm),
-       "4": NullPart(DiffSpec, "hw11/ok2/", "-s", normalize=ppasm, comment=commentasm),
-       "5": NullPart(DiffSpec, "hw11/ok3/", "-s", normalize=ppasm, comment=commentasm),
-       "6": NullPart(DiffSpec, "hw11/ok-fuzzer12/", "-s", normalize=ppasm, comment=commentasm),
-       ##"7": NullPart(DiffSpec, "hw11/ok-fuzzer1/", "-s", normalize=ppasm, comment=commentasm),
-       ##"8": NullPart(DiffSpec, "hw11/ok-fuzzer2/", "-s", normalize=ppasm, comment=commentasm),
-   },
-
-
    "12": {
        "1": NullPart(DiffSpec, "hw12/if/", "-s", normalize=ppasm, comment=commentasm),
        "2": NullPart(DiffSpec, "hw12/index/", "-s", normalize=ppasm, comment=commentasm),
