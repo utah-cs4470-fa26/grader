@@ -34,21 +34,19 @@ const6: dq 27
 const7: dq 109
 const8: db `divide by zero`, 0
 const9: dq 891
-const10: dq 785
-const11: dq 828
-const12: dq 988
-const13: dq 1
-const14: dq 0
-const15: dq 12
-const16: dq 479
-const17: dq 213
-const18: db `(FloatType)`, 0
-const19: dq 708
-const20: dq 31.51
-const21: dq 92.64
-const22: db `(IntType)`, 0
-const23: dq 443
-const24: dq 69.75
+const10: dq 828
+const11: dq 988
+const12: dq 1
+const13: dq 0
+const14: dq 12
+const15: dq 479
+const16: dq 213
+const17: db `(FloatType)`, 0
+const18: dq 708
+const19: dq 92.64
+const20: db `(IntType)`, 0
+const21: dq 443
+const22: dq 69.75
 
 section .text
 j:
@@ -182,47 +180,16 @@ _l:
 	push rsi
 	push rdx
 	sub rsp, 8
-	; Moving 8 bytes from r12 - 72 to rsp 
-		mov r10, [r12 - 72 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	add rsp, 24 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 72 to rsp 
-		mov r10, [r12 - 72 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	add rsp, 24 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
 	; Moving 8 bytes from rbp - 16 to rsp 
 		mov r10, [rbp - 16 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const10] ; 785
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	neg rax
-	push rax
-	pop rax
-	add rsp, 32 ; Local variables
-	pop rbp
-	ret
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 16 to rsp 
 		mov r10, [r12 - 16 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const11] ; 828
+	mov rax, [rel const10] ; 828
 	push rax
-	mov rax, [rel const12] ; 988
+	mov rax, [rel const11] ; 988
 	push rax
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 56 to rsp 
@@ -237,7 +204,7 @@ _l:
 	; Moving 8 bytes from rbp - 40 to rsp 
 		mov r10, [rbp - 40 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const13] ; True
+	mov rax, [rel const12] ; True
 	push rax
 	sub rsp, 8
 	; Moving 8 bytes from rbp - 32 to rsp 
@@ -288,7 +255,7 @@ _q:
 	sete al
 	and rax, 1
 	push rax
-	mov rax, [rel const14] ; False
+	mov rax, [rel const13] ; False
 	push rax
 	pop rdi
 	pop rsi
@@ -330,9 +297,9 @@ _q:
 	mulsd xmm0, xmm1
 	sub rsp, 8
 	movsd [rsp], xmm0
-	mov rax, [rel const13] ; True
+	mov rax, [rel const12] ; True
 	push rax
-	mov rax, [rel const13] ; True
+	mov rax, [rel const12] ; True
 	push rax
 	pop rdi
 	pop rsi
@@ -402,7 +369,7 @@ _q:
 	setge al
 	and rax, 1
 	push rax
-	mov rax, [rel const14] ; False
+	mov rax, [rel const13] ; False
 	push rax
 	sub rsp, 8
 	; Moving 8 bytes from rbp - 16 to rsp 
@@ -466,7 +433,7 @@ _q:
 	pop rax
 	xor rax, 1
 	push rax
-	mov rax, [rel const13] ; True
+	mov rax, [rel const12] ; True
 	push rax
 	pop rax
 	xor rax, 1
@@ -491,11 +458,11 @@ _q:
 	; Moving 8 bytes from rbp - 80 to rsp 
 		mov r10, [rbp - 80 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const15] ; 12
+	mov rax, [rel const14] ; 12
 	push rax
-	mov rax, [rel const16] ; 479
+	mov rax, [rel const15] ; 479
 	push rax
-	mov rax, [rel const17] ; 213
+	mov rax, [rel const16] ; 213
 	push rax
 	pop rax
 	neg rax
@@ -560,38 +527,6 @@ _B:
 	sub rsp, 8
 	movsd [rsp], xmm0
 	sub rsp, 8
-	; Moving 8 bytes from r12 - 88 to rsp 
-		mov r10, [r12 - 88 + 0]
-		mov [rsp + 0], r10
-	sub rsp, 8 ; Add alignment
-	mov rax, [rel const20] ; 31.51
-	push rax
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 112 to rsp 
-		mov r10, [r12 - 112 + 0]
-		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 32 to rsp 
-		mov r10, [r12 - 32 + 0]
-		mov [rsp + 0], r10
-	pop rdi
-	pop rsi
-	movsd xmm0, [rsp]
-	add rsp, 8
-	call _j
-	add rsp, 8 ; Remove alignment
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	pop rdi
-	call _q
-	push rax
-	pop rax
-	add rsp, 16 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
 	; Moving 8 bytes from r12 - 48 to rsp 
 		mov r10, [r12 - 48 + 0]
 		mov [rsp + 0], r10
@@ -606,9 +541,9 @@ _B:
 	; Moving 8 bytes from r12 - 128 to rsp 
 		mov r10, [r12 - 128 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const13] ; True
+	mov rax, [rel const12] ; True
 	push rax
-	mov rax, [rel const13] ; True
+	mov rax, [rel const12] ; True
 	push rax
 	pop rdi
 	pop rsi
@@ -677,14 +612,6 @@ _B:
 	add rsp, 8 ; Remove alignment
 	push rax
 	sub rsp, 8
-	; Moving 8 bytes from r12 - 72 to rsp 
-		mov r10, [r12 - 72 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	add rsp, 48 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
 	; Moving 8 bytes from r12 - 24 to rsp 
 		mov r10, [r12 - 24 + 0]
 		mov [rsp + 0], r10
@@ -716,30 +643,6 @@ _I:
 		mov r10, [r12 - 176 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from r12 - 80 to rsp 
-		mov r10, [r12 - 80 + 0]
-		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 208 to rsp 
-		mov r10, [r12 - 208 + 0]
-		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 248 to rsp 
-		mov r10, [r12 - 248 + 0]
-		mov [rsp + 0], r10
-	pop rdi
-	pop rsi
-	movsd xmm0, [rsp]
-	add rsp, 8
-	call _j
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	add rsp, 32 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
 	; Moving 8 bytes from r12 - 216 to rsp 
 		mov r10, [r12 - 216 + 0]
 		mov [rsp + 0], r10
@@ -747,15 +650,6 @@ _I:
 	; Moving 8 bytes from r12 - 128 to rsp 
 		mov r10, [r12 - 128 + 0]
 		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 48 to rsp 
-		mov r10, [r12 - 48 + 0]
-		mov [rsp + 0], r10
-	movsd xmm0, [rsp]
-	add rsp, 8
-	add rsp, 48 ; Local variables
-	pop rbp
-	ret
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 120 to rsp 
 		mov r10, [r12 - 120 + 0]
@@ -776,35 +670,6 @@ _I:
 	; Moving 8 bytes from r12 - 136 to rsp 
 		mov r10, [r12 - 136 + 0]
 		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 96 to rsp 
-		mov r10, [r12 - 96 + 0]
-		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 184 to rsp 
-		mov r10, [r12 - 184 + 0]
-		mov [rsp + 0], r10
-	movsd xmm0, [rsp]
-	add rsp, 8
-	movsd xmm1, [rsp]
-	add rsp, 8
-	mulsd xmm0, xmm1
-	sub rsp, 8
-	movsd [rsp], xmm0
-	movsd xmm0, [rsp]
-	add rsp, 8
-	add rsp, 64 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 24 to rsp 
-		mov r10, [r12 - 24 + 0]
-		mov [rsp + 0], r10
-	movsd xmm0, [rsp]
-	add rsp, 8
-	add rsp, 64 ; Local variables
-	pop rbp
-	ret
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 232 to rsp 
 		mov r10, [r12 - 232 + 0]
@@ -876,14 +741,6 @@ _N:
 	and rax, 1
 	push rax
 	sub rsp, 8
-	; Moving 8 bytes from r12 - 176 to rsp 
-		mov r10, [r12 - 176 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	add rsp, 64 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
 	; Moving 8 bytes from r12 - 128 to rsp 
 		mov r10, [r12 - 128 + 0]
 		mov [rsp + 0], r10
@@ -917,7 +774,7 @@ _S:
 	; Moving 8 bytes from r12 - 304 to rsp 
 		mov r10, [r12 - 304 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const23] ; 443
+	mov rax, [rel const21] ; 443
 	push rax
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 160 to rsp 
@@ -947,7 +804,7 @@ _S:
 	; Moving 8 bytes from r12 - 144 to rsp 
 		mov r10, [r12 - 144 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const24] ; 69.75
+	mov rax, [rel const22] ; 69.75
 	push rax
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 208 to rsp 
@@ -980,27 +837,8 @@ _Z:
 	; Moving 8 bytes from rbp - 40 to rsp 
 		mov r10, [rbp - 40 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const14] ; False
+	mov rax, [rel const13] ; False
 	push rax
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 288 to rsp 
-		mov r10, [r12 - 288 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	add rsp, 56 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 112 to rsp 
-		mov r10, [r12 - 112 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	xor rax, 1
-	push rax
-	pop rax
-	add rsp, 56 ; Local variables
-	pop rbp
-	ret
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 288 to rsp 
 		mov r10, [r12 - 288 + 0]
@@ -1047,9 +885,9 @@ _aa:
 	; Moving 8 bytes from rbp - 8 to rsp 
 		mov r10, [rbp - 8 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const13] ; True
+	mov rax, [rel const12] ; True
 	push rax
-	mov rax, [rel const13] ; True
+	mov rax, [rel const12] ; True
 	push rax
 	pop rdi
 	pop rsi
@@ -1076,25 +914,9 @@ _aa:
 		mov r10, [r12 - 184 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from r12 - 40 to rsp 
-		mov r10, [r12 - 40 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	add rsp, 64 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
 	; Moving 8 bytes from r12 - 144 to rsp 
 		mov r10, [r12 - 144 + 0]
 		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 232 to rsp 
-		mov r10, [r12 - 232 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	add rsp, 72 ; Local variables
-	pop rbp
-	ret
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 160 to rsp 
 		mov r10, [r12 - 160 + 0]
@@ -1149,14 +971,6 @@ _ab:
 		mov r10, [r12 - 304 + 0]
 		mov [rsp + 0], r10
 	sub rsp, 8
-	; Moving 8 bytes from r12 - 272 to rsp 
-		mov r10, [r12 - 272 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	add rsp, 72 ; Local variables
-	pop rbp
-	ret
-	sub rsp, 8
 	; Moving 8 bytes from rbp - 64 to rsp 
 		mov r10, [rbp - 64 + 0]
 		mov [rsp + 0], r10
@@ -1183,23 +997,6 @@ _ac:
 	; Moving 8 bytes from r12 - 88 to rsp 
 		mov r10, [r12 - 88 + 0]
 		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 336 to rsp 
-		mov r10, [r12 - 336 + 0]
-		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 64 to rsp 
-		mov r10, [r12 - 64 + 0]
-		mov [rsp + 0], r10
-	movsd xmm0, [rsp]
-	add rsp, 8
-	pop rdi
-	call _q
-	push rax
-	pop rax
-	add rsp, 16 ; Local variables
-	pop rbp
-	ret
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 176 to rsp 
 		mov r10, [r12 - 176 + 0]
@@ -1244,14 +1041,6 @@ _ac:
 	; Moving 8 bytes from r12 - 136 to rsp 
 		mov r10, [r12 - 136 + 0]
 		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 224 to rsp 
-		mov r10, [r12 - 224 + 0]
-		mov [rsp + 0], r10
-	pop rax
-	add rsp, 48 ; Local variables
-	pop rbp
-	ret
 	sub rsp, 8
 	; Moving 8 bytes from r12 - 144 to rsp 
 		mov r10, [r12 - 144 + 0]
@@ -1465,7 +1254,7 @@ _jpl_main:
 	; Moving 8 bytes from rbp - 32 to rsp 
 		mov r10, [rbp - 32 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const14] ; False
+	mov rax, [rel const13] ; False
 	push rax
 	pop rax
 	xor rax, 1
@@ -1478,7 +1267,7 @@ _jpl_main:
 	; Moving 8 bytes from rbp - 24 to rsp 
 		mov r10, [rbp - 24 + 0]
 		mov [rsp + 0], r10
-	lea rdi, [rel const18] ; '(FloatType)'
+	lea rdi, [rel const17] ; '(FloatType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
@@ -1486,7 +1275,7 @@ _jpl_main:
 	; Moving 8 bytes from rbp - 32 to rsp 
 		mov r10, [rbp - 32 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const19] ; 708
+	mov rax, [rel const18] ; 708
 	push rax
 	sub rsp, 8
 	; Moving 8 bytes from rbp - 40 to rsp 
@@ -1585,7 +1374,7 @@ _jpl_main:
 	; Moving 8 bytes from rbp - 64 to rsp 
 		mov r10, [rbp - 64 + 0]
 		mov [rsp + 0], r10
-	mov rax, [rel const21] ; 92.64
+	mov rax, [rel const19] ; 92.64
 	push rax
 	movsd xmm0, [rsp]
 	add rsp, 8
@@ -1626,7 +1415,7 @@ _jpl_main:
 	; Moving 8 bytes from rbp - 136 to rsp 
 		mov r10, [rbp - 136 + 0]
 		mov [rsp + 0], r10
-	lea rdi, [rel const22] ; '(IntType)'
+	lea rdi, [rel const20] ; '(IntType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
@@ -1656,7 +1445,7 @@ _jpl_main:
 	; Moving 8 bytes from rbp - 160 to rsp 
 		mov r10, [rbp - 160 + 0]
 		mov [rsp + 0], r10
-	lea rdi, [rel const22] ; '(IntType)'
+	lea rdi, [rel const20] ; '(IntType)'
 	lea rsi, [rsp]
 	call _show
 	add rsp, 8
