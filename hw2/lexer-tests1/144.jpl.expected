@@ -1,0 +1,32 @@
+NEWLINE
+STRUCT 'struct'
+VARIABLE 'burrito'
+LCURLY '{'
+NEWLINE
+VARIABLE 'rice'
+COLON ':'
+BOOL 'bool'
+COMMA ','
+NEWLINE
+VARIABLE 'beans'
+COLON ':'
+BOOL 'bool'
+COMMA ','
+NEWLINE
+VARIABLE 'lettuce'
+COLON ':'
+BOOL 'bool'
+COMMA ','
+NEWLINE
+VARIABLE 'pico'
+COLON ':'
+BOOL 'bool'
+COMMA ','
+NEWLINE
+VARIABLE 'meat'
+COLON ':'
+INT 'int'
+NEWLINE
+RCURLY '}'
+NEWLINE
+END_OF_FILE

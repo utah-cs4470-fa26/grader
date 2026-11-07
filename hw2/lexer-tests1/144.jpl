@@ -1,0 +1,12 @@
+// OK
+
+struct burrito {
+  // yes or no
+  rice: bool,
+  beans: bool,
+  lettuce: bool,
+  pico: bool,
+  // 0 = nothing, 1 = chicken, 2 = beef, 3 = pork, 4 = grilled veggies
+  meat: int
+}
+

@@ -1,0 +1,5 @@
+// OK
+
+// dont delete line immediately following a comment
+assert argnum >= 1, "Please pass an argument"
+

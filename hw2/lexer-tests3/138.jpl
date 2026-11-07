@@ -1,0 +1,7 @@
+// ERROR
+
+// malformed newline escape
+
+let a = \ sum[x : 10] x
+let \y = 2
+
