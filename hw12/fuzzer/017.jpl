@@ -18,7 +18,6 @@ fn j() : float {
   let o[p, q] = (if ((50.59 - (sum[o : c, p : (l + n)] (sum[q : p, r : b] 45.71))) == (if true then 30.29 else 77.45)) then (array[o : (927 % m), p : 332] (array[q : (sum[q : f] l), r : k[b, n, m]] (array[s : f, t : r] i))[m, p]) else (array[o : n, p : (if (l > (- n)) then b else m)] (array[q : c, r : (m + p)] (! i))))[n, 858]
   let r[s, t, u] = a
   let v[w] = (if [(if h then (if i then h else i) else h)][c] then (array[v : t] k) else (if (! (array[v : c, w : (t + n)] false)[q, (p - n)]) then (array[v : d] (if o[l, s] then (if i then (array[w : s, x : l, y : n] n) else (array[w : b, x : c, y : l] m)) else [k, k][s])) else (array[v : q] [k, k])[(l * 463)]))
-  return (if (! (if (35.27 > 50.46) then g((- 17.73), (array[x : l] 62.57), (array[x : u] a[m, l, w])) else true)) then (- (if ((sum[x : b] 72.03) > (- 28.94)) then (array[x : n, y : (f + 885)] 81.54) else (array[x : q, y : w] (31.48 * 71.25)))[m, w]) else a[(- p), m, (sum[x : t, y : s] y)])
   return (array[x : u, y : d] ((sum[z : w] (sum[A : z, B : x, C : (if h then u else y)] a[C, f, l])) % (if h then 24.16 else 26.23)))[u, s]
 }
 
@@ -28,7 +27,6 @@ let o[p, q] = k
 let r = q
 fn s() : bool[,,] {
   let t[u, v] = k
-  return [(array[w : (if h then m else q), x : (if h then (- c) else (- q)), y : (- l)] (array[z : l, A : (if false then d else m), B : p] (if true then i else true)))[r, r, m]][(if ([n, 41.54][r] >= ([n, j(), n][(if h then u else p)] / (if (p >= r) then 25.93 else (sum[w : b] j())))) then u else v)]
   let w = p
   let x = b
   let y = (p == m)
@@ -39,8 +37,6 @@ let t = b
 let u = (- (68.72 + j()))
 fn v(w[x] : bool[], y : int, z[A, B] : bool[,]) : bool {
   let C = c
-  return (if h then (! true) else false)
-  return i
   let D[E, F, G] = (if (if s()[(- (d % p)), d, ((r - x) % f)] then (array[D : 589, E : l, F : A] w)[d, c, m] else (if h then (if true then [true, true, h] else [i, false]) else (array[D : b] false)))[(B / l)] then (array[D : y] s())[C] else (array[D : (if i then B else (if i then 385 else (- x))), E : C, F : B] h))
   let H = a
   return D[l, t, (if (p == t) then F else d)]

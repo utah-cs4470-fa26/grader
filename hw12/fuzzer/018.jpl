@@ -18,7 +18,6 @@ fn y() : bool {
   let E = n
   let F = s
   return (if (if true then ((- (array[G : s, H : w, I : m] 25.81)[s, f, m]) != (sum[G : i, H : f] (- (sum[I : r] 58.15)))) else ((if (t[F, C] >= a[n, f]) then 5.02 else (- (- 95.83))) <= (sum[G : g, H : ((if o then B else e) * m), I : E] (if true then j else j)[v, r]))) then false else (true != o))
-  return true
 }
 
 let z[A, B, C] = d
@@ -27,9 +26,8 @@ let H[I, J, K] = (if y() then z else (array[H : x, I : c, J : m] (array[K : E, L
 fn L(M[N] : int[], O : float[], P : float) : float {
   let Q = z
   let R[S, T] = (if o then a else j)
-  return (if true then P else ((sum[U : F, V : m] ((- (sum[W : s, X : E, Y : T] 90.88)) / 26.91)) / P))
   let U = B
   let V[W] = (array[V : I] s)
-  return 46.73
+  return (if true then P else ((sum[U : F, V : m] ((- (sum[W : s, X : E, Y : T] 90.88)) / 26.91)) / P))
 }
 

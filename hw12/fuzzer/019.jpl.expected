@@ -1730,15 +1730,6 @@ _x:
 		mov [rsp + 8], r10
 		mov r10, [rbp - -16 + 0]
 		mov [rsp + 0], r10
-	sub rsp, 8
-	; Moving 8 bytes from r12 - 88 to rsp 
-		mov r10, [r12 - 88 + 0]
-		mov [rsp + 0], r10
-	movsd xmm0, [rsp]
-	add rsp, 8
-	add rsp, 48 ; Local variables
-	pop rbp
-	ret
 	sub rsp, 16
 	; Moving 16 bytes from r12 - 80 to rsp 
 		mov r10, [r12 - 80 + 8]

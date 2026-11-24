@@ -15,9 +15,6 @@ show (array[w : k] e)
 
 let w[x, y] = [(array[w : m, x : t, y : m] (array[z : 537, A : k] c))[k, 788, r], (array[w : g, x : 950] c), (array[w : p, x : a[e]] c)][i][k, k]
 fn z(A : bool) : int[,] {
-  return (array[B : m, C : u] e)
-  return (if (A != false) then (if ((array[B : x, C : b, D : y] true)[h, e, (- r)] != true) then (array[B : x, C : (- (489 * y))] (array[D : h, E : y] (- g))) else (array[B : (sum[B : x, C : (- b)] C), C : (sum[B : x, C : m, D : b] e)] (if (if true then false else A) then (array[D : u, E : v] u) else (array[D : m, E : h] p))))[q, t] else (array[B : k, C : h] (array[D : x, E : B] y))[i, (- g)])
-  return (array[B : q, C : p] ((if A then u else v) - u))
   let B = ((if (62.57 <= (sum[B : (- k), C : (g / k)] 54.35)) then (array[B : y, C : (if A then m else r), D : m] (sum[E : v, F : g, G : D] 26.55)) else (array[B : b] (array[C : t, D : r, E : 511] 99.83))[k])[k, (e + b), (sum[B : (- v)] k)] >= (array[B : g, C : k, D : (if (array[B : 851] A)[y] then (sum[B : q] B) else y)] 39.85)[t, g, h])
   let C = 584
   return (if (if B then A else (false != false)) then (array[D : h, E : i] (sum[F : r, G : D, H : u] g)) else (array[D : m] (array[E : D, F : i, G : r] (array[H : x, I : 134] q)))[h][x, C, e])
@@ -32,7 +29,6 @@ fn C(D : float[,]) : float {
   let I[J, K, L] = o
   let M[N, O] = (if (if (if (if (! true) then false else (false == (44.28 != 74.74))) then ((if (H == t) then false else false) == (F <= h)) else (array[M : i, N : u] (p >= J))[k, r]) then false else (array[M : e, N : K] (array[O : G] false)[u])[e, p]) then D else (if (! (! (! (if true then false else false)))) then (array[M : L, N : b] (if (N <= L) then D else c)[y, (if (x != 17) then F else (if true then k else 285))]) else (array[M : i, N : G] (if (B > i) then D else (array[O : k, P : L] 16.56)))[G, b]))
   let P[Q] = (if (p >= L) then l else a)
-  return (sum[R : (if false then g else v)] (if [[false], (array[S : u] false), [true, false]][471][t] then (if (array[S : e, T : d] (! true))[K, A] then 42.93 else (sum[S : m, T : k] (sum[U : F, V : N] (sum[W : d, X : b] 82.43)))) else (array[S : q] (if false then 0.48 else (sum[T : q, U : g, V : F] 78.9)))[R]))
   return ((array[R : d] (if (! true) then (sum[S : e] (35.68 * 11.57)) else 18.27))[F] + (- (sum[R : b, S : x, T : Q] (sum[U : L] ((- 3.82) + (- 87.34))))))
 }
 

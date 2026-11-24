@@ -25,7 +25,6 @@ fn k(l[m, n, o] : bool[,,], p[q, r] : bool[,]) : bool {
   let t[u, v] = p
   let w[x] = (array[w : g] (! l[u, s, (- (q / u))]))
   let y = n
-  return f
   return (s != g)
 }
 
@@ -35,7 +34,6 @@ fn m() : float[,,] {
   let r[s] = (if ((array[r : g, s : j, t : c] e((array[u : d] s), (array[u : b, v : p] f)))[b, c, ((- d) + (c + b))] == e([q, q], (if f then (array[r : p, s : (if f then b else d)] (42.03 <= 31.46)) else (array[r : g, s : p] (q != c))))) then h(d, (array[r : 641] (array[s : q] true)[g]), (if f then (if (! f) then (array[r : p, s : j] g) else (array[r : (- 487), s : p] c)) else (array[r : b, s : 385] (array[t : q, u : o] s))[b, c])) else (array[r : d, s : ((- d) + g)] (if (if (true == f) then f else f) then (array[t : c] (48.95 % 14.4)) else (array[t : s] 52.83)))[(sum[r : b, s : 551, t : p] (if (! false) then g else g)), (if k((array[r : 251, s : (- q), t : (- p)] (87.5 != 26.55)), (array[r : 992, s : (- g)] false)) then (if f then o else d) else q)])
   let t = e(l, (array[t : s] (if (if false then true else false) then (array[u : (o * q), v : g] f) else (array[u : b, v : (- t)] (q <= u))))[(- s)])
   let u = (array[u : (sum[u : j, v : 377] b), v : c] s)
-  return [(array[v : (- 400), w : g, x : (- g)] t)][g]
   return (array[v : p, w : q, x : o] t)
 }
 
